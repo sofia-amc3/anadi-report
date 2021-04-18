@@ -156,19 +156,23 @@ legend("topright",
 
 # Alínea e) --------------------------------------------------
 europeanCountries <- subset(data, data$continent == "Europe")
-row <- which.max(europeanCountries$total_cases_per_million)
+row <- which.max(europeanCountries$new_cases_per_million)
+maxToalCases <- europeanCountries[row, "new_cases_per_million"]$new_cases_per_million
 country <- europeanCountries[row, "location"]$location
 date <- europeanCountries[row, "date"]$date
 cat("País europeu que teve o maior número de infetados, por milhão de habitantes, num só dia: ",
-    "\n\t", country, "\t", "Dia: ", date)
+    "\n\t", country, "\t", "Dia: ", format(date, "%d %b %Y"),
+    "\t Casos: ", maxToalCases)
 
 
 # Alínea f) --------------------------------------------------
-maxTransmissibilityRate <- which.max(data$reproduction_rate)
-date <- data[maxTransmissibilityRate, "date"]$date
-country <- data[maxTransmissibilityRate, "location"]$location
+row <- which.max(data$reproduction_rate)
+maxTransmissibilityRate <- data[row, "reproduction_rate"]$reproduction_rate
+date <- data[row, "date"]$date
+country <- data[row, "location"]$location
 cat("Dia e País onde se registou a maior taxa de transmissibilidade do vírus:",
-    "\n\t", country, "\t", "Dia: ", date)
+    "\n\t", country, "\t", "Dia: ", format(date, "%d %b %Y"),
+    "\t Índice de transmissibilidade: ", maxTransmissibilityRate)
 
 
 # Alínea g) --------------------------------------------------
@@ -220,31 +224,72 @@ boxplot(continents, names = continentsNames,
 
 ################################################## ANÁLISE DE CORRELAÇÃO ##################################################
 
-# Alínea a) --------------------------------------------------
+conditions <- data$continent == "Europe" &
+              data$population > 10^7 &
+              data$date >= as.Date("2021-01-01")
 
+# Obtém os países europeus com mais de 10 000 000 de habitantes
+# e os seus dados do ano 2021
+europeanCountriesData <- subset(data, conditions)
+europeanCountries <- unique(europeanCountriesData$location)
+
+
+# Alínea a) --------------------------------------------------
+# Variáveis
+columns <- c("date", "location", "reproduction_rate", "population_density")
+x <- c()
+y <- c()
+
+# Guarda o número total de mortes e maior percentagem de populção com idade > 65 anos
+#dos países europeus selecionados
+for (country in europeanCountries) {
+  countryData <- subset(europeanCountriesData, europeanCountriesData$location == country)
+  maxReproductionRate <- max(countryData[,columns[3]], na.rm = TRUE)
+  maxPopulationDensity <- max(countryData[,columns[4]], na.rm = TRUE) # na.rm -> remove os NA's
+  
+  x <- append(x, maxReproductionRate)
+  y <- append(y, maxPopulationDensity)
+}
+
+# Gráfico de dispersão
+plot(x, y,
+     main = "Gráfico de dispersão entre o índice de transmissibilidade\ne densidade de população",
+     xlab = "Índice de transmissibilidade",
+     ylab = "Densidade de população",
+     pch = 19,
+     col = "black")
+
+# Teste de correlação
+cor.test(x, y, alternative = "two.sided", method = "pearson")
 
 
 # Alínea b) --------------------------------------------------
 # Variáveis
 columns <- c("date","location", "total_deaths_per_million", "aged_65_older")
-conditions <- data$continent == "Europe" &
-              data$population > 10^7 &
-              data$date >= as.Date("2021-01-01")
-europeanCountries <- subset(data, conditions, columns)
-europeanCountriesNames <- unique(europeanCountriesData$location)
-
 x <- c()
 y <- c()
 
-# Obtém o total número de mortos e a percentagem de população com +65 anos em cada país
-for (countryName in europeanCountriesNames) {
-  country <- subset(europeanCountries, europeanCountries$location == countryName)
-  maxDeaths <- max(country$total_deaths_per_million, na.rm = TRUE);
-  maxAged <- max(country$aged_65_older, na.rm = TRUE);
+# Guarda o número total de mortes e maior percentagem de populção com idade > 65 anos
+#dos países europeus selecionados
+for (country in europeanCountries) {
+  countryData <- subset(europeanCountriesData, europeanCountriesData$location == country)
+  maxDeaths <- max(countryData$total_deaths_per_million, na.rm = TRUE);
+  maxAged <- max(countryData$aged_65_older, na.rm = TRUE);
   
   x <- append(x, maxDeaths)
   y <- append(y, maxAged)
 }
+
+# Gráfico de dispersão
+plot(x, y,
+     main = "Gráfico de dispersão entre o número total de mortes, por milhão de habitantes,\ne percentagem de população com mais de 65 anos",
+     xlab = "Número total de mortes / milhão de habitantes",
+     ylab = "% de população > 65 anos",
+     pch = 19,
+     col = "black")
+
+# Teste de correlação
+cor.test(x, y, alternative = "two.sided", method = "pearson")
 
 
 
