@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  18 APR 2021 18:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  24 APR 2021 17:53
 entering extended mode
 **./article.tex
 (article.tex
@@ -308,275 +308,66 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 -sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
 
+LaTeX Warning: Citation `b1' on page 1 undefined on input line 41.
+
+
+LaTeX Warning: Citation `b2' on page 1 undefined on input line 47.
+
+[1{C:/Users/SAP-PSC6-G7/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 114
+.
 
 (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 114
+.
 (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{C:/Users/SAP-PSC6-G7/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
-
-
-]
+)
 <fig1.png, id=9, 82.1469pt x 71.5473pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 133.
+Package pdftex.def Info: fig1.png  used on input line 129.
 (pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
-44.
-
+40.
 (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 144.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
 
-! LaTeX Error: Environment Referências Bibliográficas undefined.
+LaTeX Warning: Citation `b1' on page 2 undefined on input line 152.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.172 \begin{Referências Bibliográficas}
-                                          {00}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+
+LaTeX Warning: Citation `b2' on page 2 undefined on input line 153.
+
+
+LaTeX Warning: Citation `b3' on page 2 undefined on input line 154.
+
+
+LaTeX Warning: Citation `b3' on page 2 undefined on input line 154.
+
+
+LaTeX Warning: Citation `b3' on page 2 undefined on input line 154.
+
+
+LaTeX Warning: Citation `b3' on page 2 undefined on input line 155.
 
 [2 <./fig1.png (PNG copy)>]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.173 \bibitem{b1}
-                   G. Eason, B. Noble, and I. N. Sneddon, ``On certain integ...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-<argument> \@listctr 
-                     
-l.173 \bibitem{b1}
-                   G. Eason, B. Noble, and I. N. Sneddon, ``On certain integ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.173 \bibitem{b1}
-                   G. Eason, B. Noble, and I. N. Sneddon, ``On certain integ...
-I'm forgetting what you said and using zero instead.
+LaTeX Warning: Citation `b4' on page 3 undefined on input line 163.
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.174 \bibitem{b2}
-                   J. Clerk Maxwell, A Treatise on Electricity and Magnetism...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-<argument> \@listctr 
-                     
-l.174 \bibitem{b2}
-                   J. Clerk Maxwell, A Treatise on Electricity and Magnetism...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.174 \bibitem{b2}
-                   J. Clerk Maxwell, A Treatise on Electricity and Magnetism...
-I'm forgetting what you said and using zero instead.
+LaTeX Warning: Citation `b5' on page 3 undefined on input line 164.
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.175 \bibitem{b3}
-                   I. S. Jacobs and C. P. Bean, ``Fine particles, thin films...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-<argument> \@listctr 
-                     
-l.175 \bibitem{b3}
-                   I. S. Jacobs and C. P. Bean, ``Fine particles, thin films...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.175 \bibitem{b3}
-                   I. S. Jacobs and C. P. Bean, ``Fine particles, thin films...
-I'm forgetting what you said and using zero instead.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.176 \bibitem{b4}
-                   K. Elissa, ``Title of paper if known,'' unpublished.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-<argument> \@listctr 
-                     
-l.176 \bibitem{b4}
-                   K. Elissa, ``Title of paper if known,'' unpublished.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.176 \bibitem{b4}
-                   K. Elissa, ``Title of paper if known,'' unpublished.
-I'm forgetting what you said and using zero instead.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.177 \bibitem{b5}
-                   R. Nicole, ``Title of paper with only first word capitali...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-<argument> \@listctr 
-                     
-l.177 \bibitem{b5}
-                   R. Nicole, ``Title of paper with only first word capitali...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.177 \bibitem{b5}
-                   R. Nicole, ``Title of paper with only first word capitali...
-I'm forgetting what you said and using zero instead.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.178 \bibitem{b6}
-                   Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron s...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-<argument> \@listctr 
-                     
-l.178 \bibitem{b6}
-                   Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron s...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.178 \bibitem{b6}
-                   Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron s...
-I'm forgetting what you said and using zero instead.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 \bibitem{b7}
-                   M. Young, The Technical Writer's Handbook. Mill Valley, C...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-<argument> \@listctr 
-                     
-l.179 \bibitem{b7}
-                   M. Young, The Technical Writer's Handbook. Mill Valley, C...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.179 \bibitem{b7}
-                   M. Young, The Technical Writer's Handbook. Mill Valley, C...
-I'm forgetting what you said and using zero instead.
-
-
-! LaTeX Error: \begin{document} ended by \end{Referências Bibliográficas}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.180 \end{Referências Bibliográficas}
-                                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+LaTeX Warning: Citation `b6' on page 3 undefined on input line 169.
 
 
 ** Conference Paper **
@@ -593,17 +384,17 @@ Before submitting the final camera ready copy, remember to:
 
 ] (article.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3950 strings out of 479321
- 58881 string characters out of 2853721
- 362592 words of memory out of 3000000
- 21373 multiletter control sequences out of 15000+600000
- 444694 words of font info for 107 fonts, out of 8000000 for 9000
+ 3940 strings out of 479321
+ 58768 string characters out of 2853721
+ 366571 words of memory out of 3000000
+ 21367 multiletter control sequences out of 15000+600000
+ 442630 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,11n,74p,295b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,74p,570b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.e
 nc}<C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmmi10.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/typ
@@ -613,7 +404,7 @@ al/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/SAP-PSC6-G7/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/SAP-PSC6-G
 7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/SAP-
 PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (3 pages, 90942 bytes).
+Output written on article.pdf (3 pages, 93451 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
