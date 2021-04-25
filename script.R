@@ -209,12 +209,27 @@ boxplot(continents, names = continentsNames,
 
 ################################################## ANÁLISE INFERENCIAL ##################################################
 
+# Variáveis
+conditions <- data$date >= as.Date("2020-04-01") &
+              data$date <= as.Date("2021-02-27")
+dataSample <- subset(data, conditions)
+
+
 # Alínea a) --------------------------------------------------
 
 
 
 # Alínea b) --------------------------------------------------
+# Variáveis
+nrDays <- 15
+column <- "new_deaths_per_million"
 
+set.seed(115)
+
+spain <- (subset(dataSample, dataSample$iso_code == countriesCodes["spain"], column))$new_deaths_per_million
+france <- (subset(dataSample, dataSample$iso_code == countriesCodes["france"], column))$new_deaths_per_million
+portugal <- (subset(dataSample, dataSample$iso_code == countriesCodes["portugal"], column))$new_deaths_per_million
+italy <- (subset(dataSample, dataSample$iso_code == countriesCodes["italy"], column))$new_deaths_per_million
 
 
 # Alínea c) --------------------------------------------------
@@ -224,6 +239,7 @@ boxplot(continents, names = continentsNames,
 
 ################################################## ANÁLISE DE CORRELAÇÃO ##################################################
 
+# Variáveis
 conditions <- data$continent == "Europe" &
               data$population > 10^7 &
               data$date >= as.Date("2021-01-01")
