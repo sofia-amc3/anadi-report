@@ -296,10 +296,15 @@ cor.test(x, y, alternative = "two.sided", method = "pearson")
 ################################################## ANÁLISE DE REGRESSÃO ##################################################
 
 # Variáveis
+conditions <- data$iso_code == countriesCodes["portugal"] &
+              data$date > as.Date("2020-04-01") &
+              data$date < as.Date("2021-02-27")
 columns <- c("new_deaths_per_million", "new_cases_per_million", "reproduction_rate", "stringency_index")
-portugal <- subset(data,
-                   data$iso_code == "PRT" & data$date > 2020-04-01 & data$date < 2021-02-27,
-                   columns);
+
+# Obtém os dados de Portugal e remove os NA's
+portugal <- subset(data, conditions, columns);
+row.has.na <- apply(portugal, 1, function(x) { any(is.na(x)) })
+portugal <- portugal[row.has.na, ]
 
 dm <- portugal$new_deaths_per_million
 cm <- portugal$new_cases_per_million
@@ -308,7 +313,8 @@ ir <- portugal$stringency_index
 
 
 # Alínea a) --------------------------------------------------
-
+mod <- lm(ir ~ dm + cm + rm)
+summary(mod)
 
 
 # Alínea b) --------------------------------------------------
@@ -316,3 +322,5 @@ ir <- portugal$stringency_index
 
 
 # Alínea c) --------------------------------------------------
+values <- data.frame(dm = 10, cm = 460, rm = 1.1)
+predict(mod, values, interval = "confidence", level = 0.95)
