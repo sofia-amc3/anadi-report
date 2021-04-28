@@ -210,29 +210,86 @@ boxplot(continents, names = continentsNames,
 ################################################## ANÁLISE INFERENCIAL ##################################################
 
 # Variáveis
-conditions <- data$date >= as.Date("2020-04-01") &
-              data$date <= as.Date("2021-02-27")
+firstDay <- as.Date("2020-04-01")
+lastDay <- as.Date("2021-02-27")
+days <- seq(firstDay, lastDay, "day")
+conditions <- data$date >= firstDay &
+              data$date <= lastDay
 dataSample <- subset(data, conditions)
 
 
 # Alínea a) --------------------------------------------------
 
+set.seed(118)
+
+# Variáveis
+nrDays <- 30
+columns <- c("date", "reproduction_rate")
+selectedDays <- sample(days, nrDays)
+selectedDays <- as.Date(as.character(selectedDays))
+
+# Gets the data for each country for in selected days
+uk <- subset(dataSample, dataSample$iso_code == countriesCodes["uk"], columns)
+uk <- uk[is.element(uk$date, selectedDays), ]$reproduction_rate
+portugal <- subset(dataSample, dataSample$iso_code == countriesCodes["portugal"], columns)
+portugal <- portugal[is.element(portugal$date, selectedDays), ]$reproduction_rate
+
+# Teste de hipóteses
+# H0: mu_uk <= mu_pt
+# H0: mu_uk > mu_pt
+
+# T-Test
+t.test(uk, portugal, paired = TRUE, alternative = "greater")
 
 
 # Alínea b) --------------------------------------------------
-# Variáveis
-nrDays <- 15
-column <- "new_deaths_per_million"
 
 set.seed(115)
 
-spain <- (subset(dataSample, dataSample$iso_code == countriesCodes["spain"], column))$new_deaths_per_million
-france <- (subset(dataSample, dataSample$iso_code == countriesCodes["france"], column))$new_deaths_per_million
-portugal <- (subset(dataSample, dataSample$iso_code == countriesCodes["portugal"], column))$new_deaths_per_million
-italy <- (subset(dataSample, dataSample$iso_code == countriesCodes["italy"], column))$new_deaths_per_million
+# Variáveis
+nrDays <- 15
+columns <- c("date", "new_deaths_per_million")
+selectedDays <- sample(days, nrDays)
+selectedDays <- as.Date(as.character(selectedDays))
+
+# Gets the data for each country in the selected days
+spain <- subset(dataSample, dataSample$iso_code == countriesCodes["spain"], columns)
+spain <- spain[is.element(spain$date, selectedDays), ]$new_deaths_per_million
+france <- subset(dataSample, dataSample$iso_code == countriesCodes["france"], columns)
+france <- france[is.element(france$date, selectedDays), ]$new_deaths_per_million
+portugal <- subset(dataSample, dataSample$iso_code == countriesCodes["portugal"], columns)
+portugal <- portugal[is.element(portugal$date, selectedDays), ]$new_deaths_per_million
+italy <- subset(dataSample, dataSample$iso_code == countriesCodes["italy"], columns)
+italy <- italy[is.element(italy$date, selectedDays), ]$new_deaths_per_million
+
+#
 
 
 # Alínea c) --------------------------------------------------
+# Variáveis
+nrDays <- 30
+columns <- c("date", "new_deaths_per_million")
+selectedDays <- sample(days, nrDays)
+selectedDays <- as.Date(as.character(selectedDays))
+
+# Gets the data for each continent in the selected days
+set.seed(100);
+africa <- subset(dataSample, dataSample$iso_code == continentsCodes["africa"], columns)
+africa <- africa[is.element(africa$date, selectedDays), ]$new_deaths_per_million
+set.seed(101);
+asia <- subset(dataSample, dataSample$iso_code == continentsCodes["africa"], columns)
+asia <- asia[is.element(asia$date, selectedDays), ]$new_deaths_per_million
+set.seed(102);
+europe <- subset(dataSample, dataSample$iso_code == continentsCodes["africa"], columns)
+europe <- europe[is.element(europe$date, selectedDays), ]$new_deaths_per_million
+set.seed(103);
+northAmerica <- subset(dataSample, dataSample$iso_code == continentsCodes["africa"], columns)
+northAmerica <- northAmerica[is.element(northAmerica$date, selectedDays), ]$new_deaths_per_million
+set.seed(104);
+southAmerica <- subset(dataSample, dataSample$iso_code == continentsCodes["africa"], columns)
+southAmerica <- southAmerica[is.element(southAmerica$date, selectedDays), ]$new_deaths_per_million
+
+#
 
 
 
