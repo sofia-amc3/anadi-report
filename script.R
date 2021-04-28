@@ -277,16 +277,16 @@ set.seed(100);
 africa <- subset(dataSample, dataSample$iso_code == continentsCodes["africa"], columns)
 africa <- africa[is.element(africa$date, selectedDays), ]$new_deaths_per_million
 set.seed(101);
-asia <- subset(dataSample, dataSample$iso_code == continentsCodes["africa"], columns)
+asia <- subset(dataSample, dataSample$iso_code == continentsCodes["asia"], columns)
 asia <- asia[is.element(asia$date, selectedDays), ]$new_deaths_per_million
 set.seed(102);
-europe <- subset(dataSample, dataSample$iso_code == continentsCodes["africa"], columns)
+europe <- subset(dataSample, dataSample$iso_code == continentsCodes["europe"], columns)
 europe <- europe[is.element(europe$date, selectedDays), ]$new_deaths_per_million
 set.seed(103);
-northAmerica <- subset(dataSample, dataSample$iso_code == continentsCodes["africa"], columns)
+northAmerica <- subset(dataSample, dataSample$iso_code == continentsCodes["northAmerica"], columns)
 northAmerica <- northAmerica[is.element(northAmerica$date, selectedDays), ]$new_deaths_per_million
 set.seed(104);
-southAmerica <- subset(dataSample, dataSample$iso_code == continentsCodes["africa"], columns)
+southAmerica <- subset(dataSample, dataSample$iso_code == continentsCodes["southAmerica"], columns)
 southAmerica <- southAmerica[is.element(southAmerica$date, selectedDays), ]$new_deaths_per_million
 
 #
