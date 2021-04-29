@@ -486,8 +486,7 @@ var.test(residuals(mod) [x > mx], residuals(mod) [x < mx])
 # Autocorrelação Nula
 # H0: Os resíduos são independentes
 # H1: Os resíduos não são independentes
-durbinWatsonTest(mod) Atr
-
+durbinWatsonTest(mod) 
 
 # Multicolinearidade
 vif(mod) 
