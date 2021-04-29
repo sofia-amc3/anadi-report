@@ -38,20 +38,25 @@ análise, dados, estatística, COVID-19, pandemia, exploração, inferência, co
 \end{IEEEkeywords}
 
 \section{Introdução} 
-No âmbito da pandemia atual, foram extraídos da base de dados internacional “Our World in Data”\cite{b1}, dinamizada pela universidade Johns Hopkins University (JHU), dados reais incidentes em casos confirmados de COVID-19, taxa de transmissibilidade do vírus, mortes, pacientes nos cuidados intensivos, testagem, vacinação e dados acerca da população. Estes dados são referentes ao período entre 01 de janeiro de 2020 a 27 de fevereiro de 2021.
+No âmbito da pandemia atual, foram extraídos da base de dados internacional “Our World in Data”\cite{database}, dinamizada pela universidade Johns Hopkins University (JHU), dados reais incidentes em casos confirmados de COVID-19, taxa de transmissibilidade do vírus, mortes, pacientes nos cuidados intensivos, testagem, vacinação e dados acerca da população. Estes dados são referentes ao período entre 01 de janeiro de 2020 a 27 de fevereiro de 2021.
 
 Pretende-se analisar o impacto da pandemia na população mundial, com o objetivo de compreender a expansão e tratamento do vírus em diferentes partes do mundo. Irá destacar-se a análise do número de mortes ocorridas, o número total de infetados e a taxa de transmissibilidade do vírus, entre outros fatores exploratórios. Estes dados serão discutidos através de processos de análise exploratória de dados, análise inferencial e análise de correlação e regressão.
 
 
 \section{Metodologia de Trabalho}
-Tendo por base o ficheiro “owid-covid-data.csv”\cite{b2}, foi criado um script em R com quatro diferentes tipos de análise: Análise Exploratória de Dados, Análise Inferencial, Análise de Correlação e Análise de Regressão. Cada uma destas análises possui alíneas independentes que pretendem tratar de dados específicos referentes ao ficheiro de dados. Após a conclusão das diferentes alíneas, foram analisados os dados e tiradas as respetivas conclusões presentes neste artigo nas secções IV, V, VI e VII.
+Tendo por base o ficheiro “owid-covid-data.csv”\cite{dataFile}, foi criado um script em R com quatro diferentes tipos de análise: Análise Exploratória de Dados, Análise Inferencial, Análise de Correlação e Análise de Regressão. Cada uma destas análises possui alíneas independentes que pretendem tratar de dados específicos referentes ao ficheiro de dados. Após a conclusão das diferentes alíneas, foram analisados os dados e tiradas as respetivas conclusões presentes neste artigo nas secções IV, V, VI e VII.
 
 \section{Exploração e Preparação dos Dados}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+No início do script em R estão presentes as variáveis globais que permitem facilitar a obtenção de dados necessários às diversas análises realizadas. Estas variáveis tiveram como função guardar os nomes, códigos e cores dos continentes e países necessários à exploração de dados pretendida. Para além disso, está também presente a importação de duas bibliotecas: nortest\cite{nortest} e car\cite{car}, que permitem a realização de diversos testes presentes nas análises efetuadas. 
 
-\section{Análise Exploratória de Dados} % ---------------------------------------------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+O script está organizado por análises (as quatro já previamente referidas) delimitadas de forma evidente, sendo que cada uma delas contém várias alíneas, listadas alfabeticamente. As letras indicadoras das alíneas são correspondentes às letras que delimitam as respetivas secções de análise neste artigo.
+
+Em cada alínea existe uma secção para a criação de variáveis referentes à própria alínea (ou mais do que uma alínea, caso os dados se repitam), seguidas da seleção dos dados conforme o pretendido, assim como modificações aos mesmos, caso necessário (por exemplo, a remoção de NAs ou organização dos dados). 
+
+Em seguida, é visível o código que permite a realização da respetiva análise, o qual inclui a criação de gráficos ou testes estatísticos. Nos gráficos que possuem diferentes amostras de populações, deu-se uso a paletas de cor, de modo a facilitar a visualização dos mesmos. Já os testes estatísticos, são visíveis na consola do script e referidos ao longo do artigo.
+
+
+\section{Análise Exploratória de Dados} %-------------------------------------
 
 \subsection{Número total de infetados ao longo do período de tempo estabelecido, por continente}
 
@@ -327,7 +332,7 @@ O modelo de regressão linear obtido através das variáveis independentes: mort
 \end{array}
 \end{equation}
 
-Relativamente à significância dos coeficientes obtidos, a interceção e a taxa de transmissibilidade são aqueles que apresentam p-values bastante baixos, sendo estatisticamente significantes, enquanto os coeficientes das mortes diárias e casos diários apresentam um p-value alto, de 0.141 e 0.259, respetivamente, ou seja, são valores com baixo nível de significância estatisticamente.
+Relativamente à significância dos coeficientes obtidos, a interseção e a taxa de transmissibilidade são aqueles que apresentam p-values extremamente  baixos, sendo estatisticamente significantes, enquanto os coeficientes das mortes diárias e casos diários apresentam um p-value alto, de 0.141 e 0.259, respetivamente, ou seja, são valores com baixo nível de significância estatisticamente.
 
 \begin{equation}
 \begin{array}{l}
@@ -336,7 +341,7 @@ Relativamente à significância dos coeficientes obtidos, a interceção e a tax
 \end{array}
 \end{equation}
 
-O valor do R-quadrado ajustado indica que apenas 22.75\% dos valores Índice de Rigor é explicado pelos outros parâmetros. Como o valor do p-value da estatística de teste é bastante reduzido, o valor do R-quadrado ajustado é estatisticamente significativo com um grau de significância superior a 99\%.
+O valor do R-quadrado ajustado indica que apenas 22.75\% dos valores do Índice de Rigor são explicados pelos outros parâmetros. Como o valor do p-value da estatística de teste é bastante reduzido, o valor do R-quadrado ajustado é estatisticamente significativo com um grau de significância superior a 99\%.
 
 \subsection{Verificação da satisfação das condições de Homocedasticidade, Autocorrelação nula e de Multicolinearidade}
 
@@ -378,11 +383,15 @@ Por último, foi testada a multicolinearidade dos resíduos pelo Fator de Infla�
 A estimação do valor do Índice de Rigor médio mensal para os valores de Dm = 10, Cm = 460, Rm = 1.1 resulta num índice de 74.21956, com um nível de confiança de 95\%, pertencente ao intervalo de confiança [73.52288, 74.91623].
 
 
-\section{Discussão de Resultados} % ------------------------------------------------------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
 \section{Conclusões} % ------------------------------------------------------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Através da análise exploratória constata-se que a América do Norte e a Europa são os continentes que mais se evidenciam, quer no número de infetados, quer no número de mortes, registando os valores mais elevados. Em contrapartida, a Oceânia demonstra ser o continente menos afetado pelo COVID-19, assinalando os menores valores.
+
+Da inferência estatística conclui-se que...
+
+Relativamente à análise de correlação, observou-se que ambas as análises estão fracamente correlacionadas, obtendo valores de relação próximos do 0 e de p-value não significativos. Denotou-se também que ambas falharam no mesmo pressuposto, sendo este o critério da existência de uma relação linear entre as duas variáveis, o que previu a falta de correlação entre os dados de cada análise.
+
+Finalmente, na análise de regressão demonstrou-se que a relação linear múltipla não é muito forte, sendo que apenas a variável independente Rm possui uma relação linear com a variável dependente (Ir), contrariamente às restantes. Este fator foi comprovado quer na construção do modelo de regressão linear múltipla, quer na verificação da condição de multicolinearidade. Consequentemente, existe uma falta de precisão das previsões de valores do Ir através dos valores das variáveis independentes.
+
 
 \section*{Referências Bibliográficas}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  29 APR 2021 21:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  30 APR 2021 00:08
 entering extended mode
 **./article.tex
 (article.tex
@@ -361,48 +361,54 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 
-LaTeX Warning: Citation `b1' on page 1 undefined on input line 41.
+LaTeX Warning: Citation `database' on page 1 undefined on input line 41.
 
 
-LaTeX Warning: Citation `b2' on page 1 undefined on input line 47.
+LaTeX Warning: Citation `dataFile' on page 1 undefined on input line 47.
+
+
+LaTeX Warning: Citation `nortest' on page 1 undefined on input line 50.
+
+
+LaTeX Warning: Citation `car' on page 1 undefined on input line 50.
 
 <images/01.a.png, id=1, 887.56593pt x 588.69937pt>
 File: images/01.a.png Graphic file (type png)
 <use images/01.a.png>
-Package pdftex.def Info: images/01.a.png  used on input line 59.
-(pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
-<images/01.b.png, id=2, 887.56593pt x 588.69937pt>
-File: images/01.b.png Graphic file (type png)
-<use images/01.b.png>
-Package pdftex.def Info: images/01.b.png  used on input line 74.
+Package pdftex.def Info: images/01.a.png  used on input line 64.
 (pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
 [1{C:/Users/SAP-PSC6-G7/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
  <./images/01.a.png>]
+<images/01.b.png, id=11, 887.56593pt x 588.69937pt>
+File: images/01.b.png Graphic file (type png)
+<use images/01.b.png>
+Package pdftex.def Info: images/01.b.png  used on input line 79.
+(pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
 <images/01.c.png, id=12, 887.56593pt x 588.69937pt>
 File: images/01.c.png Graphic file (type png)
 <use images/01.c.png>
-Package pdftex.def Info: images/01.c.png  used on input line 87.
+Package pdftex.def Info: images/01.c.png  used on input line 92.
 (pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
 <images/01.d.png, id=13, 887.56593pt x 588.69937pt>
 File: images/01.d.png Graphic file (type png)
 <use images/01.d.png>
-Package pdftex.def Info: images/01.d.png  used on input line 104.
+Package pdftex.def Info: images/01.d.png  used on input line 109.
 (pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
  [2 <./images/01.b.png> <./images/01.c.png> <./images/01.d.png>]
 <images/01.g.png, id=20, 887.56593pt x 588.69937pt>
 File: images/01.g.png Graphic file (type png)
 <use images/01.g.png>
-Package pdftex.def Info: images/01.g.png  used on input line 125.
+Package pdftex.def Info: images/01.g.png  used on input line 130.
 (pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 138
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143
 .
 
 (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 138
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143
 .
 (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -410,99 +416,93 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <images/02.a.png, id=21, 703.12688pt x 677.53125pt>
 File: images/02.a.png Graphic file (type png)
 <use images/02.a.png>
-Package pdftex.def Info: images/02.a.png  used on input line 149.
+Package pdftex.def Info: images/02.a.png  used on input line 154.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
 [3 <./images/01.g.png> <./images/02.a.png>]
 <images/03.a.1.png, id=32, 601.4972pt x 409.53pt>
 File: images/03.a.1.png Graphic file (type png)
 <use images/03.a.1.png>
-Package pdftex.def Info: images/03.a.1.png  used on input line 221.
+Package pdftex.def Info: images/03.a.1.png  used on input line 226.
 (pdftex.def)             Requested size: 239.39923pt x 162.99673pt.
 <images/03.a.2.png, id=33, 903.375pt x 677.53125pt>
 File: images/03.a.2.png Graphic file (type png)
 <use images/03.a.2.png>
-Package pdftex.def Info: images/03.a.2.png  used on input line 231.
+Package pdftex.def Info: images/03.a.2.png  used on input line 236.
 (pdftex.def)             Requested size: 239.39923pt x 179.54492pt.
-<images/03.a.3.png, id=34, 903.375pt x 677.53125pt>
+ [4 <./images/03.a.1.png> <./images/03.a.2.png>]
+<images/03.a.3.png, id=40, 903.375pt x 677.53125pt>
 File: images/03.a.3.png Graphic file (type png)
 <use images/03.a.3.png>
-Package pdftex.def Info: images/03.a.3.png  used on input line 241.
+Package pdftex.def Info: images/03.a.3.png  used on input line 246.
 (pdftex.def)             Requested size: 239.39923pt x 179.54492pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
  \OT1/ptm/m/it/10 3) As vari[]aveis de-vem ter, aprox-i-mada-mente, uma
  []
 
-<images/03.a.4.png, id=35, 601.4972pt x 409.53pt>
+<images/03.a.4.png, id=41, 601.4972pt x 409.53pt>
 File: images/03.a.4.png Graphic file (type png)
 <use images/03.a.4.png>
-Package pdftex.def Info: images/03.a.4.png  used on input line 251.
+Package pdftex.def Info: images/03.a.4.png  used on input line 256.
 (pdftex.def)             Requested size: 239.39923pt x 162.99673pt.
-[4 <./images/03.a.1.png> <./images/03.a.2.png>]
 <images/03.b.1.png, id=42, 703.12688pt x 677.53125pt>
 File: images/03.b.1.png Graphic file (type png)
 <use images/03.b.1.png>
-Package pdftex.def Info: images/03.b.1.png  used on input line 267.
+Package pdftex.def Info: images/03.b.1.png  used on input line 272.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
 <images/03.b.2.png, id=43, 703.12688pt x 677.53125pt>
 File: images/03.b.2.png Graphic file (type png)
 <use images/03.b.2.png>
-Package pdftex.def Info: images/03.b.2.png  used on input line 277.
+Package pdftex.def Info: images/03.b.2.png  used on input line 282.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
 <images/03.b.3.png, id=44, 703.12688pt x 677.53125pt>
 File: images/03.b.3.png Graphic file (type png)
 <use images/03.b.3.png>
-Package pdftex.def Info: images/03.b.3.png  used on input line 285.
+Package pdftex.def Info: images/03.b.3.png  used on input line 290.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
- [5 <./images/03.a.3.png> <./images/03.a.4.png> <./images/03.b.1.png> <./images
-/03.b.2.png>]
-<images/03.b.4.png, id=52, 703.12688pt x 677.53125pt>
+<images/03.b.4.png, id=45, 703.12688pt x 677.53125pt>
 File: images/03.b.4.png Graphic file (type png)
 <use images/03.b.4.png>
-Package pdftex.def Info: images/03.b.4.png  used on input line 295.
+Package pdftex.def Info: images/03.b.4.png  used on input line 300.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
  \OT1/ptm/m/it/10 3) As vari[]aveis de-vem ter, aprox-i-mada-mente, uma
  []
 
-
-Underfull \hbox (badness 2478) in paragraph at lines 339--340
-\OT1/ptm/m/n/10 dos val-ores []Indice de Rigor []e ex-pli-cado pe-los out-ros
- []
-
-[6 <./images/03.b.3.png> <./images/03.b.4.png>]
-Underfull \hbox (badness 2547) in paragraph at lines 357--358
+[5 <./images/03.a.3.png> <./images/03.a.4.png> <./images/03.b.1.png>] [6 <./ima
+ges/03.b.2.png> <./images/03.b.3.png> <./images/03.b.4.png>]
+Underfull \hbox (badness 2547) in paragraph at lines 362--363
  \OT1/ptm/m/it/10 2) Autocorrela[][]ao Nula: [][] \OT1/ptm/m/n/10 Para ver-i-fi
 car esta condi[][]ao
  []
 
 
-LaTeX Warning: Citation `b1' on page 7 undefined on input line 389.
+LaTeX Warning: Citation `b1' on page 7 undefined on input line 398.
 
 
-LaTeX Warning: Citation `b2' on page 7 undefined on input line 390.
+LaTeX Warning: Citation `b2' on page 7 undefined on input line 399.
 
 
-LaTeX Warning: Citation `b3' on page 7 undefined on input line 391.
+LaTeX Warning: Citation `b3' on page 7 undefined on input line 400.
 
 
-LaTeX Warning: Citation `b3' on page 7 undefined on input line 391.
+LaTeX Warning: Citation `b3' on page 7 undefined on input line 400.
 
 
-LaTeX Warning: Citation `b3' on page 7 undefined on input line 391.
+LaTeX Warning: Citation `b3' on page 7 undefined on input line 400.
 
 
-LaTeX Warning: Citation `b3' on page 7 undefined on input line 392.
+LaTeX Warning: Citation `b3' on page 7 undefined on input line 401.
 
 
-LaTeX Warning: Citation `b4' on page 7 undefined on input line 400.
+LaTeX Warning: Citation `b4' on page 7 undefined on input line 409.
 
 
-LaTeX Warning: Citation `b5' on page 7 undefined on input line 401.
+LaTeX Warning: Citation `b5' on page 7 undefined on input line 410.
 
 
-LaTeX Warning: Citation `b6' on page 7 undefined on input line 406.
+LaTeX Warning: Citation `b6' on page 7 undefined on input line 415.
 
 
 ** Conference Paper **
@@ -524,10 +524,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3982 strings out of 479321
- 59684 string characters out of 2853721
- 367620 words of memory out of 3000000
- 21408 multiletter control sequences out of 15000+600000
+ 3985 strings out of 479321
+ 59712 string characters out of 2853721
+ 368612 words of memory out of 3000000
+ 21411 multiletter control sequences out of 15000+600000
  435603 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,8n,74p,613b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -544,7 +544,7 @@ mes/utmb8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/
 urw/times/utmbi8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts
 /type1/urw/times/utmr8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (7 pages, 269160 bytes).
+Output written on article.pdf (7 pages, 271263 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
