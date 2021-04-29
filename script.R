@@ -373,11 +373,12 @@ plot(x, y,
      col = "black")
 abline(reg)
 
-# Teste à normalidade
+# Teste à normalidade: Método #1
+shapiro.test(residuals(reg))
+
+# Teste à normalidade: Método #2
 qqnorm(residuals(reg), ylab = "Resíduos", main = "Teste à normalidade dos resíduos")
 qqline(residuals(reg))
-
-shapiro.test(residuals(reg))
 
 # Teste às variâncias (condição de homocedasticidade)
 plot(fitted(reg), residuals(reg), xlab = "Valores Ajustados", ylab = "Resíduos", main = "Teste à condição de homocedasticidade")
@@ -407,13 +408,35 @@ for (country in europeanCountries) {
   y <- append(y, maxAged)
 }
 
-# Gráfico de dispersão
+reg <- lm(y ~ x)
+
+# Teste aos outliers
+variables <- cbind(x, y)
+boxplot(variables,
+        main = "Teste aos Outliers de X e Y")
+
+# Teste à linearidade
 plot(x, y,
-     main = "Gráfico de dispersão entre o número total de mortes, por milhão de habitantes,\ne percentagem de população com mais de 65 anos",
-     xlab = "Número total de mortes / milhão de habitantes",
-     ylab = "% de população > 65 anos",
+     main = "Gráfico de dispersão entre o número de mortos\ne população com idade > 65 anos",
+     xlab = "Número de mortos",
+     ylab = "População com idade > 65 anos",
      pch = 19,
      col = "black")
+abline(reg)
+
+# Teste à normalidade: Método #1
+shapiro.test(residuals(reg))
+
+# Teste à normalidade: Método #2
+qqnorm(residuals(reg), ylab = "Resíduos", main = "Teste à normalidade dos resíduos")
+qqline(residuals(reg))
+
+# Teste às variâncias (condição de homocedasticidade)
+plot(fitted(reg), residuals(reg), xlab = "Valores Ajustados", ylab = "Resíduos", main = "Teste à condição de homocedasticidade")
+abline(h = 0) # coloca uma linha no valor 0
+
+mx = median(x) # divisão dos dados ao meio
+var.test(residuals(reg) [x > mx], residuals(reg) [x < mx])
 
 # Teste de correlação
 cor.test(x, y, alternative = "two.sided", method = "pearson")
@@ -430,8 +453,7 @@ columns <- c("new_deaths_per_million", "new_cases_per_million", "reproduction_ra
 
 # Obtém os dados de Portugal e remove os NA's
 portugal <- subset(data, conditions, columns);
-row.has.na <- apply(portugal, 1, function(x) { any(is.na(x)) })
-portugal <- portugal[row.has.na, ]
+portugal <- na.omit(portugal)
 
 dm <- portugal$new_deaths_per_million
 cm <- portugal$new_cases_per_million
