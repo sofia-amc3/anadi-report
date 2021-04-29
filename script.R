@@ -1,3 +1,7 @@
+# Libraries
+library(nortest)
+library(car)
+
 # Variáveis globais
 # Converte os dados da coluna 'date' para o tipo Date
 data$date <- as.Date(as.character(data$date))
@@ -238,6 +242,14 @@ portugal <- portugal[is.element(portugal$date, selectedDays), ]$reproduction_rat
 # H0: mu_uk <= mu_pt
 # H1: mu_uk > mu_pt
 
+# Teste à normalidade -  Método #1
+shapiro.test(uk - portugal)
+# Teste à normalidade -  Método #2
+lillie.test(uk - portugal)
+# Teste à normalidade -  Método #3
+qqnorm(uk - portugal, main = "Teste à normalidade das populações do Reino Unido e Portugal")
+qqline(uk - portugal)
+
 # T-Test
 t.test(uk, portugal, paired = TRUE, alternative = "greater")
 
@@ -289,9 +301,29 @@ set.seed(104);
 southAmerica <- subset(dataSample, dataSample$iso_code == continentsCodes["southAmerica"], columns)
 southAmerica <- southAmerica[is.element(southAmerica$date, selectedDays), ]$new_deaths_per_million
 
-#
+continentsData <- data.frame(cbind(africa, asia, europe, northAmerica, southAmerica))
+ScontinentsData <- stack(continentsData)
 
+# Teste à normalidade -  Método #1
+shapiro.test(continentsData[, 1])
+shapiro.test(continentsData[, 2])
+shapiro.test(continentsData[, 3])
+shapiro.test(continentsData[, 4])
+shapiro.test(continentsData[, 5])
+# Verifica se as variâncias são iguais
+leveneTest(ScontinentsData[, 1] ~ ScontinentsData[, 2])
 
+# Teste comparador das médias
+continents <- c(africa, asia, europe, northAmerica, southAmerica)
+groups <- factor(c(rep("Africa", length(africa)),
+                   rep("Asia", length(asia)),
+                   rep("Europe", length(europe)),
+                   rep("North America", length(northAmerica)),
+                   rep("South America", length(southAmerica))
+                 ))
+kruskal.test(continents, groups)
+
+# Análise post-hoc
 
 
 ################################################## ANÁLISE DE CORRELAÇÃO ##################################################
