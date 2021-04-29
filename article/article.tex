@@ -219,7 +219,7 @@ Sendo X a variável representativa do valor máximo da taxa diária de transmiss
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/03.a.1.png}}
-\caption{Diagrama de Caixa representativo das variáveis X e Y}
+\caption{Diagrama de Caixa representativo das variáveis X1 e Y1}
 \label{fig}
 \end{figure}
 
@@ -229,7 +229,7 @@ Sendo as variáveis contínuas, pretendeu-se verificar, através de um diagrama 
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/03.a.2.png}}
-\caption{Diagrama de Dispersão representativo das variáveis X e Y}
+\caption{Diagrama de Dispersão representativo das variáveis X1 e Y1}
 \label{fig}
 \end{figure}
 
@@ -239,7 +239,7 @@ Para a confirmação desta condição realizou-se um diagrama de dispersão onde
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/03.a.3.png}}
-\caption{Gráfico de Dispersão Normal Q-Q representativo das variáveis X e Y}
+\caption{Gráfico de Dispersão Normal Q-Q representativo das variáveis X1 e Y1}
 \label{fig}
 \end{figure}
 
@@ -249,7 +249,7 @@ Ao realizar um gráfico de dispersão Normal Q-Q, verificam-se que os pontos est
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/03.a.4.png}}
-\caption{Diagrama de Dispersão ajustado representativo das variáveis X e Y}
+\caption{Diagrama de Dispersão ajustado representativo das variáveis X1 e Y1}
 \label{fig}
 \end{figure}
 
@@ -258,18 +258,91 @@ Por fim, no gráfico de dispersão acima representado não se denota qualquer te
 Verificados três dos pressupostos anteriores, procedeu-se à realização de um Teste de Correlação Linear de Pearson, onde se concluiu que, de facto, as variáveis estão fracamente correlacionadas, uma vez que o valor de r obtido é próximo de 0 (-0,175886) e o valor de p-value não é significativo, estando bastante acima de 0,05 (0,5306).
 
 \subsection{Correlação, em 2021, entre o total de mortos por milhão de habitantes e a percentagem da população com 65 anos ou mais em todos os países da Europa com mais de 10 milhões de habitantes}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Primeiramente foram verificados os seguintes pressupostos:
+
+\subsubsection{As variáveis devem ser contínuas e não devem existir outliers significativos}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/03.b.1.png}}
+\caption{Diagrama de Caixa representativo das variáveis X2 e Y2}
+\label{fig}
+\end{figure}
+
+Como as variáveis são contínuas, verificou-se, através de um diagrama de caixa, se os outliers seriam significativos, o que se conclui pelo gráfico acima que não o são.
+
+\subsubsection{Deve existir uma relação linear entre as duas variáveis}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/03.b.2.png}}
+\caption{Diagrama de Dispersão representativo das variáveis X2 e Y2}
+\label{fig}
+\end{figure}
+
+Através do diagrama de dispersão acima comprova-se que não existe uma relação linear entre as duas variáveis, uma vez que os pontos se encontram distantes da linha de regressão traçada.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/03.b.3.png}}
+\caption{Gráfico de Dispersão Normal-QQ representativo das variáveis X2 e Y2}
+\label{fig}
+\end{figure}
+
+Ao realizar um gráfico de dispersão Normal Q-Q, verificam-se que os pontos estão ajustados à linha reta, ou seja, permite concluir que os resíduos seguem uma distribuição normal.
+
+\subsubsection{As variáveis devem ter, aproximadamente, uma distribuição normal}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/03.b.4.png}}
+\caption{Diagrama de Dispersão ajustado representativo das variáveis X2 e Y2}
+\label{fig}
+\end{figure}
+
+Pelo teste de Shapiro-Wilk, obteve-se um p-value de 0,7183, que confirma a condição de normalidade, obtendo a mesma conclusão do método gráfico.
+
+\subsubsection{As variâncias devem ser iguais (Homocedasticidade)}
+
+Por fim, no gráfico acima representado não se denota qualquer tendência no gráfico, estando os pontos aleatoriamente distribuídos em torno do valor 0, onde se traçou uma linha. Assim, temos indícios de que a variância dos resíduos é homocedástica, contudo, sendo a amostra pequena (x = y = 15 < 30), testou-se também a variância.
+
+No teste à variância o p-value obtido é ligeiramente acima de 0,05 (0,05919), o que nos permite aceitar a análise anterior e concluir que as variâncias são iguais.
+
+
+Verificados três dos pressupostos anteriores, procedeu-se à realização de um Teste de Correlação Linear de Pearson.
+
+De facto, as variáveis estão fracamente correlacionadas, uma vez que o valor de r obtido é próximo de 0 (-0,175886) e o valor de p-value não é significativo, estando bastante acima de 0,05 (0,5306).
+
 
 \section{Análise de Regressão} % ------------------------------------------------------
 
-\subsection{X}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+\subsection{Construção do modelo de regressão linear múltipla}
+
+O modelo de regressão linear obtido através das variáveis independentes: mortes diárias, casos diários e taxa de transmissibilidade; para a variável dependente índice de rigor resulta na seguinte equação com os valores dos coeficientes obtidos:
+
+\begin{equation}
+\begin{array}{l}
+	Y=\beta _{0}+\beta _{1}X_{1}+\beta _{1}X_{3}+\beta _{3}X_{3} \\
+	\beta _{0}=81.827720 \qquad \beta _{0 p-value}=2\times 10^{-16} \\
+	\beta _{1}=0.139378 \qquad \beta _{1 p-value}=0.141 \\
+	\beta _{2}=0.002183 \qquad \beta _{2 p-value}=0.259 \\
+	\beta _{3}=-9.096406 \qquad \beta _{3 p-value}=8.55\times 10^{-16}
+\end{array}
+\end{equation}
+
+Relativamente à significância dos coeficientes obtidos, a interceção e a taxa de transmissibilidade são aqueles que apresentam p-values bastante baixos, sendo estatisticamente significantes, enquanto os coeficientes das mortes diárias e casos diários apresentam um p-value alto, de 0.141 e 0.259, respetivamente, ou seja, são valores com baixo nível de significância estatisticamente.
+
+\begin{equation}
+\begin{array}{l}
+	R^{2}_{ajustado}=0.2275 \\
+	Estatistica _{p-value}=2.2\times 10^{-16}
+\end{array}
+\end{equation}
+
+O valor do R-quadrado ajustado indica que apenas 22.75\% dos valores Índice de Rigor é explicado pelos outros parâmetros. Como o valor do p-value da estatística de teste é bastante reduzido, o valor do R-quadrado ajustado é estatisticamente significativo com um grau de significância superior a 99\%.
 
 \subsection{X}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-\subsection{X}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+\subsection{Estimação do Ir para os valores Dm = 10, Cm = 460, Rm = 1.1}
+A estimação do valor do Índice de Rigor médio mensal para os valores de Dm = 10, Cm = 460, Rm = 1.1 resulta num índice de 74.21956, com um nível de confiança de 95\%, pertencente ao intervalo de confiança [73.52288, 74.91623].
 
 \subsection{Figures and Tables}
 \paragraph{Positioning Figures and Tables} 
