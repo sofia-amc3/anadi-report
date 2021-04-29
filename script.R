@@ -219,7 +219,6 @@ dataSample <- subset(data, conditions)
 
 
 # Alínea a) --------------------------------------------------
-
 set.seed(118)
 
 # Variáveis
@@ -243,7 +242,6 @@ t.test(uk, portugal, paired = TRUE, alternative = "greater")
 
 
 # Alínea b) --------------------------------------------------
-
 set.seed(115)
 
 # Variáveis
@@ -269,23 +267,26 @@ italy <- italy[is.element(italy$date, selectedDays), ]$new_deaths_per_million
 # Variáveis
 nrDays <- 30
 columns <- c("date", "new_deaths_per_million")
-selectedDays <- sample(days, nrDays)
-selectedDays <- as.Date(as.character(selectedDays))
 
 # Gets the data for each continent in the selected days
 set.seed(100);
+selectedDays <- as.Date(as.character(sample(days, nrDays)))
 africa <- subset(dataSample, dataSample$iso_code == continentsCodes["africa"], columns)
 africa <- africa[is.element(africa$date, selectedDays), ]$new_deaths_per_million
 set.seed(101);
+selectedDays <- as.Date(as.character(sample(days, nrDays)))
 asia <- subset(dataSample, dataSample$iso_code == continentsCodes["asia"], columns)
 asia <- asia[is.element(asia$date, selectedDays), ]$new_deaths_per_million
 set.seed(102);
+selectedDays <- as.Date(as.character(sample(days, nrDays)))
 europe <- subset(dataSample, dataSample$iso_code == continentsCodes["europe"], columns)
 europe <- europe[is.element(europe$date, selectedDays), ]$new_deaths_per_million
 set.seed(103);
+selectedDays <- as.Date(as.character(sample(days, nrDays)))
 northAmerica <- subset(dataSample, dataSample$iso_code == continentsCodes["northAmerica"], columns)
 northAmerica <- northAmerica[is.element(northAmerica$date, selectedDays), ]$new_deaths_per_million
 set.seed(104);
+selectedDays <- as.Date(as.character(sample(days, nrDays)))
 southAmerica <- subset(dataSample, dataSample$iso_code == continentsCodes["southAmerica"], columns)
 southAmerica <- southAmerica[is.element(southAmerica$date, selectedDays), ]$new_deaths_per_million
 
@@ -324,13 +325,34 @@ for (country in europeanCountries) {
   y <- append(y, maxPopulationDensity)
 }
 
-# Gráfico de dispersão
+reg <- lm(y ~ x)
+
+# Teste aos outliers
+variables <- cbind(x, y)
+boxplot(variables,
+        main = "Teste aos Outliers de X e Y")
+
+# Teste à linearidade
 plot(x, y,
      main = "Gráfico de dispersão entre o índice de transmissibilidade\ne densidade de população",
      xlab = "Índice de transmissibilidade",
      ylab = "Densidade de população",
      pch = 19,
      col = "black")
+abline(reg)
+
+# Teste à normalidade
+qqnorm(residuals(reg), ylab = "Resíduos", main = "Teste à normalidade dos resíduos")
+qqline(residuals(reg))
+
+shapiro.test(residuals(reg))
+
+# Teste às variâncias (condição de homocedasticidade)
+plot(fitted(reg), residuals(reg), xlab = "Valores Ajustados", ylab = "Resíduos", main = "Teste à condição de homocedasticidade")
+abline(h = 0) # coloca uma linha no valor 0
+
+mx = median(x) # divisão dos dados ao meio
+var.test(residuals(reg) [x > mx], residuals(reg) [x < mx])
 
 # Teste de correlação
 cor.test(x, y, alternative = "two.sided", method = "pearson")

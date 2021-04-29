@@ -143,19 +143,119 @@ x\in [Q1-1.5\times IQR, Q3+1.5\times IQR]\label{eq}
 
 \section{Análise Inferencial} % ------------------------------------------------------
 
-\subsection{X}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+\subsection{Verificação se a média da taxa transmissibilidade no Reino Unido é superior à média da taxa de transmissibilidade em Portugal, relativamente aos dados de 30 dias}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/02.a.png}}
+\caption{Diagrama de Dispersão representativo do teste à normalidade das populações do Reino Unido e Portugal}
+\label{fig}
+\end{figure}
+
+O teste de hipóteses segue a seguinte definição:
+
+\begin{equation}
+  \begin{array}{l}
+    H_{0}:\mu _{uk}\leq \mu _{pt} \\
+   	H_{1}:\mu _{uk}> \mu _{pt}
+  \end{array}
+\end{equation}
+
+Como os dados são relativos a 30 dias, pode-se concluir que as amostra de ambos os países seguem uma distribuição aproximadamente normal, através do Teorema do Limite Central, sendo que esta conclusão foi verificada com os testes de Shapiro-Wilk (p-value = 0.686), Lillierfors (p-value = 0. 1533) e, também, pelo método gráfico (representado na figura acima), que demonstra que as variáveis têm uma relação linear. 
+
+Ao saber que as distribuições são normais e são emparelhadas, uma vez que partilham a variável dos dias, realizou-se um t-Test que obteve um p-value igual a 0.8652, que permite concluir que não se deve rejeitar a hipótese nula, ou seja, que as médias das taxas de transmissibilidade dos dois países são idênticas, a um nível de significância superior a 8.5\%. Logo, a média da taxa de transmissibilidade do Reino unido é semelhante à média registada em Portugal.
+
 
 \subsection{X}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-\subsection{X}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+\subsection{Verificação da existência de diferenças significativas entre os números médios diários de mortes, por milhão de habitantes, entre os continentes}
+
+O teste de hipóteses segue a seguinte definição:
+
+\begin{equation}
+  \begin{array}{l}
+    H_{0}:\mu _{Asia}=\mu _{Africa}=\mu _{Europe}=\mu _{North America}= \\
+    = \mu _{South America} \\ 
+    H_{1}:\mu _{i}\neq \mu _{j} \\
+    i,j\in [Asia, Africa, Europe, North America, \\
+    South America]
+  \end{array}
+\end{equation}
+
+Com a obtenção dos dados pretendidos para cada continente, realizaram-se testes de Shapiro-Wilk para verificar a normalidade dos dados referentes a cada continente sendo que os resultados obtidos nos valores dos p-values (X) demonstram que Ásia, Europa e América do Sul não seguem distribuições normais uma vez que os seus p-values são inferiores a 0.05, rejeitando, assim, a hipótese nula.
+
+\begin{equation}
+	\begin{array}{l}
+	Asia_{p-value}=0.07204, \\
+	Africa_{p-value}=0.001552, \\
+	Europe_{p-value}=0.001734, \\
+	North America_{p-value}=0.08603, \\
+	South America_{p-value}=2.932\times 10^{-8}
+	\end{array}
+\end{equation}
+
+Após estas confirmações realizou-se um teste Levene para verificar a homogeneidade dos dados, sendo que o valor obtido do p-value indicado abaixo permite concluir que as variâncias dos dados são significativamente diferentes.
+
+\begin{equation}
+p-value = 1.437\times 10^{-11}\label{eq}
+\end{equation}
+
+Com os resultados destes testes, conclui-se que não é possível realizar um teste One-Way ANOVA para verificar a igualdade das médias dos dados de cada continente, pelo que se realizou um teste Kruskal-Wallis, onde se obteve o p-value indicado abaixo. 
+
+\begin{equation}
+p-value = 2.2\times 10^{-16}\label{eq}
+\end{equation}
+
+Isto permite concluir que se deve rejeitar a hipótese nula, ou seja, que não existe igualdade entre os números médios de mortos diários, por milhão de habitantes, entre os continentes.
+
 
 \section{Análise de Correlação} % ------------------------------------------------------
 
 \subsection{Correlação, em 2021, entre o valor máximo da taxa diária de transmissibilidade e a densidade populacional de todos os países da Europa com mais de 10 milhões de habitantes}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Sendo X a variável representativa do valor máximo da taxa diária de transmissibilidade de todos os países europeus com mais de 10 milhões de habitantes e Y da densidade populacional dos mesmos, foram verificados, em primeiro lugar, os seguintes pressupostos:
+
+\subsubsection{As variáveis devem ser contínuas e não devem existir outliers significativos}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/03.a.1.png}}
+\caption{Diagrama de Caixa representativo das variáveis X e Y}
+\label{fig}
+\end{figure}
+
+Sendo as variáveis contínuas, pretendeu-se verificar, através de um diagrama de caixa, se os outliers seriam significativos, o que se conclui pelo gráfico acima que não o são.
+
+\subsubsection{Deve existir uma relação linear entre as duas variáveis}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/03.a.2.png}}
+\caption{Diagrama de Dispersão representativo das variáveis X e Y}
+\label{fig}
+\end{figure}
+
+Para a confirmação desta condição realizou-se um diagrama de dispersão onde se comprova que não existe uma relação linear entre as duas variáveis, estando os pontos demasiado dispersos em relação à linha traçada. Este pressuposto não é, então, verificado.
+
+\subsubsection{As variáveis devem ter, aproximadamente, uma distribuição normal}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/03.a.3.png}}
+\caption{Gráfico de Dispersão Normal Q-Q representativo das variáveis X e Y}
+\label{fig}
+\end{figure}
+
+Ao realizar um gráfico de dispersão Normal Q-Q, verificam-se que os pontos estão razoavelmente ajustados à linha reta, o que nos permite a suspeita dos resíduos serem normais. Pelo teste de normalidade Shapiro-Wilk, obteve-se um p-value de 0,2014, pelo que se confirma a condição de normalidade, já que este é superior a 0,05.
+
+\subsubsection{As variâncias devem ser iguais (Homocedasticidade)}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/03.a.4.png}}
+\caption{Diagrama de Dispersão ajustado representativo das variáveis X e Y}
+\label{fig}
+\end{figure}
+
+Por fim, no gráfico de dispersão acima representado não se denota qualquer tendência no mesmo, estando os pontos aleatoriamente distribuídos em torno do valor 0, onde se traçou uma linha. Assim, temos indícios de que a variância dos resíduos é homocedástica, contudo, sendo a amostra pequena (x e y = 15), testou-se também a variância. No teste à variância o p-value obtido é ligeiramente acima de 0,05 (0,05919), o que nos permite aceitar a análise anterior e concluir que as variâncias são iguais.
+
+Verificados três dos pressupostos anteriores, procedeu-se à realização de um Teste de Correlação Linear de Pearson, onde se concluiu que, de facto, as variáveis estão fracamente correlacionadas, uma vez que o valor de r obtido é próximo de 0 (-0,175886) e o valor de p-value não é significativo, estando bastante acima de 0,05 (0,5306).
 
 \subsection{Correlação, em 2021, entre o total de mortos por milhão de habitantes e a percentagem da população com 65 anos ou mais em todos os países da Europa com mais de 10 milhões de habitantes}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -193,15 +293,6 @@ copy& More table copy$^{\mathrm{a}}$& &  \\
 \end{center}
 \end{table}
 
-Figure Labels: Use 8 point Times New Roman for Figure labels. Use words 
-rather than symbols or abbreviations when writing Figure axis labels to 
-avoid confusing the reader. As an example, write the quantity 
-``Magnetization'', or ``Magnetization, M'', not just ``M''. If including 
-units in the label, present them within parentheses. Do not label axes only 
-with units. In the example, write ``Magnetization (A/m)'' or ``Magnetization 
-\{A[m(1)]\}'', not just ``A/m''. Do not label axes with a ratio of 
-quantities and units. For example, write ``Temperature (K)'', not 
-``Temperature/K''.
 
 \section{Discussão de Resultados} % ------------------------------------------------------
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
