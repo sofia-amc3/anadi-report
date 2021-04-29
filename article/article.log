@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  24 APR 2021 17:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  29 APR 2021 10:21
 entering extended mode
 **./article.tex
 (article.tex
@@ -263,7 +263,20 @@ nd-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count276
 \l__pdf_internal_box=\box51
-) (article.aux)
+) (article.aux
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+)
 \openout1 = `article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -314,60 +327,81 @@ LaTeX Warning: Citation `b1' on page 1 undefined on input line 41.
 
 LaTeX Warning: Citation `b2' on page 1 undefined on input line 47.
 
+<images/01.a.png, id=1, 887.56593pt x 588.69937pt>
+File: images/01.a.png Graphic file (type png)
+<use images/01.a.png>
+Package pdftex.def Info: images/01.a.png  used on input line 59.
+(pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
+<images/01.b.png, id=2, 887.56593pt x 588.69937pt>
+File: images/01.b.png Graphic file (type png)
+<use images/01.b.png>
+Package pdftex.def Info: images/01.b.png  used on input line 74.
+(pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
 [1{C:/Users/SAP-PSC6-G7/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 114
+ <./images/01.a.png>]
+<images/01.c.png, id=12, 887.56593pt x 588.69937pt>
+File: images/01.c.png Graphic file (type png)
+<use images/01.c.png>
+Package pdftex.def Info: images/01.c.png  used on input line 87.
+(pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
+<images/01.d.png, id=13, 887.56593pt x 588.69937pt>
+File: images/01.d.png Graphic file (type png)
+<use images/01.d.png>
+Package pdftex.def Info: images/01.d.png  used on input line 104.
+(pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
+ [2 <./images/01.b.png> <./images/01.c.png> <./images/01.d.png>]
+<images/01.g.png, id=20, 887.56593pt x 588.69937pt>
+File: images/01.g.png Graphic file (type png)
+<use images/01.g.png>
+Package pdftex.def Info: images/01.g.png  used on input line 125.
+(pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 138
 .
 
 (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 114
+LaTeX Font Info:    Trying to load font information for U+msb on input line 138
 .
 (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<fig1.png, id=9, 82.1469pt x 71.5473pt>
-File: fig1.png Graphic file (type png)
-<use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 129.
-(pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
-40.
+) [3 <./images/01.g.png>]
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 2
+02.
+
 (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 202.
 
-LaTeX Warning: Citation `b1' on page 2 undefined on input line 152.
-
-
-LaTeX Warning: Citation `b2' on page 2 undefined on input line 153.
+LaTeX Warning: Citation `b1' on page 4 undefined on input line 214.
 
 
-LaTeX Warning: Citation `b3' on page 2 undefined on input line 154.
+LaTeX Warning: Citation `b2' on page 4 undefined on input line 215.
 
 
-LaTeX Warning: Citation `b3' on page 2 undefined on input line 154.
+LaTeX Warning: Citation `b3' on page 4 undefined on input line 216.
 
 
-LaTeX Warning: Citation `b3' on page 2 undefined on input line 154.
+LaTeX Warning: Citation `b3' on page 4 undefined on input line 216.
 
 
-LaTeX Warning: Citation `b3' on page 2 undefined on input line 155.
-
-[2 <./fig1.png (PNG copy)>]
-
-LaTeX Warning: Citation `b4' on page 3 undefined on input line 163.
+LaTeX Warning: Citation `b3' on page 4 undefined on input line 216.
 
 
-LaTeX Warning: Citation `b5' on page 3 undefined on input line 164.
+LaTeX Warning: Citation `b3' on page 4 undefined on input line 217.
 
 
-LaTeX Warning: Citation `b6' on page 3 undefined on input line 169.
+LaTeX Warning: Citation `b4' on page 4 undefined on input line 225.
+
+
+LaTeX Warning: Citation `b5' on page 4 undefined on input line 226.
+
+
+LaTeX Warning: Citation `b6' on page 4 undefined on input line 231.
 
 
 ** Conference Paper **
@@ -380,33 +414,36 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
-] (article.aux)
+[4] (article.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 3940 strings out of 479321
- 58768 string characters out of 2853721
- 366571 words of memory out of 3000000
- 21367 multiletter control sequences out of 15000+600000
+ 3969 strings out of 479321
+ 59246 string characters out of 2853721
+ 366618 words of memory out of 3000000
+ 21391 multiletter control sequences out of 15000+600000
  442630 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,11n,74p,570b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,74p,613b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.e
 nc}<C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmmi10.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmr6.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SAP-PSC6-G7/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/SAP-PSC6-G7/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/SAP-PSC6-G
-7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/SAP-
-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (3 pages, 93451 bytes).
+e1/public/amsfonts/cm/cmr10.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/SAP-PSC6-G7/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SAP-PSC6-
+G7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/SAP
+-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Us
+ers/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+<C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on article.pdf (4 pages, 166951 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -236,7 +236,7 @@ portugal <- portugal[is.element(portugal$date, selectedDays), ]$reproduction_rat
 
 # Teste de hipóteses
 # H0: mu_uk <= mu_pt
-# H0: mu_uk > mu_pt
+# H1: mu_uk > mu_pt
 
 # T-Test
 t.test(uk, portugal, paired = TRUE, alternative = "greater")

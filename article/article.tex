@@ -48,29 +48,97 @@ Tendo por base o ficheiro “owid-covid-data.csv”\cite{b2}, foi criado um scri
 
 \section{Exploração e Preparação dos Dados}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-\section{Análise Exploratória de Dados} % ------------------------------------------------------
+\section{Análise Exploratória de Dados} % ---------------------------------------------
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 \subsection{Número total de infetados ao longo do período de tempo estabelecido, por continente}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/01.a.png}}
+\caption{Gráfico de linhas representativo do total de infetados pelo COVID-19, por continente, ao longo do período de tempo estabelecido}
+\label{fig}
+\end{figure}
+
+No gráfico de linhas apresentado acima observa-se que a América do Norte e Europa são os continentes que se destacam com os valores mais elevados de infetados, tendo ambos registado uma subida acentuada a partir dos meses de outubro e novembro, onde a Europa registou mais de 34 milhões de infetados. 
+
+Relativamente à Ásia e América do Sul, estes apresentam uma subida regular a partir de maio, sendo que a Ásia se distanciou com mais casos registados desde setembro.
+
+Em contrapartida, África apresenta valores relativamente baixos em relação aos continentes referidos e a Oceânia destaca-se com um número reduzido de casos detetados durante todo o período apresentado no gráfico, com um máximo registado de quase 33.000 casos de infeção por COVID-19.
+
 
 \subsection{Número total de infetados por milhão de habitantes, ao longo do período de tempo, por continente}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/01.b.png}}
+\caption{Gráfico de linhas representativo do total de infetados pelo COVID-19 por milhão de habitantes, por continente, ao longo do período de tempo estabelecido}
+\label{fig}
+\end{figure}
+
+Neste gráfico de linhas conclui-se que a América do Norte é o continente que possui maior número total de infetados por milhão de habitantes, ultrapassando os 50.000 milhões de habitantes. Por outro lado, a Oceânia é, não só o continente mais estável uma vez que não se verificam oscilações significativas no número de infetados, como também é o que está mais próximo do 0, ou seja, é o continente com menor número de infetados por milhão de habitante.
+
+É de notar que a América e a Europa são os únicos a ultrapassar o valor de 10.000 milhões de habitantes e cujas linhas tendem a subir de forma exponencial, ao contrário dos restantes continentes que se mantêm abaixo desse patamar e cujo crescimento é mais linear.
+
 
 \subsection{Número de mortos diários, por milhão de habitantes, dos seguintes países: Portugal, Espanha, Itália e Reino Unido}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/01.c.png}}
+\caption{Diagrama de Caixa representativo do número de mortos diário pelo COVID-19 por milhão de habitantes, em Portugal, Espanha, Itália e Reino Unido}
+\label{fig}
+\end{figure}
+
+O diagrama de caixa presente acima, demonstra, no geral, que Portugal, Itália e o Reino Unido têm amplitudes interquartis semelhantes, com Espanha um pouco acima destes três países. Também é possível observar que todos os países presentes nesta análise apresentam uma assimetria negativa, onde a mediana se encontra na parte inferior das caixas.
+
+Espanha é o país com maior número de mortes diárias, por milhão de habitantes, e, também, o que apresenta maior discrepância dos dados, no entanto, sem apresentar outliers acima do terceiro quartil, ou seja, não registou nenhum dia com mortes acima da normalidade dos dados.
+
+Em contrapartida, Portugal apresenta números mais reduzidos em relação aos restantes, com a particularidade de ter outliers acima do terceiro quartil, o que representa que, em vários dias, Portugal teve um número de mortes diárias significativamente acima da maioria do período temporal dos dados registados.
+
+Em relação a Itália e Inglaterra, estes apresentam dados bastante semelhantes, onde a maior diferença encontra-se no elevado número de outliers acima do terceiro quartil.
+
 
 \subsection{Número total de mortos, por milhão de habitantes, e o número de testes diários, por milhar de habitantes, dos países: Albânia, Dinamarca, Alemanha e Rússia}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/01.d.png}}
+\caption{Gráfico de Barras representativo do número total de mortos pelo COVID-19 por milhão de habitantes, e número de testes diários por milhar de habitantes, na Albânia, Dinamarca, Alemanha e Rússia}
+\label{fig}
+\end{figure}
+
+Como é possível observar no gráfico de barras, a Dinamarca destaca-se como o país com maior número total de testes diários em relação aos outros presentes nesta análise, com um máximo superior a 2800 pessoas testadas por cada milhão de habitantes. Contrastando, a Albânia é o país com menor número de testes, por milhar de habitante, tendo atingido pouco mais de 150 pessoas testadas, por milhão de habitantes, num único dia. Relativamente à Alemanha e Rússia, estes encontram-se entre os 500 e 1.000 testes diários, no melhor dia de testagem de ambos.
+
+A respeito do número total de mortos, a Dinamarca volta a destacar-se como o país com o número total de mortos, por milhão de habitantes, mais reduzido, tendo aproximadamente um total de 400 mortos. O número mais notório de total de mortos encontra-se na Alemanha, dentro deste conjunto, com um valor acima 800 mortos, o dobro dos registos da Dinamarca. Os valores obtidos da Albânia e Rússia rondam um total de 600 mortos, por milhão de habitantes.
+
+Assim, percebe-se que a Dinamarca é o país com maior destaque destes quatro, sendo aquele com maior número de testes realizados num dia e menor número total de mortos. Também é possível concluir que a Alemanha e Rússia apresentam valores relativamente próximos nestes dois parâmetros e a Albânia demonstra uma discrepância significativa.
+
 
 \subsection{País europeu com maior número de infetados, por milhão de habitantes, num único dia}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+O Vaticano registou um total de 8.652,658/1.000.000 de habitantes infetados no dia 12 de outubro de 2020, sendo, assim, o país europeu com maior número de infetados, por milhão de habitante, num único dia. 
 
 \subsection{Dia e país onde se registou a maior taxa de transmissibilidade do vírus}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+A Coreia do Sul registou, no dia 22 de fevereiro de 2020, a maior taxa de transmissibilidade do vírus, sendo esse valor de 6,72. 
 
 \subsection{Número de mortos diários por milhão de habitantes, em cada continente}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/01.g.png}}
+\caption{Diagrama de Caixa representativo do número de mortos diários pelo COVID-19 por milhão de habitantes, por continente}
+\label{fig}
+\end{figure}
+
+O diagrama de caixa acima representado permite-nos afirmar que a América do Norte é o continente com maior número de mortos diários por milhão de habitantes.
+
+A América do Sul é o continente mais disperso, visto que o tamanho da caixa (amplitude interquartil) é maior, comparativamente às restantes caixas, havendo, consequentemente, uma maior variação dos dados neste continente.
+
+Analisando o fator de simetria, os dados da América do Norte e África são os que aparentam ter uma distribuição mais simétrica, dado que a linha da mediana se encontra posicionada no centro da caixa. Já a Europa e a Ásia denotam uma grande assimetria, sendo os seus dados assimetricamente negativos, uma vez que a linha da mediana se aproxima do primeiro quartil. A América do Sul e Oceânia também denotam uma assimetria, mas positiva, visto que a linha da mediana está mais próxima do terceiro quartil, contudo, a assimetria presente na América do Sul não é tão elevada.
+
+Por último, a Europa, mesmo depois de serem removidos alguns outliers pelo critério x é outlier se e só se satisfizer o critério indicado na equação abaixo \eqref{eq}, é o continente que ainda apresenta bastantes valores discrepantes, estando estes acima do limite máximo.
+
+\begin{equation}
+x\in [Q1-1.5\times IQR, Q3+1.5\times IQR]\label{eq}
+\end{equation}
+
 
 
 \section{Análise Inferencial} % ------------------------------------------------------
@@ -124,12 +192,6 @@ copy& More table copy$^{\mathrm{a}}$& &  \\
 \label{tab1}
 \end{center}
 \end{table}
-
-\begin{figure}[htbp]
-\centerline{\includegraphics{fig1.png}}
-\caption{Example of a figure caption.}
-\label{fig}
-\end{figure}
 
 Figure Labels: Use 8 point Times New Roman for Figure labels. Use words 
 rather than symbols or abbreviations when writing Figure axis labels to 
