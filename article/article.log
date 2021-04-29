@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  29 APR 2021 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  29 APR 2021 21:25
 entering extended mode
 **./article.tex
 (article.tex
@@ -16,7 +16,7 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmptoksA=\toks15
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 03.
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -112,29 +112,35 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtranrubishbin=\box48
 )
 ** ATTENTION: Overriding command lockouts (line 2).
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/cite\cite.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.s
+ty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.s
+ty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.st
+y
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen162
 ))
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
+y
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen163
 )
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
+y
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count194
@@ -175,10 +181,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.
+sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts
+.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -186,13 +194,15 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/algorithms\algorithmic.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algori
+thmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 
-(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.s
+ty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
@@ -203,33 +213,38 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \ALC@tlm=\skip53
 \algorithmicindent=\skip54
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx
+.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics
+.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\grap
+hics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdft
+ex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
 )
-(C:\Program Files\MiKTeX\tex/latex/base\textcomp.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\colo
+r.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -243,7 +258,8 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backe
+nd-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count276
 \l__pdf_internal_box=\box51
@@ -293,6 +309,12 @@ LaTeX Warning: Label `fig' multiply defined.
 
 LaTeX Warning: Label `fig' multiply defined.
 
+
+LaTeX Warning: Label `eq' multiply defined.
+
+
+LaTeX Warning: Label `eq' multiply defined.
+
 )
 \openout1 = `article.aux'.
 
@@ -312,7 +334,9 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 
 -- Lines per column: 56 (exact).
-(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-
+pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count277
 \scratchdimen=\dimen173
@@ -325,12 +349,15 @@ LaTeX Font Info:    ... okay on input line 12.
 \MPnumerator=\count281
 \makeMPintoPDFobject=\count282
 \everyMPtoPDFconversion=\toks23
-) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+)
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epst
+opdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf
+-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 
@@ -349,7 +376,7 @@ File: images/01.b.png Graphic file (type png)
 <use images/01.b.png>
 Package pdftex.def Info: images/01.b.png  used on input line 74.
 (pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
-[1{C:/Users/bruno/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+[1{C:/Users/SAP-PSC6-G7/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
  <./images/01.a.png>]
@@ -372,13 +399,12 @@ Package pdftex.def Info: images/01.g.png  used on input line 125.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 138
 .
 
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 138
 .
-
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <images/02.a.png, id=21, 703.12688pt x 677.53125pt>
@@ -386,7 +412,7 @@ File: images/02.a.png Graphic file (type png)
 <use images/02.a.png>
 Package pdftex.def Info: images/02.a.png  used on input line 149.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
- [3 <./images/01.g.png> <./images/02.a.png>]
+[3 <./images/01.g.png> <./images/02.a.png>]
 <images/03.a.1.png, id=32, 601.4972pt x 409.53pt>
 File: images/03.a.1.png Graphic file (type png)
 <use images/03.a.1.png>
@@ -446,32 +472,37 @@ Underfull \hbox (badness 2478) in paragraph at lines 339--340
  []
 
 [6 <./images/03.b.3.png> <./images/03.b.4.png>]
-
-LaTeX Warning: Citation `b1' on page 7 undefined on input line 378.
-
-
-LaTeX Warning: Citation `b2' on page 7 undefined on input line 379.
-
-
-LaTeX Warning: Citation `b3' on page 7 undefined on input line 380.
+Underfull \hbox (badness 2547) in paragraph at lines 357--358
+ \OT1/ptm/m/it/10 2) Autocorrela[][]ao Nula: [][] \OT1/ptm/m/n/10 Para ver-i-fi
+car esta condi[][]ao
+ []
 
 
-LaTeX Warning: Citation `b3' on page 7 undefined on input line 380.
+LaTeX Warning: Citation `b1' on page 7 undefined on input line 389.
 
 
-LaTeX Warning: Citation `b3' on page 7 undefined on input line 380.
+LaTeX Warning: Citation `b2' on page 7 undefined on input line 390.
 
 
-LaTeX Warning: Citation `b3' on page 7 undefined on input line 381.
+LaTeX Warning: Citation `b3' on page 7 undefined on input line 391.
 
 
-LaTeX Warning: Citation `b4' on page 7 undefined on input line 389.
+LaTeX Warning: Citation `b3' on page 7 undefined on input line 391.
 
 
-LaTeX Warning: Citation `b5' on page 7 undefined on input line 390.
+LaTeX Warning: Citation `b3' on page 7 undefined on input line 391.
 
 
-LaTeX Warning: Citation `b6' on page 7 undefined on input line 395.
+LaTeX Warning: Citation `b3' on page 7 undefined on input line 392.
+
+
+LaTeX Warning: Citation `b4' on page 7 undefined on input line 400.
+
+
+LaTeX Warning: Citation `b5' on page 7 undefined on input line 401.
+
+
+LaTeX Warning: Citation `b6' on page 7 undefined on input line 406.
 
 
 ** Conference Paper **
@@ -484,9 +515,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7
-
-] (article.aux)
+[7] (article.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -495,26 +524,29 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4005 strings out of 479321
- 58193 string characters out of 2866501
- 367619 words of memory out of 3000000
- 21421 multiletter control sequences out of 15000+600000
- 442630 words of font info for 100 fonts, out of 8000000 for 9000
+ 3982 strings out of 479321
+ 59684 string characters out of 2853721
+ 367620 words of memory out of 3000000
+ 21408 multiletter control sequences out of 15000+600000
+ 435603 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,11n,74p,613b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.p
-fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program
- Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1
-/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pf
-b><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
-iKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (7 pages, 275863 bytes).
+ 68i,8n,74p,613b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.e
+nc}<C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/SAP-PSC6-G7/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/SAP-PSC6-G
+7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
+sers/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+msy7.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ti
+mes/utmb8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/
+urw/times/utmbi8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts
+/type1/urw/times/utmr8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on article.pdf (7 pages, 269160 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

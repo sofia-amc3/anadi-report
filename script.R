@@ -467,7 +467,30 @@ summary(mod)
 
 
 # Alínea b) --------------------------------------------------
+x <- cbind(dm, cm, rm)
 
+# Homocedasticidade
+qqnorm(residuals(mod))
+qqline(residuals(mod))
+
+shapiro.test(residuals(mod)) 
+
+t.test(residuals(mod)) 
+
+plot(fitted(mod), residuals(mod), xlab = "Valores Ajustados", ylab = "Resíduos", main = "Teste à condição de homocedasticidade")
+abline(h = 0) # coloca uma linha no valor 0
+
+mx = median(x) # divisão dos dados ao meio
+var.test(residuals(mod) [x > mx], residuals(mod) [x < mx]) 
+
+# Autocorrelação Nula
+# H0: Os resíduos são independentes
+# H1: Os resíduos não são independentes
+durbinWatsonTest(mod) Atr
+
+
+# Multicolinearidade
+vif(mod) 
 
 
 # Alínea c) --------------------------------------------------
