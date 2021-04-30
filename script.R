@@ -237,10 +237,6 @@ uk <- uk[is.element(uk$date, selectedDays), ]$reproduction_rate
 portugal <- subset(dataSample, dataSample$iso_code == countriesCodes["portugal"], columns)
 portugal <- portugal[is.element(portugal$date, selectedDays), ]$reproduction_rate
 
-# Teste de hipóteses
-# H0: mu_uk <= mu_pt
-# H1: mu_uk > mu_pt
-
 # Teste à normalidade -  Método #1
 shapiro.test(uk - portugal)
 # Teste à normalidade -  Método #2
@@ -272,7 +268,9 @@ portugal <- portugal[is.element(portugal$date, selectedDays), ]$new_deaths_per_m
 italy <- subset(dataSample, dataSample$iso_code == countriesCodes["italy"], columns)
 italy <- italy[is.element(italy$date, selectedDays), ]$new_deaths_per_million
 
-#
+countriesData <- c(spain, france, portugal, italy)
+matrix <- matrix(countriesData, nrow = nrDays, ncol = 4)
+friedman.test(matrix)
 
 
 # Alínea c) --------------------------------------------------

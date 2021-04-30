@@ -9,6 +9,24 @@
 \usepackage{xcolor}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+    
+%encoding
+%--------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%--------------------------------------
+
+%Portuguese-specific commands
+%--------------------------------------
+\usepackage[portuguese]{babel}
+%--------------------------------------
+
+%Hyphenation rules
+%--------------------------------------
+\usepackage{hyphenat}
+\hyphenation{mate-mática recu-perar}
+%--------------------------------------  
+    
 \begin{document}
 
 \title{COVID-19 na População Mundial\\
@@ -149,7 +167,7 @@ x\in [Q1-1.5\times IQR, Q3+1.5\times IQR]\label{eq}
 
 
 \section{Análise Inferencial} % ------------------------------------------------------
-A análise inferencial incidiu na geração de amostras pseudoaleatórias para análise e verificação de diferenças significativas da taxa de transmissibilidade em Portugal e no Reino Unido, no número de mortes diárias em quatro países europeus e no número médio diário de mortes por continente. Estes dados são referentes ao período de 01 de abril de 2020 a 27 de fevereiro de 2021.
+A análise inferencial incidiu na geração de amostras pseudoaleatórias, com diferentes seeds indicadas em cada alínea, para análise e verificação de diferenças significativas da taxa de transmissibilidade em Portugal e no Reino Unido, no número de mortes diárias em quatro países europeus e no número médio diário de mortes por continente. Estes dados são referentes ao período de 01 de abril de 2020 a 27 de fevereiro de 2021.
 
 \subsection{Verificação se a média da taxa transmissibilidade no Reino Unido é superior à média da taxa de transmissibilidade em Portugal, relativamente aos dados de 30 dias}
 
@@ -168,13 +186,22 @@ O teste de hipóteses segue a seguinte definição:
   \end{array}
 \end{equation}
 
-Como os dados são relativos a 30 dias, pode-se concluir que as amostra de ambos os países seguem uma distribuição aproximadamente normal, através do Teorema do Limite Central, sendo que esta conclusão foi verificada com os testes de Shapiro-Wilk (p-value = 0.686), Lillierfors (p-value = 0. 1533) e, também, pelo método gráfico (representado na figura acima), que demonstra que as variáveis têm uma relação linear. 
+Como os dados são relativos a 30 dias, e utilizada uma seed de 118, pode-se concluir que as amostra de ambos os países seguem uma distribuição aproximadamente normal, através do Teorema do Limite Central, sendo que esta conclusão foi verificada com os testes de Shapiro-Wilk (p-value = 0.686), Lillierfors (p-value = 0. 1533) e, também, pelo método gráfico (representado na figura acima), que demonstra que as variáveis têm uma relação linear. 
 
-Ao saber que as distribuições são normais e são emparelhadas, uma vez que partilham a variável dos dias, realizou-se um t-Test que obteve um p-value igual a 0.8652, que permite concluir que não se deve rejeitar a hipótese nula, ou seja, que as médias das taxas de transmissibilidade dos dois países são idênticas, a um nível de significância superior a 8.5\%. Logo, a média da taxa de transmissibilidade do Reino unido é semelhante à média registada em Portugal.
+Ao saber que as distribuições são normais e são emparelhadas, uma vez que partilham a variável dos dias, realizou-se um t-Test que obteve um p-value igual a 0.8652, que permite concluir que não se deve rejeitar a hipótese nula, ou seja, que as médias das taxas de transmissibilidade dos dois países são idênticas, a um nível de significância superior a 8.5\%. Logo, a média da taxa de transmissibilidade do Reino Unido é semelhante à média registada em Portugal.
 
 
 \subsection{Verificação da existência de diferenças significativas no número de mortes diárias, por milhão de habitantes, em Espanha, França, Portugal e Itália}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+O teste de hipóteses segue a seguinte definição:
+
+H0: A distribuição dos dados de cada país é a mesma.
+
+H1: A distribuição dos dados de cada país é diferente.
+
+Nesta análise foram utilizados 15 dias aleatórios e uma seed de 115. Procedeu-se à realização de um teste de Friedman, uma vez que dispomos de n x k observações (sendo n os dias e k os países), com o objetivo de perceber se as amostras apresentam diferenças significativas. A escolha deste teste deve-se a possuírmos quatro amostras emparelhadas, uma vez que os dados dos diversos países têm os dias em comum.
+
+O p-value obtido foi de 0.06018, que, por ser superior a 0.05, permite-nos aceitar a hipótese nula e concluir que não há diferenças significativas no número de mortes diárias por milhão de habitantes nestes quatro países.
+
 
 \subsection{Verificação da existência de diferenças significativas nos números médios diários de mortes, por milhão de habitantes, entre os continentes}
 
@@ -190,7 +217,7 @@ O teste de hipóteses segue a seguinte definição:
   \end{array}
 \end{equation}
 
-Com a obtenção dos dados pretendidos para cada continente, realizaram-se testes de Shapiro-Wilk para verificar a normalidade dos dados referentes a cada continente sendo que os resultados obtidos nos valores dos p-values (X) demonstram que Ásia, Europa e América do Sul não seguem distribuições normais uma vez que os seus p-values são inferiores a 0.05, rejeitando, assim, a hipótese nula.
+Nesta análise foram utilizadas seeds de 100 a 104 referentes aos quatro continentes. Realizaram-se testes de Shapiro-Wilk para verificar a normalidade dos dados referentes a cada continente sendo que os resultados obtidos nos valores dos p-values (X) demonstram que Ásia, Europa e América do Sul não seguem distribuições normais uma vez que os seus p-values são inferiores a 0.05, rejeitando, assim, a hipótese nula.
 
 \begin{equation}
 	\begin{array}{l}
@@ -208,13 +235,25 @@ Após estas confirmações realizou-se um teste Levene para verificar a homogene
 p-value = 1.437\times 10^{-11}\label{eq}
 \end{equation}
 
-Com os resultados destes testes, conclui-se que não é possível realizar um teste One-Way ANOVA para verificar a igualdade das médias dos dados de cada continente, pelo que se realizou um teste Kruskal-Wallis, onde se obteve o p-value indicado abaixo. 
+Com os resultados destes testes, realizou-se um teste ANOVA, ainda que o teste de Levene tenha indicado que as variâncias sejam diferentes, sendo que se obteve um p-value reduzido e inferior a 0.05.
 
 \begin{equation}
-p-value = 2.2\times 10^{-16}\label{eq}
+p-value < 2\times 10^{-16}\label{eq}
 \end{equation}
 
 Isto permite concluir que se deve rejeitar a hipótese nula, ou seja, que não existe igualdade entre os números médios de mortos diários, por milhão de habitantes, entre os continentes.
+
+Após a realização e conclusões retiradas com o teste ANOVA, realizou-se um teste post-hoc com o objetivo de perceber mais sobre as diferenças das médias dos dados entre os continentes. Assim sendo, realizou-se um teste Tukey’s Honest Significant Difference (X), com o qual se obteve os dados apresentados na figura abaixo.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/02.c.png}}
+\caption{Gráfico representativo dos Intervalos de Confiança para a diferença das médias dos dados, entre os continentes}
+\label{fig}
+\end{figure}
+
+Através do gráfico, é possível verificar que as médias da Ásia-África são estatisticamente semelhantes, uma vez que o intervalo de confiança contém o 0. O mesmo acontece com as médias da América do Sul-Europa e América do Norte-América do Sul, no entanto carecem da mesma expressividade de igualdade relativamente à relação dos outros dois continentes, uma vez que, apesar do 0 se encontrar dentro dos intervalos, descai para os seus extremos.
+
+No que diz respeito às outras relações existentes, conclui-se que estas apresentam diferenças significativas nas médias, onde os continentes da Europa, América do Norte e América do Sul apresentam média superiores às de África e Ásia.
 
 
 \section{Análise de Correlação} % ------------------------------------------------------
@@ -391,7 +430,7 @@ A estimação do valor do Índice de Rigor médio mensal para os valores de Dm =
 \section{Conclusões} % ------------------------------------------------------
 Através da análise exploratória constata-se que a América do Norte e a Europa são os continentes que mais se evidenciam, quer no número de infetados, quer no número de mortes, registando os valores mais elevados. Em contrapartida, a Oceânia demonstra ser o continente menos afetado pelo COVID-19, assinalando os menores valores.
 
-Da inferência estatística conclui-se que...
+Da inferência estatística conclui-se que a média da taxa de transmissibilidade do Reino Unido é semelhante à média registada em Portugal. De igual modo, também se verificou não existirem diferenças significativas no número de mortes diárias, por milhão de habitantes, em Espanha, França, Portugal e Itália. Por fim, constatou-se a existência de diferenças significativas no número médio de mortos diários, por milhão de habitantes, entre os vários continentes, sendo a Ásia e África aqueles com menores médias, excluindo a Oceânia, uma vez que registou os números mais baixos comparativamente ao resto do mundo.
 
 Relativamente à análise de correlação, observou-se que ambas as análises estão fracamente correlacionadas, obtendo valores de relação próximos do 0 e de p-value não significativos. Denotou-se também que ambas falharam no mesmo pressuposto, sendo este o critério da existência de uma relação linear entre as duas variáveis, o que previu a falta de correlação entre os dados de cada análise.
 
