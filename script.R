@@ -314,7 +314,7 @@ shapiro.test(continentsData[, 5])
 # Verifica se as variâncias são iguais
 leveneTest(ScontinentsData[, 1] ~ ScontinentsData[, 2])
 
-# Teste comparador das médias
+# Teste comparador das médias (one-way ANOVA)
 continents <- c(africa, asia, europe, northAmerica, southAmerica)
 groups <- factor(c(rep("Africa", length(africa)),
                    rep("Asia", length(asia)),
@@ -322,9 +322,15 @@ groups <- factor(c(rep("Africa", length(africa)),
                    rep("North America", length(northAmerica)),
                    rep("South America", length(southAmerica))
                  ))
-kruskal.test(continents, groups)
+anovaTest <- aov(continents ~ groups, data = continentsData)
+summary(anovaTest)
 
 # Análise post-hoc
+post_hoc <- TukeyHSD(anovaTest, conf.level = 0.95)
+plot(post_hoc, las = 2)
+legend("bottomright",
+       legend = c("As - Ásia", "Af - África", "Eu - Europa", "NA - América do Norte", "SA - América do Sul"))
+
 
 
 ################################################## ANÁLISE DE CORRELAÇÃO ##################################################
