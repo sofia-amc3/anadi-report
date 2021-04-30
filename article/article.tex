@@ -7,8 +7,10 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\usepackage{biblatex}
     
 %encoding
 %--------------------------------------
@@ -71,7 +73,7 @@ O script está organizado por análises (as quatro já previamente referidas) de
 
 Em cada alínea existe uma secção para a criação de variáveis referentes à própria alínea (ou mais do que uma alínea, caso os dados se repitam), seguidas da seleção dos dados conforme o pretendido, assim como modificações aos mesmos, caso necessário (por exemplo, a remoção de NAs ou organização dos dados). 
 
-Em seguida, é visível o código que permite a realização da respetiva análise, o qual inclui a criação de gráficos ou testes estatísticos. Nos gráficos que possuem diferentes amostras de populações, deu-se uso a paletas de cor, de modo a facilitar a visualização dos mesmos. Já os testes estatísticos, são visíveis na consola do script e referidos ao longo do artigo.
+Em seguida, é visível o código que permite a realização da respetiva análise, o qual inclui a criação de gráficos ou testes estatísticos. Nos gráficos que possuem diferentes amostras de populações, deu-se uso a paletas de cor \cite{colors}, de modo a facilitar a visualização dos mesmos. Já os testes estatísticos, são visíveis na consola do script e referidos ao longo do artigo.
 
 
 \section{Análise Exploratória de Dados} %-------------------------------------
@@ -158,7 +160,8 @@ A América do Sul é o continente mais disperso, visto que o tamanho da caixa (a
 
 Analisando o fator de simetria, os dados da América do Norte e África são os que aparentam ter uma distribuição mais simétrica, dado que a linha da mediana se encontra posicionada no centro da caixa. Já a Europa e a Ásia denotam uma grande assimetria, sendo os seus dados assimetricamente negativos, uma vez que a linha da mediana se aproxima do primeiro quartil. A América do Sul e Oceânia também denotam uma assimetria, mas positiva, visto que a linha da mediana está mais próxima do terceiro quartil, contudo, a assimetria presente na América do Sul não é tão elevada.
 
-Por último, a Europa, mesmo depois de serem removidos alguns outliers pelo critério x é outlier se e só se satisfizer o critério indicado na equação abaixo \eqref{eq}, é o continente que ainda apresenta bastantes valores discrepantes, estando estes acima do limite máximo.
+Por último, a Europa, mesmo depois de serem removidos alguns outliers pelo critério x é outlier se e só se satisfizer o critério indicado na equação abaixo %\eqref{eq}
+, é o continente que ainda apresenta bastantes valores discrepantes, estando estes acima do limite máximo.
 
 \begin{equation}
 x\in [Q1-1.5\times IQR, Q3+1.5\times IQR]\label{eq}
@@ -243,7 +246,7 @@ p-value < 2\times 10^{-16}\label{eq}
 
 Isto permite concluir que se deve rejeitar a hipótese nula, ou seja, que não existe igualdade entre os números médios de mortos diários, por milhão de habitantes, entre os continentes.
 
-Após a realização e conclusões retiradas com o teste ANOVA, realizou-se um teste post-hoc com o objetivo de perceber mais sobre as diferenças das médias dos dados entre os continentes. Assim sendo, realizou-se um teste Tukey’s Honest Significant Difference (X), com o qual se obteve os dados apresentados na figura abaixo.
+Após a realização e conclusões retiradas com o teste ANOVA, realizou-se um teste post-hoc \cite{posthoc} com o objetivo de perceber mais sobre as diferenças das médias dos dados entre os continentes. Assim sendo, realizou-se um teste Tukey’s Honest Significant Difference \cite{tukey}, com o qual se obteve os dados apresentados na figura abaixo.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/02.c.png}}
@@ -436,37 +439,24 @@ Relativamente à análise de correlação, observou-se que ambas as análises es
 
 Finalmente, na análise de regressão demonstrou-se que a relação linear múltipla não é muito forte, sendo que apenas a variável independente Rm possui uma relação linear com a variável dependente (Ir), contrariamente às restantes. Este fator foi comprovado quer na construção do modelo de regressão linear múltipla, quer na verificação da condição de multicolinearidade. Consequentemente, existe uma falta de precisão das previsões de valores do Ir através dos valores das variáveis independentes.
 
+\begin{thebibliography}{00}
 
-\section*{Referências Bibliográficas}
+\bibitem{database} Ritchie, H. (2021, 3 de abril). \textit{Coronavirus Source Data}. Our World in Data. \url{https://ourworldindata.org/coronavirus-source-data}
 
-Please number citations consecutively within brackets \cite{b1}. The 
-sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
-number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
-the beginning of a sentence: ``Reference \cite{b3} was the first $\ldots$''
+\bibitem{dataFile} Our World in Data (2021, 3 de abril). [Ficheiro Csv]
 
-Number footnotes separately in superscripts. Place the actual footnote at 
-the bottom of the column in which it was cited. Do not put footnotes in the 
-abstract or reference list. Use letters for table footnotes.
+\bibitem{nortest} Gross, J. \& Ligges, U. (2015, 30 de julho). \textit{nortest: Tests for Normality}. R Project. \url{https://cran.r-project.org/web/packages/nortest/index.html}
 
-Unless there are six authors or more give all authors' names; do not use 
-``et al.''. Papers that have not been published, even if they have been 
-submitted for publication, should be cited as ``unpublished'' \cite{b4}. Papers 
-that have been accepted for publication should be cited as ``in press'' \cite{b5}. 
-Capitalize only the first word in a paper title, except for proper nouns and 
-element symbols.
+\bibitem{car} Fox, J. \& Outros (2020, 29 de setembro). \textit{car: Companion to Applied Regression}. R Project. \url{https://cran.r-project.org/web/packages/car/index.html}
 
-For papers published in translation journals, please give the English 
-citation first, followed by the original foreign-language citation \cite{b6}.
+\bibitem{colors} Department of Statistics (2021, 3 de abril). \textit{Colors in R}. Columbia University. \url{http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf?utm_source=twitterfeed&utm_medium=twitter}
 
-%\begin{references}{00}
-%\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-%\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-%\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-%\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-%\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-%\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-%\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
-%\end{thebibliography}
+\bibitem{posthoc} Autor desconhecido (2020, 17 de agosto). \textit{Post Hoc Tests}. LibreTexts Statistics. \url{https://stats.libretexts.org/Bookshelves/Applied_Statistics/Book\%3A_An_Introduction_to_Psychological_Statistics_(Foster_et_al.)/11\%3A_Analysis_of_Variance/11.08\%3A_Post_Hoc_Tests}
+
+\bibitem{tukey} Frost, J. (2021, 22 de abril). \textit{Using Post Hoc Tests with ANOVA}. Statistics By Jim. \url{https://statisticsbyjim.com/anova/post-hoc-tests-anova/}
+
+\end{thebibliography}
 
 %``Fig.~\ref{fig}'', even at the beginning of a sentence.
+%\cite{b1}.
 \end{document}
