@@ -18,9 +18,9 @@ continentsColors <- c(northAmerica = "firebrick2", southAmerica = "goldenrod1", 
 countriesCodes <- c(albania = "ALB", denmark = "DNK", germany = "DEU", russia = "RUS",
                     portugal = "PRT", spain = "ESP", italy = "ITA", uk = "GBR",
                     france = "FRA")
-countriesColors <- c(albania = "", denmark = "", germany = "", russia = "",
+countriesColors <- c(albania = "", denmark = "firebrick1", germany = "gray22", russia = "gray98",
                      portugal = "red1", spain = "gold", italy = "chartreuse3", uk = "dodgerblue1",
-                     france = "")
+                     france = "dodgerblue2")
 
 
 
@@ -161,19 +161,19 @@ legend("topright",
 # Alínea e) --------------------------------------------------
 europeanCountries <- subset(data, data$continent == "Europe")
 row <- which.max(europeanCountries$new_cases_per_million)
-maxToalCases <- europeanCountries[row, "new_cases_per_million"]$new_cases_per_million
-country <- europeanCountries[row, "location"]$location
-date <- europeanCountries[row, "date"]$date
+maxTotalCases <- europeanCountries[row, "new_cases_per_million"]
+country <- europeanCountries[row, "location"]
+date <- europeanCountries[row, "date"]
 cat("País europeu que teve o maior número de infetados, por milhão de habitantes, num só dia: ",
     "\n\t", country, "\t", "Dia: ", format(date, "%d %b %Y"),
-    "\t Casos: ", maxToalCases)
+    "\t Casos: ", maxTotalCases)
 
 
 # Alínea f) --------------------------------------------------
 row <- which.max(data$reproduction_rate)
-maxTransmissibilityRate <- data[row, "reproduction_rate"]$reproduction_rate
-date <- data[row, "date"]$date
-country <- data[row, "location"]$location
+maxTransmissibilityRate <- data[row, "reproduction_rate"]
+date <- data[row, "date"]
+country <- data[row, "location"]
 cat("Dia e País onde se registou a maior taxa de transmissibilidade do vírus:",
     "\n\t", country, "\t", "Dia: ", format(date, "%d %b %Y"),
     "\t Índice de transmissibilidade: ", maxTransmissibilityRate)
@@ -493,7 +493,7 @@ var.test(residuals(mod) [x > mx], residuals(mod) [x < mx])
 durbinWatsonTest(mod) 
 
 # Multicolinearidade
-vif(mod) 
+vif(mod)
 
 
 # Alínea c) --------------------------------------------------
