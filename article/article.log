@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  30 APR 2021 22:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  2 MAY 2021 16:49
 entering extended mode
 **./article.tex
 (article.tex
@@ -468,62 +468,7 @@ nd-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count288
 \l__pdf_internal_box=\box51
-) (article.aux
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `eq' multiply defined.
-
-
-LaTeX Warning: Label `eq' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `eq' multiply defined.
-
-
-LaTeX Warning: Label `eq' multiply defined.
-
-)
+) (article.aux)
 \openout1 = `article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -595,116 +540,116 @@ LaTeX Info: Redefining \nameref on input line 32.
 \@outlinefile=\write3
 \openout3 = `article.out'.
 
-<images/01.a.png, id=147, 887.56593pt x 588.69937pt>
+<images/01.a.png, id=148, 887.56593pt x 588.69937pt>
 File: images/01.a.png Graphic file (type png)
 <use images/01.a.png>
-Package pdftex.def Info: images/01.a.png  used on input line 86.
-(pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
-<images/01.b.png, id=148, 887.56593pt x 588.69937pt>
-File: images/01.b.png Graphic file (type png)
-<use images/01.b.png>
-Package pdftex.def Info: images/01.b.png  used on input line 101.
+Package pdftex.def Info: images/01.a.png  used on input line 84.
 (pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
  [1{C:/Users/SAP-PSC6-G7/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
-]
-<images/01.c.png, id=162, 887.56593pt x 588.69937pt>
+ <./images/01.a.png>]
+<images/01.b.png, id=166, 887.56593pt x 588.69937pt>
+File: images/01.b.png Graphic file (type png)
+<use images/01.b.png>
+Package pdftex.def Info: images/01.b.png  used on input line 99.
+(pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
+<images/01.c.png, id=168, 887.56593pt x 588.69937pt>
 File: images/01.c.png Graphic file (type png)
 <use images/01.c.png>
-Package pdftex.def Info: images/01.c.png  used on input line 114.
+Package pdftex.def Info: images/01.c.png  used on input line 112.
 (pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
-<images/01.d.png, id=163, 887.56593pt x 588.69937pt>
+<images/01.d.png, id=170, 887.56593pt x 588.69937pt>
 File: images/01.d.png Graphic file (type png)
 <use images/01.d.png>
-Package pdftex.def Info: images/01.d.png  used on input line 131.
+Package pdftex.def Info: images/01.d.png  used on input line 129.
 (pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
- [2 <./images/01.a.png> <./images/01.b.png> <./images/01.c.png>]
-<images/01.g.png, id=174, 887.56593pt x 588.69937pt>
+ [2 <./images/01.b.png> <./images/01.c.png> <./images/01.d.png>]
+<images/01.g.png, id=182, 887.56593pt x 588.69937pt>
 File: images/01.g.png Graphic file (type png)
 <use images/01.g.png>
-Package pdftex.def Info: images/01.g.png  used on input line 152.
+Package pdftex.def Info: images/01.g.png  used on input line 150.
 (pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 166
+LaTeX Font Info:    Trying to load font information for U+msa on input line 161
 .
 
 (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 166
+LaTeX Font Info:    Trying to load font information for U+msb on input line 161
 .
 (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/02.a.png, id=175, 703.12688pt x 677.53125pt>
+<images/02.a.png, id=185, 703.12688pt x 677.53125pt>
 File: images/02.a.png Graphic file (type png)
 <use images/02.a.png>
-Package pdftex.def Info: images/02.a.png  used on input line 178.
+Package pdftex.def Info: images/02.a.png  used on input line 174.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
-[3 <./images/01.d.png> <./images/01.g.png>]
-<images/02.c.png, id=191, 751.30687pt x 571.38469pt>
+[3 <./images/01.g.png>]
+<images/02.c.png, id=207, 751.30687pt x 571.38469pt>
 File: images/02.c.png Graphic file (type png)
 <use images/02.c.png>
-Package pdftex.def Info: images/02.c.png  used on input line 252.
+Package pdftex.def Info: images/02.c.png  used on input line 244.
 (pdftex.def)             Requested size: 239.39923pt x 182.06215pt.
- [4 <./images/02.a.png>]
-<images/03.a.1.png, id=204, 601.4972pt x 409.53pt>
+ [4 <./images/02.a.png> <./images/02.c.png>]
+<images/03.a.1.png, id=227, 601.4972pt x 409.53pt>
 File: images/03.a.1.png Graphic file (type png)
 <use images/03.a.1.png>
-Package pdftex.def Info: images/03.a.1.png  used on input line 272.
+Package pdftex.def Info: images/03.a.1.png  used on input line 266.
 (pdftex.def)             Requested size: 239.39923pt x 162.99673pt.
-<images/03.a.2.png, id=205, 903.375pt x 677.53125pt>
+<images/03.a.2.png, id=229, 903.375pt x 677.53125pt>
 File: images/03.a.2.png Graphic file (type png)
 <use images/03.a.2.png>
-Package pdftex.def Info: images/03.a.2.png  used on input line 282.
+Package pdftex.def Info: images/03.a.2.png  used on input line 276.
 (pdftex.def)             Requested size: 239.39923pt x 179.54492pt.
-<images/03.a.3.png, id=206, 903.375pt x 677.53125pt>
+<images/03.a.3.png, id=231, 903.375pt x 677.53125pt>
 File: images/03.a.3.png Graphic file (type png)
 <use images/03.a.3.png>
-Package pdftex.def Info: images/03.a.3.png  used on input line 292.
+Package pdftex.def Info: images/03.a.3.png  used on input line 286.
 (pdftex.def)             Requested size: 239.39923pt x 179.54492pt.
-<images/03.a.4.png, id=207, 601.4972pt x 409.53pt>
+<images/03.a.4.png, id=233, 601.4972pt x 409.53pt>
 File: images/03.a.4.png Graphic file (type png)
 <use images/03.a.4.png>
-Package pdftex.def Info: images/03.a.4.png  used on input line 302.
+Package pdftex.def Info: images/03.a.4.png  used on input line 296.
 (pdftex.def)             Requested size: 239.39923pt x 162.99673pt.
- [5 <./images/02.c.png> <./images/03.a.1.png> <./images/03.a.2.png> <./images/0
-3.a.3.png>]
-<images/03.b.1.png, id=221, 703.12688pt x 677.53125pt>
+ [5 <./images/03.a.1.png> <./images/03.a.2.png> <./images/03.a.3.png>]
+<images/03.b.1.png, id=246, 703.12688pt x 677.53125pt>
 File: images/03.b.1.png Graphic file (type png)
 <use images/03.b.1.png>
-Package pdftex.def Info: images/03.b.1.png  used on input line 318.
+Package pdftex.def Info: images/03.b.1.png  used on input line 312.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
-<images/03.b.2.png, id=222, 703.12688pt x 677.53125pt>
+<images/03.b.2.png, id=248, 703.12688pt x 677.53125pt>
 File: images/03.b.2.png Graphic file (type png)
 <use images/03.b.2.png>
-Package pdftex.def Info: images/03.b.2.png  used on input line 328.
+Package pdftex.def Info: images/03.b.2.png  used on input line 322.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
-<images/03.b.3.png, id=223, 703.12688pt x 677.53125pt>
+<images/03.b.3.png, id=250, 703.12688pt x 677.53125pt>
 File: images/03.b.3.png Graphic file (type png)
 <use images/03.b.3.png>
-Package pdftex.def Info: images/03.b.3.png  used on input line 336.
+Package pdftex.def Info: images/03.b.3.png  used on input line 330.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
-<images/03.b.4.png, id=224, 703.12688pt x 677.53125pt>
+ [6 <./images/03.a.4.png> <./images/03.b.1.png> <./images/03.b.2.png> <./images
+/03.b.3.png>]
+<images/03.b.4.png, id=263, 703.12688pt x 677.53125pt>
 File: images/03.b.4.png Graphic file (type png)
 <use images/03.b.4.png>
-Package pdftex.def Info: images/03.b.4.png  used on input line 346.
+Package pdftex.def Info: images/03.b.4.png  used on input line 344.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
 
-[6 <./images/03.a.4.png> <./images/03.b.1.png> <./images/03.b.2.png>]
-Underfull \hbox (badness 2547) in paragraph at lines 409--410
+Underfull \hbox (badness 2547) in paragraph at lines 404--405
  \T1/ptm/m/it/10 2) Au-to-cor-re-la-ção Nula: [][][] \T1/ptm/m/n/10 Para ve-ri-
 fi-car esta con-di-ção
  []
 
-[7 <./images/03.b.3.png> <./images/03.b.4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
+[7 <./images/03.b.4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
 \T1/ptm/m/n/8 Sta-tis-tics. []$https : / / stats . libretexts . org / Bookshelv
 es / Applied _ Statistics /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
 \T1/ptm/m/n/8 Book % 3A _ An _ Introduction _ to _ Psychological _ Statistics _
  (Foster _ et _ al .
  []
@@ -721,17 +666,14 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 [8] (article.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `article.out' has not changed.
-(rerunfilecheck)             Checksum: C68DCBB923BA1E8C908262DFE3FB63CB;15312.
+(rerunfilecheck)             Checksum: 0440BE6D75AA94ED36129DF3D91E6AB0;15312.
  ) 
 Here is how much of TeX's memory you used:
- 11678 strings out of 479321
- 174072 string characters out of 2853721
- 499822 words of memory out of 3000000
- 28872 multiletter control sequences out of 15000+600000
+ 11706 strings out of 479321
+ 174299 string characters out of 2853721
+ 504691 words of memory out of 3000000
+ 28898 multiletter control sequences out of 15000+600000
  509464 words of font info for 136 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  71i,8n,74p,1150b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -748,9 +690,9 @@ mes/utmb8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/
 urw/times/utmbi8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts
 /type1/urw/times/utmr8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (8 pages, 318606 bytes).
+Output written on article.pdf (8 pages, 326571 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
+ 351 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
  356 words of extra memory for PDF output out of 10000 (max. 10000000)
 
