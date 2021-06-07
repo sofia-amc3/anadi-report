@@ -121,9 +121,13 @@ cor(neural.predict, data.test$life_expectancy)
 
 # Exercício 5 --------------------------------------------------
 # Variáveis
+rt.average <- mean(data$reproduction_rate)
 
-
-# 
+# Separação do Rt em 0 e 1 (com a média como valor de corte)
+split <- function (x) { x > rt.average }
+data$NiveldeRisco <- simplify2array(lapply(data$reproduction_rate, split))
+data$NiveldeRisco <- as.numeric(data$NiveldeRisco)
+table(data$NiveldeRisco)
 
 
 
@@ -145,7 +149,26 @@ cor(neural.predict, data.test$life_expectancy)
 # Variáveis
 
 
-# 
+# Separação do Rt e Incidência em verde, amarelo e vermelho (com base na Matriz de Risco)
+ClassedeRisco <- c()
+
+for (i in 1:numberRows) {
+  incidence <- data[i, "incidence"]
+  rt <- data[i, "reproduction_rate"]
+  
+  if (incidence < 120) {
+    if (rt < 1)  value = "Verde"
+    else  value = "Amarelo"
+  } else {
+    if (rt < 1)  value = "Amarelo"
+    else  value = "Vermelho"
+  }
+  
+  ClassedeRisco <- c(ClassedeRisco, value)
+}
+
+data$ClassedeRisco <- as.numeric(as.factor(ClassedeRisco))
+table(data$ClassedeRisco)
 
 
 
