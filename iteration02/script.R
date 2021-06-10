@@ -5,6 +5,7 @@ library(neuralnet)
 
 # Variáveis globais
 
+# Funções
 MAE <- function(method, d) {
   mae <- mean(abs(d))
   cat("(", method, ") MAE: ", mae)
@@ -14,8 +15,6 @@ RMSE <- function(method, d) {
   rmse <- sqrt(mean(d^2))
   cat("(", method, ") RMSE: ", rmse)
 }
-
-
 
 
 ################################################## REGRESSÃO ##################################################
@@ -37,23 +36,37 @@ numberRows <- nrow(data)
 # Variáveis
 
 
-# 
 
 
-
-
-# Exercício 4 --------------------------------------------------
+# Exercício 3 --------------------------------------------------
 # Variáveis
 
+# Divisão dos dados em dois subconjuntos - treino e teste - segundo o critério holdout (70% treino / 30% teste)
+index <- sample(1:numberRows, as.integer(0.7 * numberRows))
+data.train <- data[index, ]
+data.test <- data[-index, ]
 
 # Alínea a)
-
+slr.model <- lm(total_deaths ~ new_cases, data = data.train)
+slr.model
+summary(slr.model)
 
 # Alínea b)
-
+plot(data.train$new_cases, data.train$total_deaths, pch = 20, 
+     xlab = "Novos Casos", 
+     ylab = "Total de Mortes", 
+     main = "Diagrama de Dispersão e Reta de Regressão")
+abline(slr.model$coefficients[1], slr.model$coefficients[2], col = "red")
 
 # Alínea c)
+slr.pred <- predict(slr.model, data.test)
+d <- data.test$total_deaths - slr.pred
 
+# Erro Médio Absoluto
+MAE("Regressão Linear Simples", d);
+
+# Raiz Quadrada do Erro Médio
+RMSE("Regressão Linear Simples", d);
 
 
 
