@@ -17,6 +17,7 @@ RMSE <- function(method, d) {
 }
 
 
+
 ################################################## REGRESSÃO ##################################################
 
 # Exercício 1 --------------------------------------------------
@@ -137,16 +138,18 @@ cor(neural.predict, data.test$life_expectancy)
 rt.average <- mean(data$reproduction_rate)
 
 # Separação do Rt em 0 e 1 (com a média como valor de corte)
-split <- function (x) { x > rt.average }
+split <- function (x) {
+  if (x > rt.average)  "high"
+  else  "low"
+}
 data$NiveldeRisco <- simplify2array(lapply(data$reproduction_rate, split))
-data$NiveldeRisco <- as.numeric(data$NiveldeRisco)
 table(data$NiveldeRisco)
 
 
 
 # Exercício 6 --------------------------------------------------
 # Variáveis
-
+#data$NiveldeRisco <- as.numeric(as.factor(data$NiveldeRisco))
 
 # Alínea a)
 
@@ -180,13 +183,13 @@ for (i in 1:numberRows) {
   ClassedeRisco <- c(ClassedeRisco, value)
 }
 
-data$ClassedeRisco <- as.numeric(as.factor(ClassedeRisco))
 table(data$ClassedeRisco)
 
 
 
 # Exercício 8 --------------------------------------------------
 # Variáveis
+#data$ClassedeRisco <- as.numeric(as.factor(ClassedeRisco))
 
 
 # Alínea a)
