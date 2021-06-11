@@ -16,12 +16,19 @@ RMSE <- function(method, d) {
   cat("(", method, ") RMSE: ", rmse)
 }
 
+normalize <- function(y) {
+  (y - min(y)) / (max(y) - min(y))
+}
+
 
 
 ################################################## REGRESSÃO ##################################################
 
 # Exercício 1 --------------------------------------------------
 data <- read.csv("")
+# importação bruno
+data <- read_excel("E:/college/mastersDegree/0thYear-preRequirements/2ndSemester/computerDataAnalysis/praticalWork/Iteration 02/countryagregatedata.xlsx")
+
 
 str(data)
 head(data)
@@ -30,6 +37,7 @@ cat("Dimensão\nLinhas: ", dimension[1], "\t Colunas: ", dimension[2])
 summary(data)
 
 numberRows <- nrow(data)
+numberColumns <- ncol(data)
 
 
 
@@ -72,15 +80,14 @@ RMSE("Regressão Linear Simples", d);
 
 
 # Exercício 4 --------------------------------------------------
-# Variáveis
+# Divisão dos dados em dois subconjuntos - treino e teste - segundo o critério holdout (70% treino / 30% teste)
 set.seed(123)
 index <- sample(1:numberRows, as.integer(0.7 * numberRows))
-data.train <- data[index, ]
-data.test <- data[-index, ]
-
+data.train <- data[index, 4:numberColumns]
+data.test <- data[-index, 4:numberColumns]
 
 # Alínea a)
-mlr.model <- lm(sales ~ facebook + youtube + newspaper, data = treino)
+mlr.model <- lm(life_expectancy ~ ., data = data.train)
 mlr.model
 
 summary(mlr.model)
@@ -92,10 +99,10 @@ mlr.predict
 d <- data.test$life_expectancy - mlr.predict
 
 # Erro Médio Absoluto
-MAE("Regressão Linear", d);
+MAE("Regressão Linear Múltipla", d);
 
 # Raiz Quadrada do Erro Médio
-RMSE("Regressão Linear", d);
+RMSE("Regressão Linear Múltipla", d);
 
 
 # Alínea b)
@@ -119,15 +126,37 @@ RMSE("Árvore de Regressão", d);
 
 
 # Alínea c)
+# Normaliza os dados
+data.normal <- as.data.frame(lapply(data[, 4:numberColumns], normalize))
+summary(data.normal$life_expectancy)
+
+# Divisão dos dados normalizados através do critério holdout (70% treino, 30% teste)
+data.train <- data.normal[index, ]
+data.test <- data.normal[-index, ]
+
 neural.model <- neuralnet(life_expectancy ~ ., data = data.train)
 plot(neural.model)
 
-model.results <- compute(concrete_model, data.test[1:8])
+columnIndex <- which(colnames(data.test) == "life_expectancy")
+
+model.results <- compute(neural.model, data.test[, -columnIndex])
 head(model.results$net.result)
 neural.predict <- model.results$net.result
 head(neural.predict)
 
 cor(neural.predict, data.test$life_expectancy)
+
+# Cálculo do MAE e RMSE
+d <- neural.predict - data.test$life_expectancy
+
+# Erro Médio Absoluto
+MAE("Árvore de Regressão", d);
+
+# Raiz Quadrada do Erro Médio
+RMSE("Árvore de Regressão", d);
+
+
+# Comparação dos resultados obtidos pelos modelos
 
 
 
@@ -188,8 +217,11 @@ table(data$ClassedeRisco)
 
 
 # Exercício 8 --------------------------------------------------
-# Variáveis
-#data$ClassedeRisco <- as.numeric(as.factor(ClassedeRisco))
+# Conversão da Classe de Risco para classes númericas
+# 1 - amarelo
+# 2 - verde
+# 3 - vermelho
+data$ClassedeRisco <- as.numeric(as.factor(ClassedeRisco))
 
 
 # Alínea a)
