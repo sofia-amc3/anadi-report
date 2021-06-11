@@ -2,6 +2,7 @@
 library(rpart)
 library(rpart.plot)
 library(neuralnet)
+library(FNN)
 
 # Variáveis globais
 
@@ -18,6 +19,24 @@ RMSE <- function(method, d) {
 
 normalize <- function(y) {
   (y - min(y)) / (max(y) - min(y))
+}
+
+classificationsModelsEvaluation <- function(data.test, predict.model) {
+  m.conf <- table(data.test, predict.model)
+  
+  accuracy <- (m.conf[1, 1] + m.conf[2, 2]) / sum(m.conf)
+  precision <- m.conf[1, 1] / (m.conf[1, 1] + m.conf[2, 1])
+  sensitivity <- m.conf[1, 1] / (m.conf[1, 1] + m.conf[1, 2])
+  specificity <- m.conf[2, 2] / (m.conf[2, 2] + m.conf[2, 1])
+  f1 <- (2 * precision * sensitivity) / (precision * sensitivity)
+  
+  print("Matriz de confusão")
+  print(m.conf)
+  
+  cat(paste("accuracy: ", accuracy, "%\n"))
+  cat(paste("sensitivity: ", sensitivity, "%\n"))
+  cat(paste("specificity: ", specificity, "%\n"))
+  cat(paste("F1: ", f1, "\n"))
 }
 
 
@@ -133,27 +152,33 @@ summary(data.normal$life_expectancy)
 # Divisão dos dados normalizados através do critério holdout (70% treino, 30% teste)
 data.train <- data.normal[index, ]
 data.test <- data.normal[-index, ]
-
-neural.model <- neuralnet(life_expectancy ~ ., data = data.train)
-plot(neural.model)
-
 columnIndex <- which(colnames(data.test) == "life_expectancy")
 
-model.results <- compute(neural.model, data.test[, -columnIndex])
-head(model.results$net.result)
-neural.predict <- model.results$net.result
-head(neural.predict)
+# Função que cria uma rede neural e apresenta o MAE e RMSE
+neuralNetwork <- function(hidden) {
+  neural.model <- neuralnet(life_expectancy ~ ., data = data.train, hidden = hidden)
+  plot(neural.model)
+  
+  model.results <- compute(neural.model, data.test[, -columnIndex])
+  head(model.results$net.result)
+  neural.predict <- model.results$net.result
+  head(neural.predict)
+  
+  cor(neural.predict, data.test$life_expectancy)
+  
+  # Cálculo do MAE e RMSE
+  d <- neural.predict - data.test$life_expectancy
+  
+  # Erro Médio Absoluto
+  MAE("Árvore de Regressão", d);
+  
+  # Raiz Quadrada do Erro Médio
+  RMSE("Árvore de Regressão", d);
+}
 
-cor(neural.predict, data.test$life_expectancy)
-
-# Cálculo do MAE e RMSE
-d <- neural.predict - data.test$life_expectancy
-
-# Erro Médio Absoluto
-MAE("Árvore de Regressão", d);
-
-# Raiz Quadrada do Erro Médio
-RMSE("Árvore de Regressão", d);
+neuralNetwork(1) # Rede neuronal com 1 nó interno
+neuralNetwork(4) # Rede neuronal com 4 nós internos
+neuralNetwork(c(3, 5)) # Rede neuronal com 2 níveis internos com 3 e 5 nós
 
 
 # Comparação dos resultados obtidos pelos modelos
@@ -212,22 +237,48 @@ for (i in 1:numberRows) {
   ClassedeRisco <- c(ClassedeRisco, value)
 }
 
+data$ClassedeRisco <- ClassedeRisco
 table(data$ClassedeRisco)
 
 
 
 # Exercício 8 --------------------------------------------------
+set.seed(456)
+index <- sample(1:numberRows, as.integer(0.7 * numberRows))
+data.train <- data[index, 4:numberColumns+1]
+data.test <- data[-index, 4:numberColumns+1]
+
+# Alínea a)
+rpart.model <- rpart(ClassedeRisco ~ ., method = "class", data = data.train)
+par(xpd = TRUE)
+plot(rpart.model, compress = TRUE)
+text(rpart.model, use.n = TRUE)
+rpart.plot(rpart.model)
+
+rpart.predict <- predict(rpart.model, data.test, type = "class")
+head(rpart.predict)
+
+m.conf <- table(data.test$ClassedeRisco, rpart.predict)
+print(m.conf)
+
+classificationsModelsEvaluation(data.test$ClassedeRisco, rpart.predict)
+
+# Alínea b)
 # Conversão da Classe de Risco para classes númericas
 # 1 - amarelo
 # 2 - verde
 # 3 - vermelho
 data$ClassedeRisco <- as.numeric(as.factor(ClassedeRisco))
 
+k <- c()
+rmse <- c()
 
-# Alínea a)
-
-
-# Alínea b)
-
+for(i in seq(1, 50, 2)) {
+  knnreg.pred <- knn.reg(data.train, data.test, train.rings, k=i)
+  knnreg.pred$pred <- minmaxdesnorm(knnreg.pred$pred, data$Rings)
+  mmd <- minmaxdesnorm(test.rings, data$Rings)
+  rmse <- c(rmse, RMSE(knnreg.pred$pred, mmd))
+  k <- c(k, i)
+}
 
 # Alínea c)
