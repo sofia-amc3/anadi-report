@@ -200,34 +200,25 @@ neuralNetwork(c(3, 5)) # Rede neuronal com 2 níveis internos com 3 e 5 nós
 
 # Comparação dos resultados obtidos pelos modelos
 # Transformação dos erros para valores absolutos (positivos)
-mlr.d <- abs(mlr.d)
-rpart.d <- abs(rpart.d)
-neural.d <- abs(neural.d)
+mlr.d <- mlr.d^2
+rpart.d <- rpart.d^2
+neural.d <- neural.d^2
 
 errorsData <- data.frame(
-  MLR = mlr.d,
   RPart = rpart.d,
   Neural = neural.d
 )
-
-# Teste à normalidade
-shapiro.test(mlr.d)
-shapiro.test(rpart.d)
-shapiro.test(neural.d)
-
-# Verifica se as variâncias são iguais
 SerrorsData <- stack(errorsData)
+
+# Testes à normalidade
+shapiro.test(rpart.d - neural.d)
+lillie.test(rpart.d - neural.d)
+
+# Teste à igualdade das variâncias
 leveneTest(SerrorsData[, 1] ~ SerrorsData[, 2])
 
-# Teste comparador das médias (one-way ANOVA)
-errors <- c(mlr.d, rpart.d, neural.d)
-groups <- factor(c(rep("MLR", length(mlr.d)),
-                   rep("RPart", length(rpart.d)),
-                   rep("Neural", length(neural.d))
-))
-
-anovaTest <- aov(errors ~ groups, data = errorsData)
-summary(anovaTest)
+# Teste comparador das duas médias
+t.test(rpart.d, neural.d, var.equal = FALSE, alternative = "two.sided")
 
 
 
