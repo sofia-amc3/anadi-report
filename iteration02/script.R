@@ -1,4 +1,5 @@
 # Libraries
+library(car)
 library(rpart)
 library(rpart.plot)
 library(neuralnet)
@@ -7,14 +8,22 @@ library(FNN)
 # Variáveis globais
 
 # Funções
-MAE <- function(method, d) {
-  mae <- mean(abs(d))
-  cat("(", method, ") MAE: ", mae)
+MAE <- function(d) {
+  mean(abs(d))
 }
 
-RMSE <- function(method, d) {
-  rmse <- sqrt(mean(d^2))
-  cat("(", method, ") RMSE: ", rmse)
+printMAE <- function(method, d) {
+  mae <- MAE(d)
+  cat("(", method, ") MAE: ", mae, "\n")
+}
+
+RMSE <- function(d) {
+  sqrt(mean(d^2))
+}
+
+printRMSE <- function(method, d) {
+  rmse <- RMSE(d)
+  cat("(", method, ") RMSE: ", rmse, "\n")
 }
 
 normalize <- function(y) {
@@ -51,12 +60,15 @@ data <- read_excel("E:/college/mastersDegree/0thYear-preRequirements/2ndSemester
 
 str(data)
 head(data)
-dimension <- dim(data)
-cat("Dimensão\nLinhas: ", dimension[1], "\t Colunas: ", dimension[2])
-summary(data)
 
-numberRows <- nrow(data)
-numberColumns <- ncol(data)
+# Dimensão
+dimension <- dim(data)
+numberRows <- dimension[1]
+numberColumns <- dimension[2]
+cat("Dimensão\nLinhas: ", dimension[1], "\t Colunas: ", dimension[2])
+
+#Sumário
+summary(data)
 
 
 
@@ -67,17 +79,17 @@ numberColumns <- ncol(data)
 
 
 # Exercício 3 --------------------------------------------------
-# Variáveis
-
 # Divisão dos dados em dois subconjuntos - treino e teste - segundo o critério holdout (70% treino / 30% teste)
 index <- sample(1:numberRows, as.integer(0.7 * numberRows))
 data.train <- data[index, ]
 data.test <- data[-index, ]
 
+
 # Alínea a)
 slr.model <- lm(total_deaths ~ new_cases, data = data.train)
 slr.model
 summary(slr.model)
+
 
 # Alínea b)
 plot(data.train$new_cases, data.train$total_deaths, pch = 20, 
@@ -86,15 +98,16 @@ plot(data.train$new_cases, data.train$total_deaths, pch = 20,
      main = "Diagrama de Dispersão e Reta de Regressão")
 abline(slr.model$coefficients[1], slr.model$coefficients[2], col = "red")
 
+
 # Alínea c)
 slr.pred <- predict(slr.model, data.test)
 d <- data.test$total_deaths - slr.pred
 
 # Erro Médio Absoluto
-MAE("Regressão Linear Simples", d);
+printMAE("Regressão Linear Simples", d)
 
 # Raiz Quadrada do Erro Médio
-RMSE("Regressão Linear Simples", d);
+printRMSE("Regressão Linear Simples", d)
 
 
 
@@ -104,6 +117,7 @@ set.seed(123)
 index <- sample(1:numberRows, as.integer(0.7 * numberRows))
 data.train <- data[index, 4:numberColumns]
 data.test <- data[-index, 4:numberColumns]
+
 
 # Alínea a)
 mlr.model <- lm(life_expectancy ~ ., data = data.train)
@@ -115,13 +129,13 @@ summary(mlr.model)$coefficient
 # Previsão (avaliação do método)
 mlr.predict <- predict(mlr.model, data.test)
 mlr.predict
-d <- data.test$life_expectancy - mlr.predict
+mlr.d <- data.test$life_expectancy - mlr.predict
 
 # Erro Médio Absoluto
-MAE("Regressão Linear Múltipla", d);
+printMAE("Regressão Linear Múltipla", mlr.d);
 
 # Raiz Quadrada do Erro Médio
-RMSE("Regressão Linear Múltipla", d);
+printRMSE("Regressão Linear Múltipla", mlr.d);
 
 
 # Alínea b)
@@ -135,13 +149,13 @@ rpart.plot(rpart.model, digits = 4, fallen.leaves = TRUE, type = 3, extra = 101)
 
 # Previsão (avaliação do método)
 rpart.predict <- predict(rpart.model, data.test)
-d <- rpart.predict - data.test$life_expectancy
+rpart.d <- rpart.predict - data.test$life_expectancy
 
 # Erro Médio Absoluto
-MAE("Árvore de Regressão", d);
+printMAE("Árvore de Regressão", rpart.d);
 
 # Raiz Quadrada do Erro Médio
-RMSE("Árvore de Regressão", d);
+printRMSE("Árvore de Regressão", rpart.d);
 
 
 # Alínea c)
@@ -164,31 +178,63 @@ neuralNetwork <- function(hidden) {
   neural.predict <- model.results$net.result
   head(neural.predict)
   
-  cor(neural.predict, data.test$life_expectancy)
+  correlation <- cor(neural.predict, data.test$life_expectancy)
+  print(correlation)
   
   # Cálculo do MAE e RMSE
   d <- neural.predict - data.test$life_expectancy
   
   # Erro Médio Absoluto
-  MAE("Árvore de Regressão", d);
+  printMAE("Árvore de Regressão", d);
   
   # Raiz Quadrada do Erro Médio
-  RMSE("Árvore de Regressão", d);
+  printRMSE("Árvore de Regressão", d);
+  
+  # Retorna os erros das previsões
+  return(d)
 }
 
-neuralNetwork(1) # Rede neuronal com 1 nó interno
+neural.d <- neuralNetwork(1) # Rede neuronal com 1 nó interno
 neuralNetwork(4) # Rede neuronal com 4 nós internos
 neuralNetwork(c(3, 5)) # Rede neuronal com 2 níveis internos com 3 e 5 nós
 
-
 # Comparação dos resultados obtidos pelos modelos
+# Transformação dos erros para valores absolutos (positivos)
+mlr.d <- abs(mlr.d)
+rpart.d <- abs(rpart.d)
+neural.d <- abs(neural.d)
+
+errorsData <- data.frame(
+  MLR = mlr.d,
+  RPart = rpart.d,
+  Neural = neural.d
+)
+
+# Teste à normalidade
+shapiro.test(mlr.d)
+shapiro.test(rpart.d)
+shapiro.test(neural.d)
+
+# Verifica se as variâncias são iguais
+SerrorsData <- stack(errorsData)
+leveneTest(SerrorsData[, 1] ~ SerrorsData[, 2])
+
+# Teste comparador das médias (one-way ANOVA)
+errors <- c(mlr.d, rpart.d, neural.d)
+groups <- factor(c(rep("MLR", length(mlr.d)),
+                   rep("RPart", length(rpart.d)),
+                   rep("Neural", length(neural.d))
+))
+
+anovaTest <- aov(errors ~ groups, data = errorsData)
+summary(anovaTest)
 
 
 
 ################################################## CLASSIFICAÇÃO ##################################################
 
 # Exercício 5 --------------------------------------------------
-# Variáveis
+# Obtenção da média do Rt
 rt.average <- mean(data$reproduction_rate)
 
 # Separação do Rt em 0 e 1 (com a média como valor de corte)
@@ -197,6 +243,9 @@ split <- function (x) {
   else  "low"
 }
 data$NiveldeRisco <- simplify2array(lapply(data$reproduction_rate, split))
+numberColumns <- numberColumns + 1
+
+# Verificação da frequência das duas classes
 table(data$NiveldeRisco)
 
 
@@ -205,10 +254,13 @@ table(data$NiveldeRisco)
 # Variáveis
 #data$NiveldeRisco <- as.numeric(as.factor(data$NiveldeRisco))
 
+
 # Alínea a)
 
 
+
 # Alínea b)
+
 
 
 # Alínea c)
@@ -216,8 +268,9 @@ table(data$NiveldeRisco)
 
 
 # Exercício 7 --------------------------------------------------
-# Variáveis
-
+# Remove a variável criada no exercício 5 e utilizada no exercício 6
+data <- subset(data, select = -numberColumns)
+numberColumns <- numberColumns - 1
 
 # Separação do Rt e Incidência em verde, amarelo e vermelho (com base na Matriz de Risco)
 ClassedeRisco <- c()
@@ -238,6 +291,9 @@ for (i in 1:numberRows) {
 }
 
 data$ClassedeRisco <- ClassedeRisco
+numberColumns <- numberColumns + 1
+
+# Verificação da frequência das classes
 table(data$ClassedeRisco)
 
 
@@ -245,40 +301,43 @@ table(data$ClassedeRisco)
 # Exercício 8 --------------------------------------------------
 set.seed(456)
 index <- sample(1:numberRows, as.integer(0.7 * numberRows))
-data.train <- data[index, 4:numberColumns+1]
-data.test <- data[-index, 4:numberColumns+1]
+data.train <- data[index, 4:numberColumns]
+data.test <- data[-index, 4:numberColumns]
+
 
 # Alínea a)
+# Árvore de Regressão
 rpart.model <- rpart(ClassedeRisco ~ ., method = "class", data = data.train)
 par(xpd = TRUE)
 plot(rpart.model, compress = TRUE)
 text(rpart.model, use.n = TRUE)
 rpart.plot(rpart.model)
 
+# Previsão
 rpart.predict <- predict(rpart.model, data.test, type = "class")
 head(rpart.predict)
 
-m.conf <- table(data.test$ClassedeRisco, rpart.predict)
-print(m.conf)
-
+# Obtenção dos critérios de avaliação (Accuracy, Sensitivity, Specificity e F1)
 classificationsModelsEvaluation(data.test$ClassedeRisco, rpart.predict)
+
 
 # Alínea b)
 # Conversão da Classe de Risco para classes númericas
 # 1 - amarelo
 # 2 - verde
 # 3 - vermelho
-data$ClassedeRisco <- as.numeric(as.factor(ClassedeRisco))
+#data.train$ClassedeRisco <- as.numeric(as.factor(data.train$ClassedeRisco))
+#data.test$ClassedeRisco <- as.numeric(as.factor(data.test$ClassedeRisco))
 
-k <- c()
-rmse <- c()
+#neural.model <- neuralnet(ClassedeRisco ~ ., data = data.train, hidden = 3)
+#plot(neural.model)
 
-for(i in seq(1, 50, 2)) {
-  knnreg.pred <- knn.reg(data.train, data.test, train.rings, k=i)
-  knnreg.pred$pred <- minmaxdesnorm(knnreg.pred$pred, data$Rings)
-  mmd <- minmaxdesnorm(test.rings, data$Rings)
-  rmse <- c(rmse, RMSE(knnreg.pred$pred, mmd))
-  k <- c(k, i)
-}
+#model.results <- compute(neural.model, data.test[, -columnIndex])
+#head(model.results$net.result)
+#neural.predict <- model.results$net.result
+#head(neural.predict)
+
+#classificationsModelsEvaluation(data.test, neural.predict)
+
 
 # Alínea c)
