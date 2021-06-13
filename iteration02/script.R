@@ -4,6 +4,7 @@ library(rpart)
 library(rpart.plot)
 library(neuralnet)
 library(FNN)
+library(caret)
 
 # Variáveis globais
 
@@ -281,7 +282,7 @@ for (i in 1:numberRows) {
   ClassedeRisco <- c(ClassedeRisco, value)
 }
 
-data$ClassedeRisco <- ClassedeRisco
+data$ClassedeRisco <- as.factor(ClassedeRisco)
 numberColumns <- numberColumns + 1
 
 # Verificação da frequência das classes
@@ -309,26 +310,34 @@ rpart.predict <- predict(rpart.model, data.test, type = "class")
 head(rpart.predict)
 
 # Obtenção dos critérios de avaliação (Accuracy, Sensitivity, Specificity e F1)
-classificationsModelsEvaluation(data.test$ClassedeRisco, rpart.predict)
+confusionMatrix(data.test$ClassedeRisco, rpart.predict)
 
 
 # Alínea b)
-# Conversão da Classe de Risco para classes númericas
-# 1 - amarelo
-# 2 - verde
-# 3 - vermelho
-#data.train$ClassedeRisco <- as.numeric(as.factor(data.train$ClassedeRisco))
-#data.test$ClassedeRisco <- as.numeric(as.factor(data.test$ClassedeRisco))
+# Adição da ClassedeRisco aos dados normalizados
+data.normal$ClassedeRisco <- as.factor(ClassedeRisco)
+# Criação de colunas que diferenciam as classes de risco em valores de true/false
+data.normal$amarelo <- ClassedeRisco == "Amarelo"
+data.normal$verde <- ClassedeRisco == "Verde"
+data.normal$vermelho <- ClassedeRisco == "Vermelho"
 
-#neural.model <- neuralnet(ClassedeRisco ~ ., data = data.train, hidden = 3)
-#plot(neural.model)
+# Obtenção de novos dados de treino e teste através dos dados normalizados
+data.train <- data.normal[index, ]
+data.test <- data.normal[-index, ]
 
-#model.results <- compute(neural.model, data.test[, -columnIndex])
-#head(model.results$net.result)
-#neural.predict <- model.results$net.result
-#head(neural.predict)
+neural.model <- neuralnet(ClassedeRisco ~ ., data = data.train, hidden = 3)
+plot(neural.model)
 
-#classificationsModelsEvaluation(data.test, neural.predict)
+columnIndex <- 23
+model.results <- compute(neural.model, data.test)
+head(model.results$net.result)
+neural.predict <- model.results$net.result
+head(neural.predict)
+
+idx <- apply(neural.predict, 1, which.max)
+predicted <- as.factor(c('Amarelo', 'Verde', 'Vermelho')[idx])
+
+confusionMatrix(predicted, data.test$ClassedeRisco)
 
 
 # Alínea c)
