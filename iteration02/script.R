@@ -91,6 +91,12 @@ slr.model <- lm(total_deaths ~ new_cases, data = data.train)
 slr.model
 summary(slr.model)
 
+# Normalização os dados
+data.normal <- as.data.frame(lapply(data[, 4:numberColumns], normalize))
+head(data.normal)
+
+
+
 
 # Alínea b)
 plot(data.train$new_cases, data.train$total_deaths, pch = 20, 
@@ -160,10 +166,6 @@ printRMSE("Árvore de Regressão", rpart.d);
 
 
 # Alínea c)
-# Normaliza os dados
-data.normal <- as.data.frame(lapply(data[, 4:numberColumns], normalize))
-summary(data.normal$life_expectancy)
-
 # Divisão dos dados normalizados através do critério holdout (70% treino, 30% teste)
 data.train <- data.normal[index, ]
 data.test <- data.normal[-index, ]
