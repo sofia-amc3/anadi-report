@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  2 MAY 2021 16:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  16 JUN 2021 23:19
 entering extended mode
 **./article.tex
 (article.tex
@@ -16,7 +16,7 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmptoksA=\toks15
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 03.
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -112,35 +112,29 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtranrubishbin=\box48
 )
 ** ATTENTION: Overriding command lockouts (line 2).
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.s
-ty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.s
-ty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.st
-y
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen162
 ))
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
-y
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen163
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
-y
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count194
@@ -181,12 +175,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.
-sty
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts
-.sty
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -194,15 +186,13 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algori
-thmic.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/algorithms\algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.s
-ty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
@@ -213,38 +203,33 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \ALC@tlm=\skip53
 \algorithmicindent=\skip54
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx
-.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics
-.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\grap
-hics.cfg
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdft
-ex.def
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+(C:\Program Files\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\colo
-r.cfg
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -258,85 +243,69 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref
-.sty
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds
-.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdft
-excmds.sty
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwa
-rerr.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvset
-keys.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kv
-definekeys.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.st
+y
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfes
-cape.sty
+) (C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.s
-ty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letlt
-xmacro.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.s
-ty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptio
-ns.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen173
 \Hy@linkcounter=\count276
 \Hy@pagecounter=\count277
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.d
-ef
+(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref
--langpatches.def
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref-langpatches.def
 File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
 nguages
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc
-.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcm
-ds.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count278
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.de
-f
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -349,19 +318,18 @@ Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count279
- (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen174
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.s
-ty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigi
-ntcalc.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -378,8 +346,7 @@ Package hyperref Info: PDF/A mode OFF on input line 6105.
 LaTeX Info: Redefining \ref on input line 6145.
 LaTeX Info: Redefining \pageref on input line 6149.
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx
-.sty
+(C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
@@ -390,12 +357,10 @@ with kernel methods
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.
-def
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-lt
-x.sty
+(C:\Program Files\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
@@ -403,43 +368,41 @@ with kernel methods
 \Fld@listcount=\count284
 \c@bookmark@seq@number=\count285
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\re
-runfilecheck.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.
+sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\u
-niquecounter.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.
+sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip55
-)
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+) (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
 2.
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ))
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks22
 \inpenc@posthook=\toks23
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+(C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2021/04/07 3.57 The Babel package
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
+(C:\Program Files\MiKTeX\tex/generic/babel\babel.def
 File: babel.def 2021/04/07 3.57 Babel common definitions
 \babel@savecnt=\count286
 \U@D=\dimen177
 \l@babelnohyphens=\language79
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.
-def)
+(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 )
 \bbl@dirlevel=\count287
@@ -447,24 +410,19 @@ def)
 *************************************
 * Local config file bblopts.cfg used
 *
-
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\po
-rtuguese.ldf
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/babel-portuges\portuguese.ldf
 Language: portuges 2021/02/04 v1.2s Portuguese support from the babel system
 Package babel Info: Making " an active character on input line 143.
-))
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyphenat\hyphenat
-.sty
+)) (C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/hyphenat\hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language80
 LaTeX Info: Redefining \_ on input line 43.
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backe
-nd-pdftex.def
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count288
 \l__pdf_internal_box=\box51
@@ -491,9 +449,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 
 -- Lines per column: 56 (exact).
-
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-
-pdf.mkii
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count289
 \scratchdimen=\dimen178
@@ -506,29 +462,24 @@ pdf.mkii
 \MPnumerator=\count293
 \makeMPintoPDFobject=\count294
 \everyMPtoPDFconversion=\toks25
-)
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epst
-opdf-base.sty
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf
--sys.cfg
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 32.
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.
-sty
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount
-.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\
-gettitlestring.sty
+(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestrin
+g.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count295
@@ -545,7 +496,7 @@ File: images/01.a.png Graphic file (type png)
 <use images/01.a.png>
 Package pdftex.def Info: images/01.a.png  used on input line 84.
 (pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
- [1{C:/Users/SAP-PSC6-G7/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+ [1{C:/Users/bruno/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
  <./images/01.a.png>]
@@ -572,13 +523,12 @@ Package pdftex.def Info: images/01.g.png  used on input line 150.
 (pdftex.def)             Requested size: 239.39923pt x 158.78027pt.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 161
 .
-
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 161
 .
-(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <images/02.a.png, id=185, 703.12688pt x 677.53125pt>
@@ -586,13 +536,14 @@ File: images/02.a.png Graphic file (type png)
 <use images/02.a.png>
 Package pdftex.def Info: images/02.a.png  used on input line 174.
 (pdftex.def)             Requested size: 239.39923pt x 230.67805pt.
-[3 <./images/01.g.png>]
+ [3 <./images/01.g.png>]
 <images/02.c.png, id=207, 751.30687pt x 571.38469pt>
 File: images/02.c.png Graphic file (type png)
 <use images/02.c.png>
 Package pdftex.def Info: images/02.c.png  used on input line 244.
 (pdftex.def)             Requested size: 239.39923pt x 182.06215pt.
- [4 <./images/02.a.png> <./images/02.c.png>]
+
+[4 <./images/02.a.png> <./images/02.c.png>]
 <images/03.a.1.png, id=227, 601.4972pt x 409.53pt>
 File: images/03.a.1.png Graphic file (type png)
 <use images/03.a.1.png>
@@ -671,25 +622,21 @@ Package rerunfilecheck Info: File `article.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  11706 strings out of 479321
- 174299 string characters out of 2853721
+ 170822 string characters out of 2866501
  504691 words of memory out of 3000000
  28898 multiletter control sequences out of 15000+600000
  509464 words of font info for 136 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  71i,8n,74p,1150b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.e
-nc}<C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi7.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/SAP-PSC6-G7/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/SAP-PSC6-G
-7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
-sers/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-msy7.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ti
-mes/utmb8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/
-urw/times/utmbi8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts
-/type1/urw/times/utmr8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX
-/fonts/type1/urw/times/utmri8a.pfb>
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKT
+eX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/ti
+mes/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/P
+rogram Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
 Output written on article.pdf (8 pages, 326571 bytes).
 PDF statistics:
  351 PDF objects out of 1000 (max. 8388607)
