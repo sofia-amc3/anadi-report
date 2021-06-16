@@ -54,9 +54,10 @@ classificationsModelsEvaluation <- function(data.test, predict.model) {
 ################################################## REGRESSÃO ##################################################
 
 # Exercício 1 --------------------------------------------------
-data <- read.csv("")
 # importação bruno
-data <- read_excel("E:/college/mastersDegree/0thYear-preRequirements/2ndSemester/computerDataAnalysis/praticalWork/Iteration 02/countryagregatedata.xlsx")
+data <- read.csv("E:/college/mastersDegree/0thYear-preRequirements/2ndSemester/computerDataAnalysis/praticalWork/Iteration 02/data.csv")
+
+data <- read.csv("data.csv")
 
 
 str(data)
@@ -70,6 +71,10 @@ cat("Dimensão\nLinhas: ", dimension[1], "\t Colunas: ", dimension[2])
 
 #Sumário
 summary(data)
+
+# Normalização os dados
+data.normal <- as.data.frame(lapply(data[, 4:numberColumns], normalize))
+head(data.normal)
 
 
 
@@ -90,12 +95,6 @@ data.test <- data[-index, ]
 slr.model <- lm(total_deaths ~ new_cases, data = data.train)
 slr.model
 summary(slr.model)
-
-# Normalização os dados
-data.normal <- as.data.frame(lapply(data[, 4:numberColumns], normalize))
-head(data.normal)
-
-
 
 
 # Alínea b)
