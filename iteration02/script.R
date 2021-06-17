@@ -1,6 +1,7 @@
 # Libraries
 library(PerformanceAnalytics)
 library(corrplot)
+library(nortest)
 library(car)
 library(rpart)
 library(rpart.plot)
@@ -29,35 +30,13 @@ printRMSE <- function(method, d) {
   cat("(", method, ") RMSE: ", rmse, "\n")
 }
 
-normalize <- function(y) {
-  (y - min(y)) / (max(y) - min(y))
-}
-
-classificationsModelsEvaluation <- function(data.test, predict.model) {
-  m.conf <- table(data.test, predict.model)
-  
-  accuracy <- (m.conf[1, 1] + m.conf[2, 2]) / sum(m.conf)
-  precision <- m.conf[1, 1] / (m.conf[1, 1] + m.conf[2, 1])
-  sensitivity <- m.conf[1, 1] / (m.conf[1, 1] + m.conf[1, 2])
-  specificity <- m.conf[2, 2] / (m.conf[2, 2] + m.conf[2, 1])
-  f1 <- (2 * precision * sensitivity) / (precision * sensitivity)
-  
-  print("Matriz de confusão")
-  print(m.conf)
-  
-  cat(paste("accuracy: ", accuracy, "%\n"))
-  cat(paste("sensitivity: ", sensitivity, "%\n"))
-  cat(paste("specificity: ", specificity, "%\n"))
-  cat(paste("F1: ", f1, "\n"))
-}
-
 
 
 ################################################## REGRESSÃO ##################################################
 
 # Exercício 1 --------------------------------------------------
 # importação bruno
-data <- read.csv("E:/college/mastersDegree/0thYear-preRequirements/2ndSemester/computerDataAnalysis/praticalWork/Iteration 02/data.csv")
+data <- read.csv("E:/college/mastersDegree/0thYear-preRequirements/2ndSemester/computerDataAnalysis/praticalWork/Iteration 02/countryagregatedata.csv")
 
 data <- read.csv("data.csv")
 
@@ -75,6 +54,10 @@ cat("Dimensão\nLinhas: ", dimension[1], "\t Colunas: ", dimension[2])
 summary(data)
 
 # Normalização os dados
+normalize <- function(y) {
+  (y - min(y)) / (max(y) - min(y))
+}
+
 data.normal <- as.data.frame(lapply(data[, 4:numberColumns], normalize))
 head(data.normal)
 
@@ -347,3 +330,16 @@ confusionMatrix(predicted, data.test$ClassedeRisco)
 
 
 # Alínea c)
+columnIndex <- which(colnames(data.train) == "ClassedeRisco")
+ClassedeRisco.train <- data.train[, columnIndex]
+ClassedeRisco.test <- data.test[, columnIndex]
+
+# Remoção da variável ClassedeRisco
+data.train <- data.train[, -columnIndex]
+data.test <- data.test[, -columnIndex]
+
+# Obtenção do k através da raiz do número de linhas do treino
+k <- round(sqrt(nrow(data.train)))
+knn <- knn(train = data.train, test = data.test, cl = ClassedeRisco.train, k = k)
+
+confusionMatrix(knn, ClassedeRisco.test)

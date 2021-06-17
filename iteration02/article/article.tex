@@ -110,7 +110,33 @@ Na normalização dos dados foram excluídas as colunas “continent” e “loc
 
 
 \subsection{Diagrama de correlação entre todos os atributos}
-X
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/02_1.png}}
+\caption{Matriz de correlação}
+\label{02_1}
+\end{figure}
+Para a realização do diagrama de correlação entre todos os atributos procedeu-se à construção da matriz de correlação, presente na Fig.\ref{02_1}.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/02_2.png}}
+\caption{Visualização da matriz de correlação  através do correlograma}
+\label{02_2}
+\end{figure}
+Para facilitar a visualização dos dados utilizou-se um correlograma que permite visualizar a matriz de correlação através de um sistema de cores e círculos, visível na Fig.\ref{02_2}, sendo que as cores azul e vermelho escuro pertencentes, respetivamente, aos valores 1 e -1, em conjunto com um círculo maior representam os melhores valores de correlação.
+Analisando o correlograma, excluindo-se os atributos correlacionados consigo mesmos presentes na diagonal, verificam-se os seguintes pares de atributos com boa correlação:
+\begin{itemize}
+	\item "median$\_$age" e "aged$\_$65$\_$older"
+	\item "median$\_$age" e "aged$\_$70$\_$older"
+	\item "median$\_$age" e "extreme$\_$poverty"
+	\item "median$\_$age" e "human$\_$development$\_$index"
+	\item "aged$\_$65$\_$older" e "aged$\_$70$\_$older"
+	\item "extreme$\_$poverty" e "life$\_$expectancy"
+	\item "extreme$\_$poverty" e "human$\_$development$\_$index"
+	\item "total$\_$cases" e "new$\_$cases"
+	\item "total$\_$cases" e "total$\_$deaths"
+	\item "new$\_$cases" e "total$\_$deaths"
+\end{itemize}
+
 
 
 \subsection{Regressão linear simples entre “new$\_$cases” e “total$\_$deaths”}
@@ -125,7 +151,10 @@ R^{2}_{ajust.} = 0.6835\label{3a_r2ajust}
 \begin{equation}
 p-value = 2.2*10^{-16}\label{3a_pvalue}
 \end{equation}
-X
+Após a separação dos dados em dados de treino e teste, criou-se o modelo de regressão linear, cuja função obtida está apresentada em \eqref{3a_equation} a interseção é 1056.156 e o declive 2.991. 
+O R quadrado ajustado \eqref{3a_r2ajust} indica que a correlação entre os atributos new$\_$cases e total$\_$deaths não é muito forte, uma vez que o valor ainda se encontra afastado do valor 1. Isto significa que o modelo de regressão não é, de igual forma, muito forte.
+Por fim, o p-value \eqref{3a_pvalue}, sendo inferior a 0.05, permite concluir que a análise realizada sobre o R quadrado ajustado é estatisticamente significativa
+
 
 \subsubsection{Diagrama de dispersão e reta correspondente ao modelo de regressão}
 \begin{figure}[htbp]
@@ -133,20 +162,20 @@ X
 \caption{Gráfico de dispersão e reta de regressão linear}
 \label{3a}
 \end{figure}
-X
+Através do diagrama de dispersão da Fig. \ref{3a}, verifica-se que os pontos estão bastante dispersos em relação à reta correspondente ao modelo de regressão. Assim, não existe uma relação linear entre os dois atributos, tal como confirmado na alínea anterior.
 
 \subsubsection{Erro médio absoluto (MAE) e raiz quadrada do erro médio (RMSE)}
 \begin{equation}
-MAE = 2051.678\label{3a_r2ajust}
+MAE = 2051.678\label{3a_mae}
 \end{equation}
 \begin{equation}
-RMSE = 4613.71\label{3a_pvalue}
+RMSE = 4613.71\label{3a_rmse}
 \end{equation}
-X
+Para finalizar, a avaliação do modelo de regressão linear é, efetivamente, negativa. Isto confirma-se não só pelo modelo não ser muito forte, como também pelos valores do MAE \eqref{3a_mae} e RMSE \eqref{3a_rmse} serem bastante altos.
 
 
 \subsection{Previsão da esperança de vida aplicando regressão linear múltipla, árvore de regressão e rede neuronal.}
-X
+Utilizando os métodos de regressão linear múltipla, árvore de regressão e rede neuronal, pretendeu-se prever a esperança de vida através dos outros atributos presentes nos dados. Após a realização destes métodos, houve uma comparação entre todos com o objetivo de perceber aquele com melhor desempenho a prever a esperança de vida.
 
 \subsubsection{Regressão linear múltipla}
 Para a regressão linear múltipla utilizaram-se todos os atributos (excetuando o "continent" e "location", como referido anteriormente) para prever a esperança de vida.
@@ -348,17 +377,22 @@ A Matriz de Confusão e os valores provenientes da mesma da rede neuronal criada
 
 
 \subsubsection{K-vizinhos-mais-próximos}
-X
-Os resultados dos valores de avaliação para este modelo encontram-se na Fig.\ref{8c_confusionmatrix}.
+\begin{equation}
+k = round(\sqrt{nrow(dadosteste)})=12\label{8c_k}
+\end{equation}
+Antes da realização do algoritmo knn, foi necessária a separação da variável em estudo (“ClassedeRisco”) dos restantes dados de treino e teste. Após esta divisão, calculou-se o valor de k através da equação \eqref{8c_k}, com o resultado obtido presente na mesma.
+
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/08_5.png}}
 \caption{Matriz de confusão e valores de avaliação do modelo Knn}
 \label{8c_confusionmatrix}
 \end{figure}
-
+Com os dados preparados e o valor de k encontrado, procedeu-se à realização do algoritmo e obtiveram-se os resultados dos valores de avaliação para este modelo, visíveis na Fig.\ref{8c_confusionmatrix}.
 
 \subsubsection{Comparação dos modelos}
-X
+Com a realização destes três algoritmos e a posterior obtenção da matriz de confusão com os valores de \textit{Accuracy}, \textit{Precision} (na matriz de confusão referida como “Pos/Neg Pred Value”), \textit{Sensitivity} e \textit{Specificity}, sendo estes os máximos possíveis, conclui-se que todos os algoritmos tiverem um desempenho excelente, não tendo falhado nenhuma previsão durante o período de testagem. O valor de F1 resultante para todos os algoritmos é também de 1.
+Assim, este problema de classificação acabou por ser algo bastante simples para todos os algoritmos utilizados conseguirem prever os dados sem quaisquer tipos de erros.
+
 
 
 
