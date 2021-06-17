@@ -1,4 +1,6 @@
 # Libraries
+library(PerformanceAnalytics)
+library(corrplot)
 library(car)
 library(rpart)
 library(rpart.plot)
@@ -79,8 +81,11 @@ head(data.normal)
 
 
 # Exercício 2 --------------------------------------------------
-# Variáveis
+# Matriz de Correlação
+chart.Correlation(data[, 4:numberColumns], histogram = TRUE, pch = 19)
 
+# Correlogram (Visualização da Matriz de Correlação)
+corrplot(round(cor(data[, 4:numberColumns]), digits = 2), type = "upper", tl.cex = 0.5, tl.col = "black")
 
 
 
