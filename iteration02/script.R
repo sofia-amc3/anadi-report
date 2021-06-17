@@ -84,7 +84,7 @@ head(data.normal)
 # Matriz de Correlação
 chart.Correlation(data[, 4:numberColumns], histogram = TRUE, pch = 19)
 
-# Correlogram (Visualização da Matriz de Correlação)
+# Correlograma (Visualização da Matriz de Correlação)
 corrplot(round(cor(data[, 4:numberColumns]), digits = 2), type = "upper", tl.cex = 0.5, tl.col = "black")
 
 
