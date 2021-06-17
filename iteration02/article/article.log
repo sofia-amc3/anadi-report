@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  17 JUN 2021 00:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  17 JUN 2021 14:26
 entering extended mode
 **./article.tex
 (article.tex
@@ -428,6 +428,12 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box51
 ) (article.aux
 
+LaTeX Warning: Label `3a_r2ajust' multiply defined.
+
+
+LaTeX Warning: Label `3a_pvalue' multiply defined.
+
+
 LaTeX Warning: Label `4b' multiply defined.
 
 
@@ -504,13 +510,13 @@ LaTeX Info: Redefining \nameref on input line 32.
 \@outlinefile=\write3
 \openout3 = `article.out'.
 
-<images/matrix.png, id=119, 411.78844pt x 311.66437pt>
+<images/matrix.png, id=132, 411.78844pt x 311.66437pt>
 File: images/matrix.png Graphic file (type png)
 <use images/matrix.png>
-Package pdftex.def Info: images/matrix.png  used on input line 63.
+Package pdftex.def Info: images/matrix.png  used on input line 64.
 (pdftex.def)             Requested size: 239.39923pt x 181.1887pt.
 
-Underfull \hbox (badness 2913) in paragraph at lines 75--80
+Underfull \hbox (badness 2913) in paragraph at lines 78--83
 []\T1/ptm/m/n/10 A apren-di-za-gem au-to-má-tica divide-se em três áreas,
  []
 
@@ -518,121 +524,153 @@ Underfull \hbox (badness 2913) in paragraph at lines 75--80
 
 
  <./images/matrix.png>]
-<images/04_1.png, id=142, 418.56375pt x 415.5525pt>
-File: images/04_1.png Graphic file (type png)
-<use images/04_1.png>
-Package pdftex.def Info: images/04_1.png  used on input line 111.
-(pdftex.def)             Requested size: 239.39923pt x 237.67267pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 116
+<images/01.png, id=159, 696.35156pt x 405.76593pt>
+File: images/01.png Graphic file (type png)
+<use images/01.png>
+Package pdftex.def Info: images/01.png  used on input line 101.
+(pdftex.def)             Requested size: 239.39923pt x 139.49408pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 105
 .
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 116
+LaTeX Font Info:    Trying to load font information for U+msb on input line 105
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 2005) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+ \T1/ptm/m/it/10 C. Re-gres-são li-near sim-ples en-tre new$[]$cases e
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 116.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 116.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 116.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 116.
+
+<images/03.png, id=161, 598.48593pt x 546.54187pt>
+File: images/03.png Graphic file (type png)
+<use images/03.png>
+Package pdftex.def Info: images/03.png  used on input line 132.
+(pdftex.def)             Requested size: 239.39923pt x 218.6212pt.
+<images/04_1.png, id=162, 418.56375pt x 415.5525pt>
+File: images/04_1.png Graphic file (type png)
+<use images/04_1.png>
+Package pdftex.def Info: images/04_1.png  used on input line 155.
+(pdftex.def)             Requested size: 239.39923pt x 237.67267pt.
+
+Underfull \hbox (badness 2005) in paragraph at lines 160--161
 []\T1/ptm/m/n/10 No su-má-rio da fun-ção de re-gres-são ob-tida, pre-sente
  []
 
 
-Underfull \hbox (badness 3271) in paragraph at lines 116--117
-\T1/ptm/m/n/10 na Fig.[]2[], observam-se os co-e-fi-ci-en-tes ob-ti-dos e, tam-
+Underfull \hbox (badness 3271) in paragraph at lines 160--161
+\T1/ptm/m/n/10 na Fig.[]4[], observam-se os co-e-fi-ci-en-tes ob-ti-dos e, tam-
 
  []
 
-<images/04_2.png, id=150, 598.48593pt x 546.54187pt>
+[2 <./images/01.png> <./images/03.png>]
+<images/04_2.png, id=190, 598.48593pt x 546.54187pt>
 File: images/04_2.png Graphic file (type png)
 <use images/04_2.png>
-Package pdftex.def Info: images/04_2.png  used on input line 140.
+Package pdftex.def Info: images/04_2.png  used on input line 184.
 (pdftex.def)             Requested size: 239.39923pt x 218.6212pt.
-<images/04_3.png, id=151, 499.8675pt x 499.8675pt>
+<images/04_3.png, id=191, 499.8675pt x 499.8675pt>
 File: images/04_3.png Graphic file (type png)
 <use images/04_3.png>
-Package pdftex.def Info: images/04_3.png  used on input line 160.
+Package pdftex.def Info: images/04_3.png  used on input line 204.
 (pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
-<images/04_4.png, id=152, 499.8675pt x 499.8675pt>
+<images/04_4.png, id=192, 499.8675pt x 499.8675pt>
 File: images/04_4.png Graphic file (type png)
 <use images/04_4.png>
-Package pdftex.def Info: images/04_4.png  used on input line 173.
+Package pdftex.def Info: images/04_4.png  used on input line 217.
 (pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
+ [3 <./images/04_1.png> <./images/04_2.png (PNG copy)> <./images/04_3.png>]
 File: images/04_4.png Graphic file (type png)
 <use images/04_4.png>
-Package pdftex.def Info: images/04_4.png  used on input line 186.
+Package pdftex.def Info: images/04_4.png  used on input line 230.
 (pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
 
-Underfull \hbox (badness 1596) in paragraph at lines 187--187
-\T1/ptm/m/n/8 Figura 6.  []Rede neu-ro-nal com 5 e 3 nós in-ter-nos para a va-r
+Underfull \hbox (badness 1596) in paragraph at lines 231--231
+\T1/ptm/m/n/8 Figura 8.  []Rede neu-ro-nal com 5 e 3 nós in-ter-nos para a va-r
 iá-vel
  []
 
-[2 <./images/04_1.png> <./images/04_2.png (PNG copy)>] [3 <./images/04_3.png> <
-./images/04_4.png>]
-<images/08_1.png, id=197, 539.01375pt x 494.59781pt>
+[4 <./images/04_4.png>]
+<images/08_1.png, id=230, 539.01375pt x 494.59781pt>
 File: images/08_1.png Graphic file (type png)
 <use images/08_1.png>
-Package pdftex.def Info: images/08_1.png  used on input line 278.
+Package pdftex.def Info: images/08_1.png  used on input line 322.
 (pdftex.def)             Requested size: 239.39923pt x 219.67647pt.
-<images/08_2.png, id=199, 389.20406pt x 336.50719pt>
+<images/08_2.png, id=232, 389.20406pt x 336.50719pt>
 File: images/08_2.png Graphic file (type png)
 <use images/08_2.png>
-Package pdftex.def Info: images/08_2.png  used on input line 284.
+Package pdftex.def Info: images/08_2.png  used on input line 328.
 (pdftex.def)             Requested size: 239.39923pt x 206.98918pt.
-<images/08_3.png, id=202, 499.8675pt x 499.8675pt>
+<images/08_3.png, id=235, 499.8675pt x 499.8675pt>
 File: images/08_3.png Graphic file (type png)
 <use images/08_3.png>
-Package pdftex.def Info: images/08_3.png  used on input line 294.
+Package pdftex.def Info: images/08_3.png  used on input line 338.
 (pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
-<images/08_4.png, id=204, 392.21532pt x 339.51843pt>
+<images/08_4.png, id=237, 392.21532pt x 339.51843pt>
 File: images/08_4.png Graphic file (type png)
 <use images/08_4.png>
-Package pdftex.def Info: images/08_4.png  used on input line 300.
+Package pdftex.def Info: images/08_4.png  used on input line 344.
 (pdftex.def)             Requested size: 239.39923pt x 207.23544pt.
-<images/08_5.png, id=206, 392.21532pt x 339.51843pt>
+<images/08_5.png, id=239, 392.21532pt x 339.51843pt>
 File: images/08_5.png Graphic file (type png)
 <use images/08_5.png>
-Package pdftex.def Info: images/08_5.png  used on input line 310.
+Package pdftex.def Info: images/08_5.png  used on input line 354.
 (pdftex.def)             Requested size: 239.39923pt x 207.23544pt.
- [4 <./images/08_1.png (PNG copy)> <./images/08_2.png>]
-Underfull \hbox (badness 1509) in paragraph at lines 331--332
+
+Underfull \hbox (badness 1509) in paragraph at lines 378--379
 []\T1/ptm/m/n/8 McGregor, M, (2020, 21 de se-tem-bro). \T1/ptm/m/it/8 8 Clus-te
 -ring Al-go-rithms
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 \T1/ptm/m/it/8 in Ma-chine Le-ar-ning that All Data Sci-en-tists Should
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 \T1/ptm/m/it/8 Know\T1/ptm/m/n/8 . Free Code Camp. []$https : / / www . freecod
 ecamp . org / news /
  []
 
 
-Overfull \hbox (34.24866pt too wide) in paragraph at lines 331--332
+Overfull \hbox (34.24866pt too wide) in paragraph at lines 378--379
 \T1/ptm/m/n/8 8-[]clustering-[]algorithms-[]in-[]machine-[]learning-[]that-[]al
 l-[]data-[]scientists-[]should-[]know/$[] 
  []
 
-
-Underfull \hbox (badness 4024) in paragraph at lines 333--334
+[5 <./images/08_1.png (PNG copy)> <./images/08_2.png>]
+Underfull \hbox (badness 4024) in paragraph at lines 380--381
 []\T1/ptm/m/n/8 Shaier, S. (2019, 18 de março). \T1/ptm/m/it/8 ML Al-go-rithms:
  One SD -
  []
 
 
-Underfull \hbox (badness 6477) in paragraph at lines 333--334
+Underfull \hbox (badness 6477) in paragraph at lines 380--381
 \T1/ptm/m/it/8 As-so-ci-a-tion Rule Le-ar-ning Al-go-rithms\T1/ptm/m/n/8 . Towa
 rds Data Sci-ence.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
 []$\T1/ptm/m/n/8 https : / / medium . com / @Shaier / ml-[]algorithms-[]one-[]s
 d-[] % CF %
  []
@@ -648,21 +686,21 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5 <./images/08_3.png> <./images/08_4.png> <./images/08_5.png>] (article.aux)
+[6 <./images/08_3.png> <./images/08_4.png> <./images/08_5.png>] (article.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `article.out' has not changed.
-(rerunfilecheck)             Checksum: 57844AC172E9182A8910646326234EB1;7729.
+(rerunfilecheck)             Checksum: 39B682984FE86F29AD4B619EF03508CC;10354.
  ) 
 Here is how much of TeX's memory you used:
- 11661 strings out of 479321
- 170371 string characters out of 2866501
- 499352 words of memory out of 3000000
- 28868 multiletter control sequences out of 15000+600000
+ 11699 strings out of 479321
+ 170881 string characters out of 2866501
+ 505208 words of memory out of 3000000
+ 28891 multiletter control sequences out of 15000+600000
  511108 words of font info for 137 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 71i,9n,74p,1039b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,9n,74p,1108b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
@@ -672,9 +710,9 @@ am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKT
 eX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/ti
 mes/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/P
 rogram Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (5 pages, 510640 bytes).
+Output written on article.pdf (6 pages, 562535 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
- 283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
