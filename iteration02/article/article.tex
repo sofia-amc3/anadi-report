@@ -54,11 +54,12 @@ Através de dados retirados de uma base de dados internacional, pretende-se prev
 \end{abstract}
 
 \begin{IEEEkeywords}
-análise, dados, COVID-19, pandemia, exploração, inferência, correlação, regressão, classificação, aprendizagem automática, árvores de decisão, redes neuronais, modelo knn, avaliação
+análise, dados, COVID-19, pandemia, exploração, inferência, correlação, regressão, classificação, aprendizagem automática, árvores de decisão, redes neuronais, knn, avaliação
 \end{IEEEkeywords}
 
 \section{Introdução} %-------------------------------------
-X
+No âmbito da pandemia atual, foram extraídos da base de dados internacional “Our World in Data” \cite{database}, dinamizada pela universidade Johns Hopkins University (JHU), dados reais incidentes em 206 países, contendo indicadores acerca da população dos mesmos. 
+Pretende-se, recorrendo a processos de aprendizagem automática, prever o impacto da COVID-19 na população mundial, com o objetivo de avaliar os algoritmos quanto à sua aproximação à realidade. Para isso, serão utilizados modelos de regressão e classificação, nomeadamente regressão linear simples e múltipla, árvores de decisão, redes neuronais e knn.
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/matrix.png}}
 \caption{Matriz de risco}
@@ -67,8 +68,9 @@ X
 
 
 
-\section{Metodologia de Trabalho} %-------------------------------------
-Tendo por base o ficheiro “countryagregatedata.csv”\cite{dataFile}, foi criado um script em R separado em dois tipos de modelos: Regressão e Classificação. Em cada um destes estão presentes alíneas independentes que pretendem utilizar algoritmos de aprendizagem automática sobre os dados referentes ao ficheiro. Após a conclusão das diferentes alíneas, foi realizada a comparação e avaliação dos mesmos, cujas conclusões encontram-se nas secções V e VI deste artigo. 
+\section{Metodologia de Trabalho}
+\label{methodology} %-------------------------------------
+Tendo por base o ficheiro “countryagregatedata.csv”\cite{dataFile}, foi criado um script em R separado em dois tipos de modelos: Regressão e Classificação. Em cada um destes estão presentes alíneas independentes que utilizam algoritmos de aprendizagem automática sobre os dados referentes ao ficheiro. Após a conclusão das diferentes alíneas, foi realizada a comparação e avaliação dos algoritmos, onde a discussão de resultados se encontra nas secções \ref{regression} e \ref{classification} deste artigo. 
 
 
 
@@ -82,23 +84,64 @@ Para a avaliação dos algoritmos de aprendizagem automática destacam-se: a Mat
 
 
 \section{Exploração e Preparação dos Dados} %-------------------------------------
-X
+No início do script em R estão presentes as importações de bibliotecas necessárias para a realização dos algoritmos, avaliações e testes utilizados. De seguida, encontram-se funções criadas para calcular valores de avaliação dos algoritmos, assim como para visualização dos mesmos na consola.
+Como já referido na secção \ref{methodology}, o script está organizado por 2 partes (Regressão e Classificação), cada uma contendo alíneas em que são utilizados algoritmos diferentes e feitas comparações e/ou avaliações. Nestas alíneas são obtidos os dados de treino e teste e a sua posterior incorporação nos algoritmos. Na parte final é feita a avaliação do algoritmo utilizado e, no caso de ser mais do que um, é feita a comparação entre os mesmos.
+De forma a igualar a dimensão dos dados de treino e teste perante todos os algoritmos, utilizou-se o critério holdout 70\% treino e 30\% teste em todos os pontos, onde também foram eliminadas as colunas “continent” e “location” uma vez que o algoritmo de redes neuronais não é capaz de processar dados classificados (em texto) e, também, devido à falta de relevância que estes possuem sobre os algoritmos utilizados. Assim, todos os algoritmos utilizam os mesmos dados de teste em cada ponto para uma comparação justa.
 
 
 
-\section{Análise e Discussão de Resultados: Regressão} %-------------------------------------
-X
+
+\section{Análise e Discussão de Resultados: Regressão}
+\label{regression} %-------------------------------------
 
 \subsection{Carregamento do ficheiro e a dimensão e sumário dos dados.} 
 \label{ex01}
+Após a importação dos dados contidos no ficheiro, é possível verificar a sua dimensão, sendo esta de 209 linhas (cada uma referente a um país) e 25 colunas, referentes a indicadores acerca da população.
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/01.png}}
+\caption{Sumário dos dados importados}
+\label{summary}
+\end{figure}
+\begin{equation}
+y = \frac{y-min_{y}}{max_{y}-min_{y}} \label{norm}
+\end{equation}
+Através do sumário dos dados (Fig. X) é possível perceber que estes precisarão de ser normalizados para serem incluídos nos algoritmos de redes neuronais e knn, pelo que se procedeu à normalização dos mesmos através da função representada pela equação \eqref{norm}.
+Na normalização dos dados foram excluídas as colunas “continent” e “location” por não apresentarem relevância na aprendizagem automática e por não serem dados numéricos. Estes dados foram utilizados ao longo dos pontos do artigo onde a sua inclusão no algoritmo era necessária.
+
+
+\subsection{Diagrama de correlação entre todos os atributos}
 X
 
 
-\subsection{X}
+\subsection{Regressão linear simples entre “new$\_$cases” e “total$\_$deaths”}
+
+\subsubsection{Função linear resultante}
+\begin{equation}
+y = 1056.156 + 2.991x\label{3a_equation}
+\end{equation}
+\begin{equation}
+R^{2}_{ajust.} = 0.6835\label{3a_r2ajust}
+\end{equation}
+\begin{equation}
+p-value = 2.2*10^{-16}\label{3a_pvalue}
+\end{equation}
 X
 
+\subsubsection{Diagrama de dispersão e reta correspondente ao modelo de regressão}
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/03.png}}
+\caption{Gráfico de dispersão e reta de regressão linear}
+\label{3a}
+\end{figure}
+X
 
-\subsection{X}
+\subsubsection{Erro médio absoluto (MAE) e raiz quadrada do erro médio (RMSE)}
+\begin{equation}
+MAE = 2051.678\label{3a_r2ajust}
+\end{equation}
+\begin{equation}
+RMSE = 4613.71\label{3a_pvalue}
+\end{equation}
 X
 
 
@@ -230,8 +273,8 @@ O teste foi realizado com as hipóteses referidas em \eqref{4_hypothesis} e tend
 
 
 
-\section{Análise e Discussão de Resultados: Classificação} % ------------------------------------------------------
-X
+\section{Análise e Discussão de Resultados: Classificação} 
+\label{classification} % ------------------------------------------------------
 
 \subsection{Derivação de um novo atributo NiveldeRisco, discretizando o atributo Taxa de Transmissibilidade, em 2 classes: low e high usando como valor de corte a média do atributo.}
 \label{ex05}
@@ -242,7 +285,7 @@ Com o objetivo de separar os dados da Taxa de Transmissibilidade em duas classes
 Através deste valor foi possível fazer a separação dos dados, onde o valor de low ocorre em 75 países e o valor high ocorre em 134 países. Isto permite concluir que a maioria dos países presentes nos dados têm um índice de transmissibilidade superior a 1 e superior à própria média dos países.
 
 
-\subsection{X}
+\subsection{Avaliação da capacidade preditiva, através do k-fold cross validation, relativamente ao novo atributo NiveldeRisco usando árvore de regressão, rede neuronal e k-vizinhos-mais-próximos.}
 \subsubsection{Árvore de decisão}
 X
 
@@ -323,6 +366,8 @@ X
 X
 
 \begin{thebibliography}{00}
+
+\bibitem{database} Ritchie, H. (2021, 31 de maio). \textit{Coronavirus Source Data}. Our World in Data. \url{https://ourworldindata.org/coronavirus-source-data}
 
 \bibitem{dataFile} Our World in Data (2021, 31 de maio). [Ficheiro Csv]
 
