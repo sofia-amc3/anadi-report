@@ -223,7 +223,8 @@ split <- function (x) {
   if (x > rt.average)  "high"
   else  "low"
 }
-data$NiveldeRisco <- simplify2array(lapply(data$reproduction_rate, split))
+NiveldeRisco <- simplify2array(lapply(data$reproduction_rate, split))
+data$NiveldeRisco <- as.factor(NiveldeRisco)
 numberColumns <- numberColumns + 1
 
 # Verificação da frequência das duas classes
@@ -233,18 +234,134 @@ table(data$NiveldeRisco)
 
 # Exercício 6 --------------------------------------------------
 # Variáveis
-#data$NiveldeRisco <- as.numeric(as.factor(data$NiveldeRisco))
+set.seed(789)
+index <- sample(1:numberRows, as.integer(0.7 * numberRows))
+data.train <- data[index, 4:numberColumns]
+data.test <- data[-index, 4:numberColumns]
+
+accuracy <- function (test, predict) {
+  m.conf <- table(test, predict)
+  (m.conf[1, 1] + m.conf[2, 2]) / sum(m.conf)
+}
 
 
 # Alínea a)
+# Árvore de Regressão
+rpart.model <- rpart(NiveldeRisco ~ ., method = "class", data = data.train)
+par(xpd = TRUE)
+plot(rpart.model, compress = TRUE)
+text(rpart.model, use.n = TRUE)
+rpart.plot(rpart.model)
 
+# Previsão
+rpart.predict <- predict(rpart.model, data.test, type = "class")
+head(rpart.predict)
+
+# Obtenção da Accuracy
+rpart.accuracy <- accuracy(as.factor(data.test$NiveldeRisco), rpart.predict)
+rpart.accuracy
 
 
 # Alínea b)
+# Adição da ClassedeRisco aos dados normalizados
+data.normal$NiveldeRisco <- as.factor(NiveldeRisco)
+# Criação de colunas que diferenciam as classes de risco em valores de true/false
+data.normal$high <- NiveldeRisco == "high"
+data.normal$low <- NiveldeRisco == "low"
 
+# Obtenção de novos dados de treino e teste através dos dados normalizados
+data.train <- data.normal[index, ]
+data.test <- data.normal[-index, ]
+
+neural.model <- neuralnet(NiveldeRisco ~ ., data = data.train, hidden = 3)
+plot(neural.model)
+
+model.results <- compute(neural.model, data.test)
+head(model.results$net.result)
+neural.predict <- model.results$net.result
+head(neural.predict)
+
+idx <- apply(neural.predict, 1, which.max)
+predicted <- as.factor(c('high', 'low')[idx])
+
+# Obtenção da Accuracy
+neural.accuracy <- accuracy(data.test$NiveldeRisco, predicted)
+neural.accuracy
 
 
 # Alínea c)
+columnIndex <- which(colnames(data.train) == "NiveldeRisco")
+NiveldeRisco.train <- data.train[, columnIndex]
+NiveldeRisco.test <- data.test[, columnIndex]
+
+# Remoção da variável ClassedeRisco
+data.train <- data.train[, -columnIndex]
+data.test <- data.test[, -columnIndex]
+
+# Obtenção do k através da raiz do número de linhas do treino
+k <- round(sqrt(nrow(data.train)))
+knn <- knn(train = data.train, test = data.test, cl = NiveldeRisco.train, k = k)
+
+# Obtenção da Accuracy
+knn.accuracy <- accuracy(NiveldeRisco.test, knn)
+knn.accuracy
+
+
+# k-fold cross validation
+nrFolds <- 10
+neural.accuracy <- numeric()
+knn.accuracy <- numeric()
+
+folds <- rep_len(1:nrFolds, nrow(data))
+folds <- sample(folds, length(folds))
+
+for (i in 1:nrFolds) {
+  fold <- which(folds == i)
+  data.train <- data.normal[fold, ]
+  data.test <- data.normal[-fold, ]
+  
+  # Rede Neuronal
+  neural.model <- neuralnet(NiveldeRisco ~ ., data = data.train, hidden = 3)
+  
+  neural.predict <- compute(neural.model, data.test)$net.result
+  idx <- apply(neural.predict, 1, which.max)
+  predicted <- as.factor(c('high', 'low')[idx])
+  
+  neural.accuracy[i] <- accuracy(data.test$NiveldeRisco, predicted)
+  
+  # Knn
+  NiveldeRisco.train <- data.train[, columnIndex]
+  NiveldeRisco.test <- data.test[, columnIndex]
+  knn <- knn(train = data.train[, -columnIndex], test = data.test[, -columnIndex], cl = NiveldeRisco.train, k = k)
+  levels(knn) <- c("high", "low")
+  knn.accuracy[i] <- accuracy(NiveldeRisco.test, knn)
+}
+
+print("Rede Neuronal:")
+cat(paste("taxa de acerto média: ", 100 * round(mean(neural.accuracy), 4), 
+          "%, desvio : ", round(sd(neural.accuracy), 3)))
+
+print("Knn:")
+cat(paste("taxa de acerto média: ", 100 * round(mean(knn.accuracy), 4), 
+          "%, desvio : ", round(sd(knn.accuracy), 3)))
+
+
+# Comparação dos resultados obtidos pelos modelos
+accuracies <- data.frame(
+  Neural = neural.accuracy,
+  Knn = knn.accuracy
+)
+Saccuracies <- stack(accuracies)
+
+# Testes à normalidade
+shapiro.test(neural.accuracy - knn.accuracy)
+lillie.test(neural.accuracy - knn.accuracy)
+
+# Teste à igualdade das variâncias
+leveneTest(Saccuracies[, 1] ~ Saccuracies[, 2])
+
+# Teste comparador das duas médias
+t.test(neural.accuracy, knn.accuracy, var.equal = FALSE, alternative = "two.sided")
 
 
 
@@ -317,7 +434,6 @@ data.test <- data.normal[-index, ]
 neural.model <- neuralnet(ClassedeRisco ~ ., data = data.train, hidden = 3)
 plot(neural.model)
 
-columnIndex <- 23
 model.results <- compute(neural.model, data.test)
 head(model.results$net.result)
 neural.predict <- model.results$net.result
