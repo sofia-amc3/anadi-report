@@ -316,22 +316,63 @@ Através deste valor foi possível fazer a separação dos dados, onde o valor d
 
 \subsection{Avaliação da capacidade preditiva, através do k-fold cross validation, relativamente ao novo atributo NiveldeRisco usando árvore de regressão, rede neuronal e k-vizinhos-mais-próximos.}
 \subsubsection{Árvore de decisão}
-X
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/06_1.png}}
+\caption{Árvore de decisão para a varíavel NiveldeRisco}
+\label{6a_rpart}
+\end{figure}
+\begin{equation}
+Accuracy = 0.984127\label{6a_accuracy}
+\end{equation}
+Com a criação do novo atributo NiveldeRisco, procedeu-se à criação de uma árvore de regressão que pretende prever o mesmo, estando o resultado da árvore o presente na Fig. \ref{6a_rpart} e a avaliação da mesma através da accuracy na equação \eqref{6a_rpart}.
 
 
 \subsubsection{Rede neuronal}
-X
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.95\columnwidth]{images/06_2.png}}
+\caption{Rede neuronal com 3 nós internos para a varíavel NiveldeRisco}
+\label{6b_neural}
+\end{figure}
+\begin{equation}
+Accuracy = 1\label{6b_accuracy}
+\end{equation}
+Após a criação da árvore de regressão, construiu-se uma rede neuronal com 3 nós internos, presente na Fig. \ref{6b_neural}, e obteve-se o respetivo valor de accuracy \eqref{6b_accuracy} para posterior avaliação e comparação.
 
 
 \subsubsection{K-vizinhos-mais-próximos}
-X
+\begin{equation}
+k = round(\sqrt{nrow(dadosteste)})=12\label{6c_k}
+\end{equation}
+\begin{equation}
+Accuracy = 1\label{6c_accuracy}
+\end{equation}
+Por último, utilizou-se o algoritmo knn com k igual ao demonstrado na equação \eqref{6c_k} e calculou-se novamente a accuracy do modelo, sendo esta disposta na equação \eqref{6c_accuracy}.
 
 
 \subsubsection{k-fold cross validation}
-X
+Os dois melhores algoritmos entre os três realizados são a rede neuronal e o knn, uma vez que possuem uma taxa de acerto perfeita, em comparação com a árvore de decisão que apresenta um valor bastante bom, mas não perfeito.
+Com isto, procedeu-se a uma posterior avaliação usando o método k-fold cross validation para estes dois melhores modelos. Na rede neuronal, a taxa de acerto média obtida foi de 99.68\% e o seu desvio 0.004. Relativamente ao modelo knn, a taxa de acerto média foi de 87.07\% e desvio 0.168. Assim, a rede neuronal apresenta melhores resultados, mesmo em várias repetições, relativamente ao knn, sendo considerado o melhor algoritmo destes três.
+
 
 \subsubsection{Teste aos resultados dos dois melhores modelos}
-X
+\begin{equation}
+  \begin{array}{l}
+	Shapiro-Wilk_{p-value}=0.0009287 \\
+	Lillierfors_{p-value}=0.004461
+	\end{array}\label{6_shapirolillie}
+\end{equation}
+\begin{equation}
+Levene_{p-value}=0.01338\label{6_levene}
+\end{equation}
+Para concluir este ponto, realizou-se um teste às taxas de acerto obtidas pelo k-fold cross validation com o objetivo de concluir se existe diferença significativa entre os dois modelos. Antes da realização do teste às médias, verificou-se a normalidade dos dados através dos testes de Shapiro-Wilk e Lilliefors \eqref{6_shapirolillie}, que obtiveram p-values inferiores a 0.05, indicando que os dados não seguem uma distribuição normal. Com isto, procedeu-se ao teste de Levene para verificar a igualdade das variâncias, tendo este resultado também num p-value \eqref{6_levene} inferior a 0.05, o que permite concluir que as variâncias dos dados são diferentes.
+
+\begin{equation}
+  \begin{array}{l}
+    H_{0}:\mu _{accuracy_neural} - \mu _{accuracy_knn}=0 \\ 
+    H_{1}:\mu _{accuracy_neural} - \mu _{accuracy_knn}\neq 0
+  \end{array}\label{4_hypothesis}
+\end{equation}
+Por último, realizou-se um t.test com variâncias desconhecidas e diferentes e obteve-se o p-value de 0.04147, o que significa que há diferenças entre ambos os dados, porém, como o valor é próximo de 0.05, a diferença é reduzida.
 
 
 \subsection{Derivação do novo atributo ClassedeRisco, discretizando os atributos Taxa de Transmissibilidade R(t) e Incidência.}
@@ -377,10 +418,7 @@ A Matriz de Confusão e os valores provenientes da mesma da rede neuronal criada
 
 
 \subsubsection{K-vizinhos-mais-próximos}
-\begin{equation}
-k = round(\sqrt{nrow(dadosteste)})=12\label{8c_k}
-\end{equation}
-Antes da realização do algoritmo knn, foi necessária a separação da variável em estudo (“ClassedeRisco”) dos restantes dados de treino e teste. Após esta divisão, calculou-se o valor de k através da equação \eqref{8c_k}, com o resultado obtido presente na mesma.
+Antes da realização do algoritmo knn, foi necessária a separação da variável em estudo (“ClassedeRisco”) dos restantes dados de treino e teste. Após esta divisão, calculou-se o valor de k através da equação \eqref{6c_k}, com o resultado obtido presente na mesma.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/08_5.png}}
