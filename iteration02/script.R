@@ -48,7 +48,7 @@ numberRows <- dimension[1]
 numberColumns <- dimension[2]
 cat("Dimensão\nLinhas: ", dimension[1], "\t Colunas: ", dimension[2])
 
-#Sumário
+# Sumário
 summary(data)
 
 # Normalização os dados
@@ -95,10 +95,10 @@ abline(slr.model$coefficients[1], slr.model$coefficients[2], col = "red")
 slr.pred <- predict(slr.model, data.test)
 d <- data.test$total_deaths - slr.pred
 
-# Erro Médio Absoluto
+# Erro Médio Absoluto (MAE)
 printMAE("Regressão Linear Simples", d)
 
-# Raiz Quadrada do Erro Médio
+# Raiz Quadrada do Erro Médio (RMSE)
 printRMSE("Regressão Linear Simples", d)
 
 
@@ -118,35 +118,35 @@ mlr.model
 summary(mlr.model)
 summary(mlr.model)$coefficient
 
-# Previsão (avaliação do método)
+# Previsão (Avaliação do método)
 mlr.predict <- predict(mlr.model, data.test)
 mlr.predict
 mlr.d <- data.test$life_expectancy - mlr.predict
 
-# Erro Médio Absoluto
+# Erro Médio Absoluto (MAE)
 printMAE("Regressão Linear Múltipla", mlr.d);
 
-# Raiz Quadrada do Erro Médio
+# Raiz Quadrada do Erro Médio (RMSE)
 printRMSE("Regressão Linear Múltipla", mlr.d);
 
 
 # Alínea b)
-# Obtenção da árvore de Regressão
+# Obtenção da Árvore de Regressão
 rpart.model <- rpart(life_expectancy ~ ., method = "anova", data = data.train)
 rpart.model
 
-# Visualização da árvore de Regressão
+# Visualização da Árvore de Regressão
 rpart.plot(rpart.model, digits = 3)
 rpart.plot(rpart.model, digits = 4, fallen.leaves = TRUE, type = 3, extra = 101)
 
-# Previsão (avaliação do método)
+# Previsão (Avaliação do método)
 rpart.predict <- predict(rpart.model, data.test)
 rpart.d <- rpart.predict - data.test$life_expectancy
 
-# Erro Médio Absoluto
+# Erro Médio Absoluto (MAE)
 printMAE("Árvore de Regressão", rpart.d);
 
-# Raiz Quadrada do Erro Médio
+# Raiz Quadrada do Erro Médio (RMSE)
 printRMSE("Árvore de Regressão", rpart.d);
 
 
@@ -156,7 +156,7 @@ data.train <- data.normal[index, ]
 data.test <- data.normal[-index, ]
 columnIndex <- which(colnames(data.test) == "life_expectancy")
 
-# Função que cria uma rede neural e apresenta o MAE e RMSE
+# Função que cria uma rede neuronal e apresenta o MAE e RMSE
 neuralNetwork <- function(hidden) {
   neural.model <- neuralnet(life_expectancy ~ ., data = data.train, hidden = hidden)
   plot(neural.model)
@@ -172,10 +172,10 @@ neuralNetwork <- function(hidden) {
   # Cálculo do MAE e RMSE
   d <- neural.predict - data.test$life_expectancy
   
-  # Erro Médio Absoluto
+  # Erro Médio Absoluto (MAE)
   printMAE("Árvore de Regressão", d);
   
-  # Raiz Quadrada do Erro Médio
+  # Raiz Quadrada do Erro Médio (RMSE)
   printRMSE("Árvore de Regressão", d);
   
   # Retorna os erros das previsões
@@ -184,7 +184,7 @@ neuralNetwork <- function(hidden) {
 
 neural.d <- neuralNetwork(1) # Rede neuronal com 1 nó interno
 neuralNetwork(4) # Rede neuronal com 4 nós internos
-neuralNetwork(c(3, 5)) # Rede neuronal com 2 níveis internos com 3 e 5 nós
+neuralNetwork(c(3, 5)) # Rede neuronal com 2 níveis internos de 3 e 5 nós
 
 # Comparação dos resultados obtidos pelos modelos
 # Transformação dos erros para valores absolutos (positivos)
@@ -305,7 +305,7 @@ knn.accuracy <- accuracy(NiveldeRisco.test, knn)
 knn.accuracy
 
 
-# k-fold cross validation
+# K-fold Cross Validation
 nrFolds <- 10
 neural.accuracy <- numeric()
 knn.accuracy <- numeric()

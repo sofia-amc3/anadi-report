@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  18 JUN 2021 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  18 JUN 2021 18:02
 entering extended mode
 **./article.tex
 (article.tex
@@ -742,17 +742,20 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 [8 <./images/08_5.png>] (article.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `article.out' has not changed.
-(rerunfilecheck)             Checksum: 952ABFFDF6F21605F443C776BEABDFD5;10313.
+(rerunfilecheck)             Checksum: 1681B9878EAFA89C08C34D59C40B5094;10368.
  ) 
 Here is how much of TeX's memory you used:
- 11762 strings out of 479321
- 175255 string characters out of 2853721
- 504500 words of memory out of 3000000
- 28936 multiletter control sequences out of 15000+600000
+ 11768 strings out of 479321
+ 175351 string characters out of 2853721
+ 504504 words of memory out of 3000000
+ 28942 multiletter control sequences out of 15000+600000
  511108 words of font info for 137 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 71i,9n,74p,1108b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,9n,74p,1110b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.e
 nc}<C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmex10.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/typ
@@ -768,7 +771,7 @@ ams/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local
 /Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/SAP-PSC6-G7/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/SAP-PSC6-G7/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (8 pages, 705601 bytes).
+Output written on article.pdf (8 pages, 706145 bytes).
 PDF statistics:
  378 PDF objects out of 1000 (max. 8388607)
  97 named destinations out of 1000 (max. 500000)

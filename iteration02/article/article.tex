@@ -89,7 +89,7 @@ De forma a igualar a dimensão dos dados de treino e teste perante todos os algo
 \section{Análise e Discussão de Resultados: Regressão}
 \label{regression} %-------------------------------------
 
-\subsection{Carregamento do ficheiro, dimensão e sumário dos dados.} 
+\subsection{Carregamento do ficheiro, dimensão e sumário dos dados} 
 \label{ex01}
 Após a importação dos dados contidos no ficheiro, é possível verificar a sua dimensão, sendo esta de 209 linhas (cada uma referente a um país) e 25 colunas, referentes a indicadores acerca da população.
 \begin{figure}[htbp]
@@ -169,7 +169,7 @@ RMSE = 4613.71\label{3a_rmse}
 Para finalizar, a avaliação do modelo de regressão linear é, efetivamente, negativa. Isto confirma-se não só pelo modelo não ser muito forte, como também pelos valores do MAE \eqref{3a_mae} e RMSE \eqref{3a_rmse} serem bastante altos.
 
 
-\subsection{Previsão da esperança de vida aplicando regressão linear múltipla, árvore de regressão e rede neuronal.}
+\subsection{Previsão da esperança de vida aplicando regressão linear múltipla, árvore de regressão e redes neuronais}
 Utilizando os métodos de regressão linear múltipla, árvore de regressão e rede neuronal, pretendeu-se prever a esperança de vida através dos outros atributos presentes nos dados. Após a realização destes métodos, houve uma comparação entre todos com o objetivo de perceber aquele com melhor desempenho a prever a esperança de vida.
 
 \subsubsection{Regressão linear múltipla}
@@ -300,16 +300,16 @@ O teste foi realizado com as hipóteses referidas em \eqref{4_hypothesis} e tend
 \section{Análise e Discussão de Resultados: Classificação} 
 \label{classification} % ------------------------------------------------------
 
-\subsection{Derivação de um novo atributo NiveldeRisco, discretizando o atributo Taxa de Transmissibilidade, em 2 classes: low e high usando como valor de corte a média do atributo.}
+\subsection{Derivação de um novo atributo "NiveldeRisco", discretizando o atributo Taxa de Transmissibilidade, em 2 classes: low e high usando como valor de corte a média do atributo.}
 \label{ex05}
 Com o objetivo de separar os dados da Taxa de Transmissibilidade em duas classes, obteve-se o valor da média dos mesmos \eqref{5}.
 \begin{equation}
 \mu = 1.057654\label{5}
 \end{equation}
-Através deste valor foi possível fazer a separação dos dados, onde o valor de low ocorre em 75 países e o valor high ocorre em 134 países. Isto permite concluir que a maioria dos países presentes nos dados têm um índice de transmissibilidade superior a 1 e superior à própria média dos países.
+Através deste valor foi possível fazer a separação dos dados, onde o valor de \textit{low} ocorre em 75 países e o valor \textit{high} ocorre em 134 países. Isto permite concluir que a maioria dos países presentes nos dados têm um índice de transmissibilidade superior a 1 e superior à própria média dos países.
 
 
-\subsection{Avaliação da capacidade preditiva, através do k-fold cross validation, relativamente ao novo atributo NiveldeRisco usando árvore de regressão, rede neuronal e k-vizinhos-mais-próximos.}
+\subsection{Avaliação da capacidade preditiva, através do k-fold cross validation, relativamente ao novo atributo "NiveldeRisco" usando árvore de regressão, rede neuronal e k-vizinhos-mais-próximos.}
 \subsubsection{Árvore de decisão}
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/06_1.png}}
@@ -319,7 +319,7 @@ Através deste valor foi possível fazer a separação dos dados, onde o valor d
 \begin{equation}
 Accuracy = 0.984127\label{6a_accuracy}
 \end{equation}
-Com a criação do novo atributo NiveldeRisco, procedeu-se à criação de uma árvore de regressão que pretende prever o mesmo, estando o resultado da árvore o presente na Fig. \ref{6a_rpart} e a avaliação da mesma através da accuracy na equação \eqref{6a_rpart}.
+Com a criação do novo atributo "NiveldeRisco", procedeu-se à criação de uma árvore de regressão que pretende prever o mesmo, estando o resultado da árvore o presente na Fig. \ref{6a_rpart} e a avaliação da mesma através da accuracy na equação \eqref{6a_accuracy}.
 
 
 \subsubsection{Rede neuronal}
@@ -331,7 +331,7 @@ Com a criação do novo atributo NiveldeRisco, procedeu-se à criação de uma �
 \begin{equation}
 Accuracy = 1\label{6b_accuracy}
 \end{equation}
-Após a criação da árvore de regressão, construiu-se uma rede neuronal com 3 nós internos, presente na Fig. \ref{6b_neural}, e obteve-se o respetivo valor de accuracy \eqref{6b_accuracy} para posterior avaliação e comparação.
+Após a criação da árvore de regressão, construiu-se uma rede neuronal com 3 nós internos, presente na Fig. \ref{6b_neural}, e obteve-se o respetivo valor de \textit{accuracy} \eqref{6b_accuracy} para posterior avaliação e comparação.
 
 
 \subsubsection{K-vizinhos-mais-próximos}
@@ -341,12 +341,12 @@ k = round(\sqrt{nrow(dadosteste)})=12\label{6c_k}
 \begin{equation}
 Accuracy = 1\label{6c_accuracy}
 \end{equation}
-Por último, utilizou-se o algoritmo knn com k igual ao demonstrado na equação \eqref{6c_k} \cite{knn} e calculou-se novamente a accuracy do modelo, sendo esta disposta na equação \eqref{6c_accuracy}.
+Por último, utilizou-se o algoritmo knn com k igual ao demonstrado na equação \eqref{6c_k} \cite{knn} e calculou-se novamente a \textit{accuracy} do modelo, sendo esta disposta na equação \eqref{6c_accuracy}.
 
 
-\subsubsection{k-fold cross validation}
+\subsubsection{K-fold Cross Validation}
 Os dois melhores algoritmos entre os três realizados são a rede neuronal e o knn, uma vez que possuem uma taxa de acerto perfeita, em comparação com a árvore de decisão que apresenta um valor bastante bom, mas não perfeito.
-Com isto, procedeu-se a uma posterior avaliação usando o método k-fold cross validation para estes dois melhores modelos. Na rede neuronal, a taxa de acerto média obtida foi de 99.68\% e o seu desvio 0.004. Relativamente ao modelo knn, a taxa de acerto média foi de 87.07\% e desvio 0.168. Assim, a rede neuronal apresenta melhores resultados, mesmo em várias repetições, relativamente ao knn, sendo considerado o melhor algoritmo destes três.
+Com isto, procedeu-se a uma posterior avaliação usando o método \textit{k-fold cross validation} para estes dois melhores modelos. Na rede neuronal, a taxa de acerto média obtida foi de 99.68\% e o seu desvio 0.004. Relativamente ao modelo knn, a taxa de acerto média foi de 87.07\% e desvio 0.168. Assim, a rede neuronal apresenta melhores resultados, mesmo em várias repetições, relativamente ao knn, sendo considerado o melhor algoritmo destes três.
 
 
 \subsubsection{Teste aos resultados dos dois melhores modelos}
@@ -359,7 +359,7 @@ Com isto, procedeu-se a uma posterior avaliação usando o método k-fold cross 
 \begin{equation}
 Levene_{p-value}=0.01338\label{6_levene}
 \end{equation}
-Para concluir este ponto, realizou-se um teste às taxas de acerto obtidas pelo k-fold cross validation com o objetivo de concluir se existe diferença significativa entre os dois modelos. Antes da realização do teste às médias, verificou-se a normalidade dos dados através dos testes de Shapiro-Wilk e Lilliefors \eqref{6_shapirolillie}, que obtiveram p-values inferiores a 0.05, indicando que os dados não seguem uma distribuição normal. Com isto, procedeu-se ao teste de Levene para verificar a igualdade das variâncias, tendo este resultado também num p-value \eqref{6_levene} inferior a 0.05, o que permite concluir que as variâncias dos dados são diferentes.
+Para concluir este ponto, realizou-se um teste às taxas de acerto obtidas pelo \textit{k-fold cross validation} com o objetivo de concluir se existe diferença significativa entre os dois modelos. Antes da realização do teste às médias, verificou-se a normalidade dos dados através dos testes de \textit{Shapiro-Wilk} e \textit{Lilliefors} \eqref{6_shapirolillie}, que obtiveram p-values inferiores a 0.05, indicando que os dados não seguem uma distribuição normal. Com isto, procedeu-se ao teste de \textit{Levene} para verificar a igualdade das variâncias, tendo este resultado também num p-value \eqref{6_levene} inferior a 0.05, o que permite concluir que as variâncias dos dados são diferentes.
 
 \begin{equation}
   \begin{array}{l}
@@ -367,21 +367,21 @@ Para concluir este ponto, realizou-se um teste às taxas de acerto obtidas pelo 
     H_{1}:\mu _{accuracy_neural} - \mu _{accuracy_knn}\neq 0
   \end{array}\label{6_hypothesis}
 \end{equation}
-Por último, realizou-se um t.test com variâncias desconhecidas e diferentes e obteve-se o p-value de 0.04147, o que significa que há diferenças entre ambos os dados, porém, como o valor é próximo de 0.05, a diferença é reduzida.
+Por último, realizou-se um \textit{t.test} com variâncias desconhecidas e diferentes e obteve-se o p-value de 0.04147, o que significa que há diferenças entre ambos os dados, porém, como o valor é próximo de 0.05, a diferença é reduzida.
 
 
-\subsection{Derivação do novo atributo ClassedeRisco, discretizando os atributos Taxa de Transmissibilidade R(t) e Incidência.}
+\subsection{Derivação do novo atributo "ClassedeRisco", discretizando os atributos "Taxa de Transmissibilidade" - R(t) - e "Incidência".}
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/matrix.png}}
 \caption{Matriz de risco}
 \label{matrix}
 \end{figure}
-Para a criação do atributo ClassedeRisco, verificaram-se os valores de Rt e Incidência para atribuir as classes “Verde”, “Amarelo” e “Vermelho” com base na Matriz de Risco Fig.\ref{matrix}.
+Para a criação do atributo "ClassedeRisco", verificaram-se os valores de Rt e Incidência para atribuir as classes “Verde”, “Amarelo” e “Vermelho” com base na Matriz de Risco (Fig.\ref{matrix}).
 Após esta classificação, verificaram-se o número de países que estão em cada região, tendo obtido os seguintes valores:
-Verde – 55
-Amarelo – 34
-Vermelho – 120
-Mais uma vez, a maioria dos países encontra-se na zona com os piores valores (zona vermelha), tendo o valor do Rt um contributo significativo, como observado nas conclusões do ponto '\ref{ex05}'.
+Verde – 55;
+Amarelo – 34;
+Vermelho – 120.
+Mais uma vez, a maioria dos países encontra-se na zona com os piores valores (zona vermelha), tendo o valor do Rt um contributo significativo, como observado nas conclusões do ponto \ref{ex05}.
 
 
 
@@ -390,7 +390,7 @@ Mais uma vez, a maioria dos países encontra-se na zona com os piores valores (z
 A árvore de regressão foi criada de maneira idêntica aos exercícios anteriores com o método “class”, uma vez que este atributo exige uma análise classificativa dos dados. A árvore obtida encontra-se presente na Fig.\ref{8a_rpart}.
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/08_1.png}}
-\caption{Árvore de decisão para a varíavel ClassedeRisco}
+\caption{Árvore de decisão para a variável ClassedeRisco}
 \label{8a_rpart}
 \end{figure}
 Com o modelo obtido, obtiveram-se os valores de avaliação presentes na Fig.\ref{8a_confusionmatrix}.
@@ -402,11 +402,11 @@ Com o modelo obtido, obtiveram-se os valores de avaliação presentes na Fig.\re
 
 
 \subsubsection{Rede neuronal}
-Na preparação dos dados para a criação de uma rede neuronal, foi necessário utilizar os dados normalizados no ponto '\ref{ex01}' e também a coluna ClassedeRisco, criada no ponto anterior. Como os dados desta nova coluna são classificados, houve a necessidade de criar colunas extras que continham os valores de “true”/”false” que diferenciavam as classes.
+Na preparação dos dados para a criação de uma rede neuronal, foi necessário utilizar os dados normalizados no ponto \ref{ex01} e também a coluna "ClassedeRisco", criada no ponto anterior. Como os dados desta nova coluna são classificados, houve a necessidade de criar colunas extras que continham os valores de “true”/”false” que diferenciavam as classes.
 Após esta preparação, foi criada a rede neuronal com 3 nós internos, podendo esta ser observada na Fig.\ref{8b_neural}.
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/08_3.png}}
-\caption{Rede neuronal com 3 nós internos para a varíavel ClassedeRisco}
+\caption{Rede neuronal com 3 nós internos para a variável ClassedeRisco}
 \label{8b_neural}
 \end{figure}
 A Matriz de Confusão e os valores provenientes da mesma da rede neuronal criada estão indicados na Fig.\ref{8b_confusionmatrix}.
@@ -422,7 +422,7 @@ Antes da realização do algoritmo knn, foi necessária a separação da variáv
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.95\columnwidth]{images/08_5.png}}
-\caption{Matriz de confusão e valores de avaliação do modelo Knn}
+\caption{Matriz de confusão e valores de avaliação do modelo knn}
 \label{8c_confusionmatrix}
 \end{figure}
 Com os dados preparados e o valor de k encontrado, procedeu-se à realização do algoritmo e obtiveram-se os resultados dos valores de avaliação para este modelo, visíveis na Fig.\ref{8c_confusionmatrix}.
@@ -436,7 +436,7 @@ Assim, este problema de classificação acabou por ser algo bastante simples par
 \section{Conclusões} % ------------------------------------------------------
 As alíneas referentes a problemas de Regressão permitem concluir que o algoritmo de regressão linear simples não se revelou um modelo forte, não só pela sua fraca correlação como pela dispersão de pontos visível no diagrama obtido. Os métodos de avaliação MAE e RMSE confirmam a sua avaliação negativa. O mesmo se concluiu para a regressão linear múltipla, tendo sido o pior modelo face às redes neuronais e árvore de regressão. 
 
-Já nos problemas de Classificação verificou-se, em primeiro lugar, que a maioria dos países tem índice de transmissibilidade superior a 1 e à média dos países em geral. Relativamente aos algoritmos, as redes neuronais e knn demonstraram ser os melhores face à árvore de decisão, sendo que o método de avaliação k-fold cross validation confirma que as redes neuronais foram ainda superiores ao knn. Contudo, na última alínea todos estes algoritmos obtiveram um resultado perfeito, não se verificando diferenças na avaliação dos mesmos. Por fim, denotou-se que a maioria dos países encontra-se na zona vermelha da matriz de risco, obtendo as classificações de: 55 países verdes, 34 amarelos e 120 vermelhos. 
+Já nos problemas de Classificação verificou-se, em primeiro lugar, que a maioria dos países tem índice de transmissibilidade superior a 1 e à média dos países em geral. Relativamente aos algoritmos, as redes neuronais e knn demonstraram ser os melhores face à árvore de decisão, sendo que o método de avaliação \textit{k-fold cross validation} confirma que as redes neuronais foram ainda superiores ao knn. Contudo, na última alínea, todos estes algoritmos obtiveram um resultado perfeito, não se verificando diferenças na avaliação dos mesmos. Por fim, denotou-se que a maioria dos países encontra-se na zona vermelha da matriz de risco, obtendo as classificações de: 55 países verdes, 34 amarelos e 120 vermelhos. 
 
 Em suma, é visível que a regressão linear apresenta sempre piores resultados, quer a simples, quer a múltipla, face aos restantes algoritmos. As árvores de regressão ou decisão revelam-se melhores que os anteriores mas continuam inferiores face às redes neuronais ou knn, sendo estes os melhores algoritmos dos testes realizados. 
 
