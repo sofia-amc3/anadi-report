@@ -36,7 +36,7 @@ printRMSE <- function(method, d) {
 
 # Exercício 1 --------------------------------------------------
 # Importação dos dados
-data <- read.csv("countryagregatedata.csv")
+data <- read.csv("countryaggregatedata.csv")
 
 
 str(data)

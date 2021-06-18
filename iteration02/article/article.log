@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  18 JUN 2021 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.16)  18 JUN 2021 17:41
 entering extended mode
 **./article.tex
 (article.tex
@@ -16,7 +16,7 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmptoksA=\toks15
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 03.
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -112,29 +112,35 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtranrubishbin=\box48
 )
 ** ATTENTION: Overriding command lockouts (line 2).
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/cite\cite.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.s
+ty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.s
+ty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.st
+y
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen162
 ))
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
+y
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen163
 )
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
+y
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count194
@@ -175,10 +181,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.
+sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts
+.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -186,13 +194,15 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/algorithms\algorithmic.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algori
+thmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 
-(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.s
+ty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
@@ -203,33 +213,38 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \ALC@tlm=\skip53
 \algorithmicindent=\skip54
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx
+.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics
+.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\grap
+hics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdft
+ex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
 )
-(C:\Program Files\MiKTeX\tex/latex/base\textcomp.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\colo
+r.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -243,69 +258,85 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref
+.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
 
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds
+.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
-(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdft
+excmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwa
+rerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvset
+keys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.st
-y
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kv
+definekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+)
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfes
+cape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.s
+ty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letlt
+xmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/auxhook\auxhook.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.s
+ty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptio
+ns.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen173
 \Hy@linkcounter=\count276
 \Hy@pagecounter=\count277
 
-(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.d
+ef
 File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref-langpatches.def
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref
+-langpatches.def
 File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
 nguages
 )
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc
+.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcm
+ds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count278
 
-(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.de
+f
 File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -318,18 +349,19 @@ Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count279
-
-(C:\Program Files\MiKTeX\tex/latex/url\url.sty
+ (C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen174
 
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.s
+ty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigi
+ntcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -346,7 +378,8 @@ Package hyperref Info: PDF/A mode OFF on input line 6105.
 LaTeX Info: Redefining \ref on input line 6145.
 LaTeX Info: Redefining \pageref on input line 6149.
 
-(C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx
+.sty
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
@@ -357,10 +390,12 @@ with kernel methods
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.
+def
 File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
 
-(C:\Program Files\MiKTeX\tex/latex/base\atveryend-ltx.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-lt
+x.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
@@ -368,41 +403,43 @@ with kernel methods
 \Fld@listcount=\count284
 \c@bookmark@seq@number=\count285
 
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.
-sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\re
+runfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.
-sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\u
+niquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip55
-) (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
+)
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
 2.
 
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1ptm.fd
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ))
-(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks22
 \inpenc@posthook=\toks23
 )
-(C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2021/04/07 3.57 The Babel package
 
-(C:\Program Files\MiKTeX\tex/generic/babel\babel.def
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
 File: babel.def 2021/04/07 3.57 Babel common definitions
 \babel@savecnt=\count286
 \U@D=\dimen177
 \l@babelnohyphens=\language79
 
-(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.
+def)
 \bbl@readstream=\read2
 )
 \bbl@dirlevel=\count287
@@ -410,39 +447,28 @@ File: babel.def 2021/04/07 3.57 Babel common definitions
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
+
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/babel-portuges\portuguese.ldf
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\po
+rtuguese.ldf
 Language: portuges 2021/02/04 v1.2s Portuguese support from the babel system
 Package babel Info: Making " an active character on input line 143.
-)) (C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/hyphenat\hyphenat.sty
+))
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyphenat\hyphenat
+.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language80
 LaTeX Info: Redefining \_ on input line 43.
 )
-(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backe
+nd-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count288
 \l__pdf_internal_box=\box51
-) (article.aux
-
-LaTeX Warning: Label `4b' multiply defined.
-
-
-LaTeX Warning: Label `4b' multiply defined.
-
-
-LaTeX Warning: Label `4b' multiply defined.
-
-
-LaTeX Warning: Label `4_ttest' multiply defined.
-
-
-LaTeX Warning: Label `4_hypothesis' multiply defined.
-
-)
+) (article.aux)
 \openout1 = `article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -465,7 +491,9 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 
 -- Lines per column: 56 (exact).
-(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-
+pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count289
 \scratchdimen=\dimen178
@@ -478,24 +506,29 @@ LaTeX Font Info:    ... okay on input line 32.
 \MPnumerator=\count293
 \makeMPintoPDFobject=\count294
 \everyMPtoPDFconversion=\toks25
-) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+)
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epst
+opdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf
+-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 32.
 
-(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.
+sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount
+.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\bruno\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestrin
-g.sty
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\
+gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count295
@@ -507,185 +540,192 @@ LaTeX Info: Redefining \nameref on input line 32.
 \@outlinefile=\write3
 \openout3 = `article.out'.
 
-<images/matrix.png, id=132, 411.78844pt x 311.66437pt>
-File: images/matrix.png Graphic file (type png)
-<use images/matrix.png>
-Package pdftex.def Info: images/matrix.png  used on input line 64.
-(pdftex.def)             Requested size: 239.39923pt x 181.1887pt.
 
-Underfull \hbox (badness 2913) in paragraph at lines 78--83
+Underfull \hbox (badness 2913) in paragraph at lines 73--78
 []\T1/ptm/m/n/10 A apren-di-za-gem au-to-má-tica divide-se em três áreas,
  []
 
-[1{C:/Users/bruno/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
-
-
- <./images/matrix.png>]
-<images/01.png, id=159, 696.35156pt x 405.76593pt>
+<images/01.png, id=141, 696.35156pt x 405.76593pt>
 File: images/01.png Graphic file (type png)
 <use images/01.png>
-Package pdftex.def Info: images/01.png  used on input line 101.
+Package pdftex.def Info: images/01.png  used on input line 96.
 (pdftex.def)             Requested size: 239.39923pt x 139.49408pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 105
-.
- (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 105
+[1{C:/Users/SAP-PSC6-G7/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 100
 .
 
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 100
+.
+(C:\Users\SAP-PSC6-G7\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/02_1.png, id=161, 700.11563pt x 673.01437pt>
+<images/02_1.png, id=160, 700.11563pt x 673.01437pt>
 File: images/02_1.png Graphic file (type png)
 <use images/02_1.png>
-Package pdftex.def Info: images/02_1.png  used on input line 114.
+Package pdftex.def Info: images/02_1.png  used on input line 109.
 (pdftex.def)             Requested size: 239.39923pt x 230.12607pt.
-<images/02_2.png, id=163, 434.37282pt x 441.14813pt>
+<images/02_2.png, id=162, 434.37282pt x 441.14813pt>
 File: images/02_2.png Graphic file (type png)
 <use images/02_2.png>
-Package pdftex.def Info: images/02_2.png  used on input line 121.
+Package pdftex.def Info: images/02_2.png  used on input line 116.
 (pdftex.def)             Requested size: 239.39923pt x 243.13707pt.
- [2 <./images/01.png> <./images/02_1.png> <./images/02_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
  \T1/ptm/m/it/10 C. Re-gres-são li-near sim-ples en-tre new$[]$cases e
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 142.
+(hyperref)                removing `math shift' on input line 137.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 142.
+(hyperref)                removing `math shift' on input line 137.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 142.
+(hyperref)                removing `math shift' on input line 137.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 142.
+(hyperref)                removing `math shift' on input line 137.
 
-<images/03.png, id=182, 598.48593pt x 546.54187pt>
+[2 <./images/01.png> <./images/02_1.png> <./images/02_2.png>]
+<images/03.png, id=185, 598.48593pt x 546.54187pt>
 File: images/03.png Graphic file (type png)
 <use images/03.png>
-Package pdftex.def Info: images/03.png  used on input line 161.
+Package pdftex.def Info: images/03.png  used on input line 156.
 (pdftex.def)             Requested size: 239.39923pt x 218.6212pt.
-<images/04_1.png, id=186, 418.56375pt x 415.5525pt>
+<images/04_1.png, id=189, 418.56375pt x 415.5525pt>
 File: images/04_1.png Graphic file (type png)
 <use images/04_1.png>
-Package pdftex.def Info: images/04_1.png  used on input line 184.
+Package pdftex.def Info: images/04_1.png  used on input line 179.
 (pdftex.def)             Requested size: 239.39923pt x 237.67267pt.
 
-Underfull \hbox (badness 2005) in paragraph at lines 189--190
+Underfull \hbox (badness 2005) in paragraph at lines 184--185
 []\T1/ptm/m/n/10 No su-má-rio da fun-ção de re-gres-são ob-tida, pre-sente
  []
 
 
-Underfull \hbox (badness 3271) in paragraph at lines 189--190
-\T1/ptm/m/n/10 na Fig.[]6[], observam-se os co-e-fi-ci-en-tes ob-ti-dos e, tam-
+Underfull \hbox (badness 3271) in paragraph at lines 184--185
+\T1/ptm/m/n/10 na Fig.[]5[], observam-se os co-e-fi-ci-en-tes ob-ti-dos e, tam-
 
  []
 
-[3 <./images/03.png> <./images/04_1.png>]
-<images/04_2.png, id=208, 598.48593pt x 546.54187pt>
+<images/04_2.png, id=197, 598.48593pt x 546.54187pt>
 File: images/04_2.png Graphic file (type png)
 <use images/04_2.png>
-Package pdftex.def Info: images/04_2.png  used on input line 213.
+Package pdftex.def Info: images/04_2.png  used on input line 208.
 (pdftex.def)             Requested size: 239.39923pt x 218.6212pt.
-<images/04_3.png, id=209, 499.8675pt x 499.8675pt>
+[3 <./images/03.png> <./images/04_1.png>]
+<images/04_3.png, id=212, 499.8675pt x 499.8675pt>
 File: images/04_3.png Graphic file (type png)
 <use images/04_3.png>
-Package pdftex.def Info: images/04_3.png  used on input line 233.
+Package pdftex.def Info: images/04_3.png  used on input line 228.
 (pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
-<images/04_4.png, id=210, 499.8675pt x 499.8675pt>
+<images/04_4.png, id=213, 499.8675pt x 499.8675pt>
 File: images/04_4.png Graphic file (type png)
 <use images/04_4.png>
-Package pdftex.def Info: images/04_4.png  used on input line 246.
+Package pdftex.def Info: images/04_4.png  used on input line 241.
 (pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
 File: images/04_4.png Graphic file (type png)
 <use images/04_4.png>
-Package pdftex.def Info: images/04_4.png  used on input line 259.
+Package pdftex.def Info: images/04_4.png  used on input line 254.
 (pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
- [4 <./images/04_2.png (PNG copy)> <./images/04_3.png>]
+
+Underfull \hbox (badness 1596) in paragraph at lines 255--255
+\T1/ptm/m/n/8 Figura 9.  []Rede neu-ro-nal com 5 e 3 nós in-ter-nos para a va-r
+iá-vel
+ []
+
+[4 <./images/04_2.png (PNG copy)> <./images/04_3.png> <./images/04_4.png>]
 <images/06_1.png, id=234, 430.60875pt x 335.00156pt>
 File: images/06_1.png Graphic file (type png)
 <use images/06_1.png>
-Package pdftex.def Info: images/06_1.png  used on input line 320.
+Package pdftex.def Info: images/06_1.png  used on input line 315.
 (pdftex.def)             Requested size: 239.39923pt x 186.25009pt.
- [5 <./images/04_4.png>]
-<images/06_2.png, id=249, 499.8675pt x 499.8675pt>
+<images/06_2.png, id=237, 499.8675pt x 499.8675pt>
 File: images/06_2.png Graphic file (type png)
 <use images/06_2.png>
-Package pdftex.def Info: images/06_2.png  used on input line 332.
+Package pdftex.def Info: images/06_2.png  used on input line 327.
 (pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
- [6 <./images/06_1.png> <./images/06_2.png>]
-<images/08_1.png, id=276, 539.01375pt x 494.59781pt>
+
+[5 <./images/06_1.png>]
+<images/matrix.png, id=261, 411.78844pt x 311.66437pt>
+File: images/matrix.png Graphic file (type png)
+<use images/matrix.png>
+Package pdftex.def Info: images/matrix.png  used on input line 375.
+(pdftex.def)             Requested size: 239.39923pt x 181.1887pt.
+<images/08_1.png, id=265, 539.01375pt x 494.59781pt>
 File: images/08_1.png Graphic file (type png)
 <use images/08_1.png>
 Package pdftex.def Info: images/08_1.png  used on input line 392.
 (pdftex.def)             Requested size: 239.39923pt x 219.67647pt.
-<images/08_2.png, id=278, 389.20406pt x 336.50719pt>
+<images/08_2.png, id=267, 389.20406pt x 336.50719pt>
 File: images/08_2.png Graphic file (type png)
 <use images/08_2.png>
 Package pdftex.def Info: images/08_2.png  used on input line 398.
 (pdftex.def)             Requested size: 239.39923pt x 206.98918pt.
-<images/08_3.png, id=281, 499.8675pt x 499.8675pt>
+<images/08_3.png, id=270, 499.8675pt x 499.8675pt>
 File: images/08_3.png Graphic file (type png)
 <use images/08_3.png>
 Package pdftex.def Info: images/08_3.png  used on input line 408.
 (pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
-<images/08_4.png, id=283, 392.21532pt x 339.51843pt>
+<images/08_4.png, id=272, 392.21532pt x 339.51843pt>
 File: images/08_4.png Graphic file (type png)
 <use images/08_4.png>
 Package pdftex.def Info: images/08_4.png  used on input line 414.
 (pdftex.def)             Requested size: 239.39923pt x 207.23544pt.
- [7 <./images/08_1.png (PNG copy)> <./images/08_2.png> <./images/08_3.png> <./i
-mages/08_4.png>]
-<images/08_5.png, id=294, 388.45125pt x 338.01282pt>
+ [6 <./images/06_2.png> <./images/matrix.png>]
+<images/08_5.png, id=289, 388.45125pt x 338.01282pt>
 File: images/08_5.png Graphic file (type png)
 <use images/08_5.png>
 Package pdftex.def Info: images/08_5.png  used on input line 424.
 (pdftex.def)             Requested size: 239.39923pt x 208.31761pt.
-
-Underfull \hbox (badness 1509) in paragraph at lines 450--451
+ [7 <./images/08_1.png (PNG copy)> <./images/08_2.png> <./images/08_3.png> <./i
+mages/08_4.png>]
+Underfull \hbox (badness 1509) in paragraph at lines 455--456
 []\T1/ptm/m/n/8 McGregor, M, (2020, 21 de se-tem-bro). \T1/ptm/m/it/8 8 Clus-te
 -ring Al-go-rithms
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--451
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 \T1/ptm/m/it/8 in Ma-chine Le-ar-ning that All Data Sci-en-tists Should
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--451
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 \T1/ptm/m/it/8 Know\T1/ptm/m/n/8 . Free Code Camp. []$https : / / www . freecod
 ecamp . org / news /
  []
 
 
-Overfull \hbox (34.24866pt too wide) in paragraph at lines 450--451
+Overfull \hbox (34.24866pt too wide) in paragraph at lines 455--456
 \T1/ptm/m/n/8 8-[]clustering-[]algorithms-[]in-[]machine-[]learning-[]that-[]al
 l-[]data-[]scientists-[]should-[]know/$[] 
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 452--453
+Underfull \hbox (badness 4024) in paragraph at lines 457--458
 []\T1/ptm/m/n/8 Shaier, S. (2019, 18 de março). \T1/ptm/m/it/8 ML Al-go-rithms:
  One SD -
  []
 
 
-Underfull \hbox (badness 6477) in paragraph at lines 452--453
+Underfull \hbox (badness 6477) in paragraph at lines 457--458
 \T1/ptm/m/it/8 As-so-ci-a-tion Rule Le-ar-ning Al-go-rithms\T1/ptm/m/n/8 . Towa
 rds Data Sci-ence.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--453
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
 []$\T1/ptm/m/n/8 https : / / medium . com / @Shaier / ml-[]algorithms-[]one-[]s
 d-[] % CF %
  []
@@ -702,34 +742,35 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 [8 <./images/08_5.png>] (article.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `article.out' has not changed.
-(rerunfilecheck)             Checksum: CA85E271BD9195C2873D802521072BE4;10334.
+(rerunfilecheck)             Checksum: 952ABFFDF6F21605F443C776BEABDFD5;10313.
  ) 
 Here is how much of TeX's memory you used:
- 11757 strings out of 479321
- 171662 string characters out of 2866501
- 502141 words of memory out of 3000000
- 28931 multiletter control sequences out of 15000+600000
+ 11762 strings out of 479321
+ 175255 string characters out of 2853721
+ 504500 words of memory out of 3000000
+ 28936 multiletter control sequences out of 15000+600000
  511108 words of font info for 137 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 71i,9n,74p,1108b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/
-utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Progr
-am Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts
-/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (8 pages, 703772 bytes).
+ 71i,9n,74p,1108b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.e
+nc}<C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/SAP-PSC6-G7/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/SAP-PSC6
+-G7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
+Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr7.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/SAP-PSC6-G7/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/SAP-PSC6-G7/AppData/Local
+/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/SAP-PSC6-G7/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/SAP-PSC6-G7/
+AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on article.pdf (8 pages, 705601 bytes).
 PDF statistics:
- 376 PDF objects out of 1000 (max. 8388607)
+ 378 PDF objects out of 1000 (max. 8388607)
  97 named destinations out of 1000 (max. 500000)
  337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
