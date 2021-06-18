@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  17 JUN 2021 23:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  18 JUN 2021 12:44
 entering extended mode
 **./article.tex
 (article.tex
@@ -439,6 +439,9 @@ LaTeX Warning: Label `4b' multiply defined.
 
 LaTeX Warning: Label `4_ttest' multiply defined.
 
+
+LaTeX Warning: Label `4_hypothesis' multiply defined.
+
 )
 \openout1 = `article.aux'.
 
@@ -606,76 +609,83 @@ File: images/04_4.png Graphic file (type png)
 <use images/04_4.png>
 Package pdftex.def Info: images/04_4.png  used on input line 259.
 (pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
- [4 <./images/04_2.png (PNG copy)> <./images/04_3.png>] [5 <./images/04_4.png>]
-<images/08_1.png, id=248, 539.01375pt x 494.59781pt>
+ [4 <./images/04_2.png (PNG copy)> <./images/04_3.png>]
+<images/06_1.png, id=234, 430.60875pt x 335.00156pt>
+File: images/06_1.png Graphic file (type png)
+<use images/06_1.png>
+Package pdftex.def Info: images/06_1.png  used on input line 320.
+(pdftex.def)             Requested size: 239.39923pt x 186.25009pt.
+ [5 <./images/04_4.png>]
+<images/06_2.png, id=249, 499.8675pt x 499.8675pt>
+File: images/06_2.png Graphic file (type png)
+<use images/06_2.png>
+Package pdftex.def Info: images/06_2.png  used on input line 332.
+(pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
+ [6 <./images/06_1.png> <./images/06_2.png>]
+<images/08_1.png, id=275, 539.01375pt x 494.59781pt>
 File: images/08_1.png Graphic file (type png)
 <use images/08_1.png>
-Package pdftex.def Info: images/08_1.png  used on input line 351.
+Package pdftex.def Info: images/08_1.png  used on input line 392.
 (pdftex.def)             Requested size: 239.39923pt x 219.67647pt.
-<images/08_2.png, id=250, 389.20406pt x 336.50719pt>
+<images/08_2.png, id=277, 389.20406pt x 336.50719pt>
 File: images/08_2.png Graphic file (type png)
 <use images/08_2.png>
-Package pdftex.def Info: images/08_2.png  used on input line 357.
+Package pdftex.def Info: images/08_2.png  used on input line 398.
 (pdftex.def)             Requested size: 239.39923pt x 206.98918pt.
-<images/08_3.png, id=253, 499.8675pt x 499.8675pt>
+<images/08_3.png, id=280, 499.8675pt x 499.8675pt>
 File: images/08_3.png Graphic file (type png)
 <use images/08_3.png>
-Package pdftex.def Info: images/08_3.png  used on input line 367.
+Package pdftex.def Info: images/08_3.png  used on input line 408.
 (pdftex.def)             Requested size: 239.39923pt x 239.39975pt.
-<images/08_4.png, id=255, 392.21532pt x 339.51843pt>
+<images/08_4.png, id=282, 392.21532pt x 339.51843pt>
 File: images/08_4.png Graphic file (type png)
 <use images/08_4.png>
-Package pdftex.def Info: images/08_4.png  used on input line 373.
+Package pdftex.def Info: images/08_4.png  used on input line 414.
 (pdftex.def)             Requested size: 239.39923pt x 207.23544pt.
-
-
-LaTeX Warning: Reference `8c_k' on page 6 undefined on input line 383.
-
-<images/08_5.png, id=256, 388.45125pt x 338.01282pt>
+ [7 <./images/08_1.png (PNG copy)> <./images/08_2.png> <./images/08_3.png> <./i
+mages/08_4.png>]
+<images/08_5.png, id=293, 388.45125pt x 338.01282pt>
 File: images/08_5.png Graphic file (type png)
 <use images/08_5.png>
-Package pdftex.def Info: images/08_5.png  used on input line 386.
+Package pdftex.def Info: images/08_5.png  used on input line 424.
 (pdftex.def)             Requested size: 239.39923pt x 208.31761pt.
-[6 <./images/08_1.png (PNG copy)> <./images/08_2.png> <./images/08_3.png>]
-Underfull \vbox (badness 2351) has occurred while \output is active []
 
-
-Underfull \hbox (badness 1509) in paragraph at lines 412--413
+Underfull \hbox (badness 1509) in paragraph at lines 450--451
 []\T1/ptm/m/n/8 McGregor, M, (2020, 21 de se-tem-bro). \T1/ptm/m/it/8 8 Clus-te
 -ring Al-go-rithms
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
 \T1/ptm/m/it/8 in Ma-chine Le-ar-ning that All Data Sci-en-tists Should
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
 \T1/ptm/m/it/8 Know\T1/ptm/m/n/8 . Free Code Camp. []$https : / / www . freecod
 ecamp . org / news /
  []
 
 
-Overfull \hbox (34.24866pt too wide) in paragraph at lines 412--413
+Overfull \hbox (34.24866pt too wide) in paragraph at lines 450--451
 \T1/ptm/m/n/8 8-[]clustering-[]algorithms-[]in-[]machine-[]learning-[]that-[]al
 l-[]data-[]scientists-[]should-[]know/$[] 
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 414--415
+Underfull \hbox (badness 4024) in paragraph at lines 452--453
 []\T1/ptm/m/n/8 Shaier, S. (2019, 18 de março). \T1/ptm/m/it/8 ML Al-go-rithms:
  One SD -
  []
 
 
-Underfull \hbox (badness 6477) in paragraph at lines 414--415
+Underfull \hbox (badness 6477) in paragraph at lines 452--453
 \T1/ptm/m/it/8 As-so-ci-a-tion Rule Le-ar-ning Al-go-rithms\T1/ptm/m/n/8 . Towa
 rds Data Sci-ence.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--415
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
 []$\T1/ptm/m/n/8 https : / / medium . com / @Shaier / ml-[]algorithms-[]one-[]s
 d-[] % CF %
  []
@@ -691,37 +701,38 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7 <./images/08_4.png> <./images/08_5.png>] (article.aux)
-
-LaTeX Warning: There were undefined references.
-
+[8 <./images/08_5.png>] (article.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `article.out' has not changed.
-(rerunfilecheck)             Checksum: 37C68924516694682B1CF3FD3FBC9CDA;10354.
+(rerunfilecheck)             Checksum: CA85E271BD9195C2873D802521072BE4;10334.
  ) 
 Here is how much of TeX's memory you used:
- 11728 strings out of 479321
- 171282 string characters out of 2866501
- 501614 words of memory out of 3000000
- 28913 multiletter control sequences out of 15000+600000
- 512215 words of font info for 138 fonts, out of 8000000 for 9000
+ 11757 strings out of 479321
+ 171666 string characters out of 2866501
+ 502190 words of memory out of 3000000
+ 28931 multiletter control sequences out of 15000+600000
+ 511108 words of font info for 137 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  71i,9n,74p,1108b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Progr
-am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/typ
-e1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.
-pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files
-/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on article.pdf (7 pages, 641802 bytes).
+pdfTeX warning (dest): name{equation.6.32} has been referenced but does not e
+xist, replaced by a fixed one
+
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/ut
+mb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on article.pdf (8 pages, 702770 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 500000)
- 327 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 373 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
