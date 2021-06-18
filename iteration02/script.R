@@ -35,10 +35,8 @@ printRMSE <- function(method, d) {
 ################################################## REGRESSÃO ##################################################
 
 # Exercício 1 --------------------------------------------------
-# importação bruno
-data <- read.csv("E:/college/mastersDegree/0thYear-preRequirements/2ndSemester/computerDataAnalysis/praticalWork/Iteration 02/countryagregatedata.csv")
-
-data <- read.csv("data.csv")
+# Importação dos dados
+data <- read.csv("countryagregatedata.csv")
 
 
 str(data)
@@ -369,6 +367,7 @@ t.test(neural.accuracy, knn.accuracy, var.equal = FALSE, alternative = "two.side
 # Remove a variável criada no exercício 5 e utilizada no exercício 6
 data <- subset(data, select = -numberColumns)
 numberColumns <- numberColumns - 1
+data.normal <- subset(data.normal, select = -c(23, 24, 25))
 
 # Separação do Rt e Incidência em verde, amarelo e vermelho (com base na Matriz de Risco)
 ClassedeRisco <- c()
